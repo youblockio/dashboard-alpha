@@ -1,7 +1,7 @@
 import React from 'react'
 
 import house from "./assets/Solar Powered Home.png"
-"
+
 import { useNavigate } from "react-router-dom";
 
 const Onboarding2 = () => {

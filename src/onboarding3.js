@@ -10,15 +10,15 @@ const Onboarding3 = () => {
   return (
     <div className="bg-gradient-to-l from-gray-900 via-gray-800  to-teal-900 ... h-screen w-screen justify-center items-center">
       <div className="my-auto mx-auto ">
-        <div className="flex flex-row justify-center py-40">
+        <div className="flex flex-row justify-center pt-40">
             <div className=" flex-col">
               <h1 className="font-mono font-extrabold text-4xl tracking-wide text-white inline-flex">
               LET’S BEGIN! 
               </h1>
-              <div className="flex my-2 flex-col  py-9">
+              <div className="flex my-2 flex-col  pt-9">
                 <p className="font-serif text-2xl text-white inline-flex mr-6">Welcome to Youblock!
                 </p>
-                <div className="flex space-x-2 justify-centerflex-col py-24 ">
+                <div className="flex space-x-2 justify-centerflex-col pt-24 ">
                 <button onClick={(e) => {
               e.preventDefault();
               navigate("/register");
@@ -26,7 +26,7 @@ const Onboarding3 = () => {
                 </div>
               </div>
             </div>
-            <div className=" flex-col pl-16 grid items-center"><img src={element} className="h-72 w-72" /></div>
+            <div className=" flex-col pl-16 grid top-50"><img src={element} className="h-72 w-78" /></div>
         </div>
       </div>
     </div>

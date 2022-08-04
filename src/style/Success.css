@@ -1,0 +1,103 @@
+.success-div {
+    position: relative;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .frame-div20,
+  .frame-h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .frame-h1 {
+    margin: 0;
+    font-weight: unset;
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: center;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  .please-click-next {
+    margin-block-start: 0;
+    margin-block-end: 20px;
+  }
+  .to-set-up {
+    margin: 0;
+  }
+  .next-button,
+  .please-click-next-to-set-up-th {
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+  }
+  .please-click-next-to-set-up-th {
+    align-self: stretch;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+  .next-button {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    font-weight: 500;
+    font-family: Inter;
+    color: #fff;
+    text-align: left;
+  }
+  .frame-button1 {
+    cursor: pointer;
+    border: 0;
+    padding: 30px 80px;
+    background-color: #17a40b;
+    align-self: stretch;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .frame-div19,
+  .successpage-div {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .frame-div19 {
+    align-self: stretch;
+    border-radius: 20px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(167, 167, 167, 0.5),
+      rgba(83, 83, 83, 0.4)
+    );
+    backdrop-filter: blur(50px);
+    height: 542px;
+    flex-shrink: 0;
+    padding: 0 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 71px;
+  }
+  .successpage-div {
+    position: relative;
+    width: 100%;
+    padding: 592px 90px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url(../assets/SuccessPage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    font-size: 42px;
+    color: #fff;
+    font-family: Inter;
+  }
+  

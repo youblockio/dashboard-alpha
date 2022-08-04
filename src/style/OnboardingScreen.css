@@ -1,0 +1,136 @@
+.welcome-div1 {
+  position: relative;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  display: inline-block;
+}
+.masternatureblue-globe-icon1 {
+  position: relative;
+  width: 61.48px;
+  height: 51px;
+  flex-shrink: 0;
+}
+.frame-div39 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 0 60px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 70px;
+}
+.lorem-ipsum-dolor2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.lorem-ipsum-dolor-sit-amet-co2,
+.next-div6 {
+  position: relative;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+.lorem-ipsum-dolor-sit-amet-co2 {
+  flex: 1;
+  align-self: stretch;
+  font-weight: 300;
+}
+.next-div6 {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Inter;
+  color: #fff;
+  text-align: left;
+}
+.frame-button6 {
+  cursor: pointer;
+  border: 0;
+  padding: 20px 60px;
+  background-color: #17a40b;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ellipse-icon3 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.frame-button5,
+.frame-button7 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.frame-button7 {
+  flex: 1;
+  justify-content: center;
+  gap: 30px;
+}
+.frame-button5 {
+  justify-content: flex-start;
+  gap: 107px;
+}
+.frame-div40 {
+  flex: 1;
+  align-self: stretch;
+  flex-direction: column;
+  padding: 0 60px;
+  align-items: flex-start;
+  gap: 40px;
+  font-size: 24px;
+}
+.frame-div38,
+.frame-div40,
+.welcome1-div {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.frame-div38 {
+  flex: 1;
+  border-radius: 20px;
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    rgba(167, 167, 167, 0.5),
+    rgba(83, 83, 83, 0.4)
+  );
+  backdrop-filter: blur(50px);
+  height: 1381px;
+  flex-direction: column;
+  padding: 100px 0;
+  align-items: center;
+  gap: 32px;
+}
+.welcome1-div {
+  position: relative;
+  width: 100%;
+  flex-direction: row;
+  padding: 166px 91px;
+  align-items: flex-start;
+  background-image: url(../assets/Welcome.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: 42px;
+  color: #fff;
+  font-family: Inter;
+}
+@media screen and (max-width: 390px) {
+ .welcome-div1{
+  width: 90%;
+  background-size: 100%;
+ 
+
+ }
+}

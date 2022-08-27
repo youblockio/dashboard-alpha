@@ -1,0 +1,116 @@
+.setting-div-main{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 844px;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden;
+}
+.setting-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    position: absolute;
+    left: 190px;
+    top: 30px;
+}
+.setting-div-button-container{
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: absolute;
+    left: 190px;
+    top: 120px;
+    width: 1100px;
+    height: 500px;
+}
+.setting-div-button{
+    position: absolute;
+    left: 80px;
+    top:70px;
+    
+}
+.setting-div-button-text{
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+    padding: 20px;
+}
+.setting-div-button-divider{
+    width: 500px;
+    height: 0.8px;
+    background:linear-gradient(#AAAAAA 100%, #4C5F66 0%);
+    position: absolute;
+    left: 25px;
+}
+.setting-div-button-text1{
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: #FF6B6B;
+    padding: 20px;
+}
+@media screen and (max-width: 400px){
+    .setting-div-main{
+        height: 844px;
+    }
+    .setting-text{
+        display: none;
+    }
+    .setting-div-button-container{
+        width: 340px;
+        left: 20px;
+        height: 440px;
+    }
+    .setting-div-button{
+        left: 20px;
+        top:40px;
+        
+    }
+    .setting-div-button-text{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 20px;
+    }
+    .setting-div-button-text1{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 20px;
+    }
+    .setting-div-button-divider{
+        width: 250px;
+        left: 25px;
+    }
+}

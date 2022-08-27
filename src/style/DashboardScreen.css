@@ -1,0 +1,1508 @@
+.main{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 844px;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden;
+}
+.vertical-menu-div{
+    display: none;
+}
+.menu-div{
+    width: 80px;
+    height: 500px;
+    border-radius: 14px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    top: 120px;
+    position: absolute;
+    left: 30px;
+    flex-direction: column;
+    gap: 90px;
+}
+.home-text{
+    position: absolute;
+    left: 190px;
+    top: 30px;
+}
+.TE-div{
+    position: absolute;
+    left: 190px;
+    top: 80px;
+    width: 450px;
+    height: 120px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    border-radius: 14px;
+}
+.refresh-div{
+    position: absolute;
+    width: 160px;
+    height: 20px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    top: 8px;
+    left: 280px;
+    border-radius: 8px;
+    font-size: 10px;
+    color: white;
+    display: none;
+}
+.EE-div{
+    position: absolute;
+    width: 220px;
+    height: 90px;
+    border-radius: 14px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    left: 190px;
+    top:210px;
+    color: white;
+}
+.ME-div{
+    position: absolute;
+    width: 220px;
+    height: 90px;
+    left:420px;
+    border-radius: 14px;
+    top:210px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    color: white;
+}
+.solar-cell-div{
+    position: absolute;
+    left: 190px;
+    width: 450px;
+    height: 160px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    border-radius: 14px;
+    top: 310px;
+}
+.weather-div{
+    position: absolute;
+    left: 190px;
+    width: 450px;
+    height: 130px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    border-radius: 14px;
+    top: 480px;
+}
+.consumption-div{
+    position: absolute;
+    left: 190px;
+    width: 450px;
+    height: 100px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    border-radius: 14px;
+    top: 620px;
+}
+.graph-div{
+    position: absolute;
+    left: 660px;
+    top: 80px;
+    width: 450px;
+    height: 220px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    border-radius: 14px;
+}
+.geolocation{
+    position: absolute;
+    left: 660px;
+    width: 450px;
+    height: 160px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    border-radius: 14px;
+    top: 340px;
+}
+.block{
+    position: absolute;
+    left: 660px;
+    width: 450px;
+    height: 200px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    border-radius: 14px;
+    top: 520px;
+}
+.MS-div{
+    top: 80px;
+    position: absolute;
+    width: 350px;
+    height:80px;
+    background-color: #03a400;
+    border-radius: 14px;
+    left: 1130px;
+    color: white;
+}
+.CS-div{
+    top: 170px;
+    position: absolute;
+    width: 350px;
+    height:80px;
+    background-color: #cc9300;
+    border-radius: 14px;
+    left: 1130px;
+    color: white;
+}
+.picture-unit-div{
+    top: 260px;
+    position: absolute;
+    width: 350px;
+    height:280px;
+    background: radial-gradient(
+    50% 50%at 50% 50%,
+    rgba(167, 167, 167, 0.5),
+    rgba(83, 83, 83, 0.4)
+  );
+    border-radius: 14px;
+    left: 1130px
+}
+.emission-div{
+    position: absolute;
+    width: 350px;
+    height:170px;
+    background: radial-gradient(
+    50% 50%at 50% 50%,
+    rgba(0, 217, 100, 0.5),
+    rgba(0, 255, 117, 0.4)
+  );
+    border-radius: 14px;
+    left: 1130px;
+    top: 550px;
+}
+.refresh-div1{
+    position: absolute;
+    width: 160px;
+    height: 20px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    top: 8px;
+    left: 180px;
+    border-radius: 8px;
+    font-size: 10px;
+    display: none;
+}
+.connect-wallet-div{
+    width: 200px;
+    height: 40px;
+    
+    position: absolute;
+    left: 1150px;
+    top: 10px;
+    border-radius: 14px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.MS-div-image{
+    position: absolute;
+    left: 270px;
+    top: 9px;
+}
+.CS-div-image{
+    position: absolute;
+    left: 270px;
+    top: 9px;
+}
+.MS-div-title{
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+.CS-div-title{
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+.MS-div-value{
+    font-size: 26px;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+.CS-div-value{
+    font-size: 26px;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+.TE-text{
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: white;
+}
+.TE-value-text{
+    font-size: 66px;
+    padding-top: 4px;
+    padding-left: 40px;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 73px;
+}
+.EE-text{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+padding-top: 10px;
+padding-left: 20px;
+}
+.EE-value-text{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 61px;
+padding-left: 20px;
+}
+.solar-cell-image-div{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+.solar-cell-image{
+    width: 200px;
+    height: 70px;
+}
+.solar-cell-image-div-text{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+color: #FFFFFF;
+position: absolute;
+left: 50px;
+top:130px
+}
+.weather-image-div{
+    position: absolute;
+    left: 260px;
+    top: 40px;
+}
+.weather-image{
+    width: 98px;
+    height: 104px;
+}
+.tempratue-div{
+    position: absolute;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 48px;
+left: 350px;
+top: 45px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.time-div{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+position: absolute;
+left: 365px;
+top: 110px;
+}
+.weather-div-text{
+    position: absolute;
+    left: 400px;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: 300;
+    top:7px;
+
+}
+.weather-div-mini{
+    position: absolute;
+    left: 380px;
+    top:5px
+}
+.weather-div-title{
+    position: absolute;
+    left: 30px;
+    font-size: 12px;
+    top:7px;
+    color: #FFFFFF;
+}
+.weather-div-array-image{
+    width: 360px;
+}
+.weather-div-array{
+    position: absolute;
+    left: 40px;
+    top: 35px;
+}
+.emission-div-title-1{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+text-align: right;
+
+color: #FFFFFF;
+position: absolute;
+top: 20px;
+left: 180px;
+}
+.emission-div-title-2{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+text-align: right;
+
+color: #FFFFFF;
+position: absolute;
+left: 180px;
+top: 85px;
+}
+.emission-div-title-3{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+text-align: right;
+
+color: #FFFFFF;
+position: absolute;
+left: 180px;
+top: 100px;
+}
+.emission-div-title-1-value{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 34px;
+text-align: right;
+
+color: #FFFFFF;
+position: absolute;
+top: 40px;
+left: 190px;
+}
+.emission-div-title-2-value{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 34px;
+text-align: right;
+
+color: #FFFFFF;
+position: absolute;
+left: 190px;
+top: 120px;
+}
+.bulb{
+    width: 55.28px;
+height: 62.48px;
+}
+.earth{
+    width: 55.28px;
+height: 62.48px;
+}
+.emission-div-title-1-image{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+.emission-div-title-2-image{
+    position: absolute;
+    left: 40px;
+    top: 90px;
+}
+.picture-unit{
+    position: absolute;
+    top: 40px;
+    gap: 10px;
+    left: 70px;
+}
+.storage-unit-div{
+    position: absolute;
+}
+.compute-unit-div{
+    position: absolute;
+    left: 80px;
+}
+.Network-unit-div{
+    position: absolute;
+    left: 150px;
+}
+.storage-unit-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 12px;
+text-align: center;
+color: #FFFFFF;
+}
+.Network-unit-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 12px;
+text-align: center;
+color: #FFFFFF;
+}
+.compute-unit-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 12px;
+
+color: #FFFFFF;
+text-align: center;
+}
+.cpu{
+    width: 40px;
+    height: 40px;
+}
+.cloudmining-image-div-image{
+    width: 140px;
+    height: 100px;
+}
+.cloudmining-image-div{
+    position: absolute;
+    left: 100px;
+    top: 130px;
+}
+.cloudmining-image-div-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+position: absolute;
+left: 30px;
+top: 95px;
+}
+.cloudmining-image-div-value{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+position: absolute;
+left: 30px;
+top: 109px;
+}
+.picture-unit-div-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+position: absolute;
+left: 90px;
+top: 259px;
+}
+.picture-unit-div-title1{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #9CFFB8;
+position: absolute;
+left: 220px;
+top: 259px;
+}
+.storage-unit-value{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.compute-unit-value{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.Network-unit-value{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.self-production-div{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.self-consumption-div{
+    position: absolute;
+    top: 30px;
+    left: 240px;
+}
+.self-production-div-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.self-production-div-value{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 31px;
+
+color: #FFFFFF;
+}
+.self-production-image-div{
+    position: absolute;
+    left: 110px;
+    top: 25px;
+}
+.self-production-image-div1{
+    position: absolute;
+    left: 130px;
+    top: 25px;
+}
+.geolocation-title-div{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 15px;
+
+color: #FFFFFF;
+position: absolute;
+left: 30px;
+top: 15px;
+}
+.geolocation-center-div{
+background: radial-gradient(87.65% 87.65% at 18.75% 87.65%, rgba(167, 167, 167, 0.5) 0%, rgba(83, 83, 83, 0.4) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+border-radius: 20px;
+width: 360px;
+height: 90px;
+position: absolute;
+left: 40px;
+top: 40px;
+}
+.sunrise-div{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+.sunset-div{
+    position: absolute;
+    left: 230px;
+    top: 10px;
+}
+.sunrise{
+    width: 30px;
+    height: 30px;
+}
+.sunrise-div-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 10px;
+
+color: #FFFFFF;
+position: absolute;
+left: 49px;
+top: 2px;
+}
+.sunrise-div-value{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 15px;
+
+color: #FFFFFF;
+position: absolute;
+left: 45px;
+top: 14px;
+
+}
+.daylight-div{
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+.efficiency-div{
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+.daylight-div-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #FFFFFF;
+}
+.daylight-div-value{
+    position: absolute;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+left: 90px;
+top: -3px;
+color: #FFFFFF;
+}
+.current-div{
+    position: absolute;
+    left: 40px;
+    top: 135px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 17px;
+
+color: #FFFFFF;
+}
+.current-div-value{
+    position: absolute;
+    left: 350px;
+    top: 135px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 17px;
+text-align: right;
+
+color: #FFFFFF;
+}
+.block-mining-div{
+    background: radial-gradient(87.65% 87.65% at 18.75% 87.65%, rgba(167, 167, 167, 0.5) 0%, rgba(83, 83, 83, 0.4) 100%);
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    border-radius: 18px; 
+}
+.block-energy-div{
+    background: radial-gradient(87.65% 87.65% at 18.75% 87.65%, rgba(167, 167, 167, 0.5) 0%, rgba(83, 83, 83, 0.4) 100%);
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    left: 260px;
+    top: 20px;
+    border-radius: 18px; 
+}
+.block-grid-div{
+    background: radial-gradient(87.65% 87.65% at 18.75% 87.65%, rgba(167, 167, 167, 0.5) 0%, rgba(83, 83, 83, 0.4) 100%);
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    border-radius: 18px; 
+}
+.block-home-div{
+    background: radial-gradient(87.65% 87.65% at 18.75% 87.65%, rgba(167, 167, 167, 0.5) 0%, rgba(83, 83, 83, 0.4) 100%);
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    left: 260px;
+    top: 120px;
+    border-radius: 18px; 
+}
+.mining{
+    width: 40px;
+    height: 40px;
+}
+.block-mining-div-image{
+    position: absolute;
+    left: 10px;
+    top: 17px;
+}
+.block-mining-div-title{
+    position: absolute;
+    left: 40px;
+    top: 5px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 8px;
+line-height: 10px;
+
+color: #FFFFFF;
+}
+.block-mining-div-value{
+    position: absolute;
+    left: 70px;
+    top: 30px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+}
+
+.green-logo-div{
+    position: absolute;
+    left: 13px;
+    top: 30px;
+    cursor: pointer;
+}
+.greenLogo{
+    width: 55px;
+    height: 65px;
+}
+.home-logo-div{
+    position: absolute;
+    left: 20px;
+    top: 190px;
+    cursor: pointer;
+}
+.wallet-logo-div{
+    position: absolute;
+    left: 20px;
+    top: 270px;
+    cursor: pointer;
+}
+.setting-logo-div{
+    position: absolute;
+    left: 20px;
+    top: 420px;
+    cursor: pointer;
+}
+.settingIcon{
+    width: 40px;
+    height: 40px;
+}
+.home-text{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+letter-spacing: 0.2em;
+
+color: #FFFFFF;
+}
+
+@media screen and (max-width: 400px){
+    .main{
+        position: absolute;
+        height: 1580px ;
+        display: flex;
+    }
+    .menu-div{
+        display: none;
+    }
+    .home-text{
+        display: none;
+    }
+    .TE-div{
+        left: 20px;
+        top: 80px;
+        width: 340px;
+        height: 100px;
+        border-radius: 12px;
+    }
+    .refresh-div{
+        width: 160px;
+        height: 20px;
+        background: radial-gradient(
+          50% 50%at 50% 50%,
+          rgba(255, 255, 255, 0.4),
+          rgba(165, 165, 165, 0.3)
+        );
+        top: 8px;
+        left: 280px;
+        border-radius: 8px;
+        font-size: 10px;
+        color: white;
+    }
+    .EE-div{
+        width: 165px;
+        height: 80px;
+        border-radius: 12px;
+        left: 20px;
+        top:200px;
+        
+    }
+    .ME-div{
+        position: absolute;
+        width: 165px;
+        height: 80px;
+        left:195px;
+        border-radius: 12px;
+        top:200px;
+    }
+    .picture-unit-div{
+        top: 300px;
+        position: absolute;
+        width: 165px;
+        height:290px;
+        border-radius: 12px;
+        left: 195px
+    }
+    .MS-div{
+        top: 300px;
+        width: 165px;
+        height:60px;
+        border-radius: 12px;
+        left: 20px;
+    }
+    .CS-div{
+        top: 380px;
+        width: 165px;
+        height:60px;
+        border-radius: 12px;
+        left: 20px;
+    }
+    .emission-div{
+        position: absolute;
+        width: 165px;
+        height:130px;
+        border-radius: 12px;
+        left: 20px;
+        top: 460px;
+    }
+    .solar-cell-div{
+        left: 20px;
+        width: 340px;
+        height: 140px;
+        border-radius: 12px;
+        top: 610px;
+    }
+    .consumption-div{
+        left: 20px;
+        width: 340px;
+        height: 70px;
+        border-radius: 12px;
+        top: 770px;
+    }
+    .weather-div{
+        left: 20px;
+        width: 340px;
+        height: 120px;
+        border-radius: 12px;
+        top: 860px;
+    }
+    .graph-div{
+        left: 20px;
+        top: 1000px;
+        width: 340px;
+        height: 160px;
+        border-radius: 12px;
+    }
+    .block{
+        left: 20px;
+        width: 340px;
+        height: 160px;
+        border-radius: 12px;
+        top: 1180px;
+    }
+    .geolocation{
+        left: 20px;
+        width: 340px;
+        height: 130px;
+        border-radius: 12px;
+        top: 1360px;
+    }
+    .connect-wallet-div{
+        width: 160px;
+        height: 40px;
+        left: 20px;
+        top: 10px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .TE-text{
+        font-size: 12px;
+        font-weight: 300;
+        padding-left: 20px;
+        padding-top: 10px;
+        color: white;
+    }
+    .TE-value-text{
+        font-size: 48px;
+        padding-top: 4px;
+        padding-left: 30px;
+        font-weight: 500;
+        line-height: 56px;
+    }
+    .EE-text{
+    font-weight: 300;
+    font-size: 10px;
+    }
+    .EE-value-text{
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 48px;
+    padding-left: 20px;
+    }
+    .solar-cell-image{
+        width: 150px;
+        height: 60px;
+    }
+    .solar-cell-image-div-text{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 17px;
+    left: 40px;
+    top:110px
+    }
+    .solar-cell-image-div{
+        position: absolute;
+        left: 30px;
+        top: 40px;
+    }
+    .weather-image{
+        width: 68px;
+        height: 84px;
+    }
+    .weather-image-div{
+        left: 200px;
+        top: 30px;
+    }
+    .tempratue-div{
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 29px;
+    left: 265px;
+    top: 40px;
+    }
+    .time-div{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 22px;
+    left: 275px;
+    top: 80px;
+    }
+    .MS-div-image{
+        position: absolute;
+        left: 120px;
+        top: 9px;
+    }
+    .CS-div-image{
+        position: absolute;
+        left: 120px;
+        top: 9px;
+    }
+    .MS-div-title{
+        font-size: 12px;
+        font-weight: 200;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .CS-div-title{
+        font-size: 9px;
+        line-height: 14px;
+        font-weight: 300;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .MS-div-value{
+        font-size: 22px;
+        font-weight: 500;
+        padding-left: 15px;
+        padding-top: 3px;
+    }
+    .CS-div-value{
+        font-size: 22px;
+        font-weight: 500;
+        padding-left: 15px;
+        padding-top: 3px;
+    }
+    .Miner{
+        height: 40px;
+        width: 40px;
+    }
+    .emission-div-title-1{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    top: 20px;
+    left: 70px;
+    padding-right: 10px;
+    }
+    .emission-div-title-2{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    left: 60px;
+    top: 75px;
+    padding-right: 10px;
+    }
+    .emission-div-title-3{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    left: 100px;
+    top: 85px;
+    }
+    .emission-div-title-1-value{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    top: 40px;
+    left: 110px;
+    }
+    .emission-div-title-2-value{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    left: 110px;
+    top: 100px;
+    }
+    .bulb{
+        width: 35.28px;
+    height: 42.48px;
+    }
+    .earth{
+        width: 35.28px;
+    height: 42.48px;
+    }
+    .emission-div-title-1-image{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .emission-div-title-2-image{
+        position: absolute;
+        left: 10px;
+        top: 70px;
+    }
+    .picture-unit{
+        position: absolute;
+        top: 20px;
+        gap: 10px;
+        left: 10px;
+    }
+    .storage-unit-div{
+        position: absolute;
+    }
+    .compute-unit-div{
+        position: absolute;
+        left: 50px;
+    }
+    .Network-unit-div{
+        position: absolute;
+        left: 100px;
+    }
+    .cpu{
+        width: 30px;
+        height: 30px;
+    }
+    .cloudmining-image-div-image{
+        width: 120px;
+        height: 100px;
+    }
+    .cloudmining-image-div{
+        position: absolute;
+        left: 20px;
+        top: 105px;
+    }
+    .picture-unit-div-title{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    position: absolute;
+    left: 10px;
+    top: 250px;
+    }
+    .picture-unit-div-title1{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    left: 130px;
+    top: 250px;
+    }
+    .storage-unit-value{
+    font-weight: 400;
+    font-size: 14px;
+    }
+    .compute-unit-value{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .Network-unit-value{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .refresh-div{
+        display: none;
+    }
+    .refresh-div1{
+        display: none;
+    }
+    .self-production-div{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .self-consumption-div{
+        position: absolute;
+        top: 20px;
+        left: 170px;
+    }
+    .self-production-div-title{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    }
+    .self-production-div-value{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    }
+    .self-production-image-div{
+        position: absolute;
+        left: 80px;
+        top: 20px;
+    }
+    .self-production-image-div1{
+        position: absolute;
+        left: 90px;
+        top: 20px;
+    }
+    .geolocation-title-div{
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    left: 20px;
+    top: 10px;
+    }
+    .geolocation-center-div{
+    border-radius: 16px;
+    width: 300px;
+    height: 70px;
+    left: 20px;
+    top: 30px;
+    }
+    .sunrise-div{
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+    .sunset-div{
+        position: absolute;
+        left: 180px;
+        top: 10px;
+    }
+    .sunrise{
+        width: 20px;
+        height: 20px;
+    }
+    .sunrise-div-title{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    
+    color: #FFFFFF;
+    position: absolute;
+    left: 30px;
+    top: 2px;
+    }
+    .sunrise-div-value{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    
+    color: #FFFFFF;
+    position: absolute;
+    left: 40px;
+    top: 14px;
+    
+    }
+    .daylight-div{
+        position: absolute;
+        left: 10px;
+        top: 40px;
+    }
+    .efficiency-div{
+        position: absolute;
+        left: 180px;
+        top: 40px;
+    }
+    .daylight-div-title{
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 12px;
+    }
+    .daylight-div-value{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    left: 70px;
+    top: -3px;
+    }
+    .current-div{
+        left: 20px;
+        top: 105px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .current-div-value{
+        left: 250px;
+        top: 105px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .block-mining-div{
+        width: 140px;
+        height: 65px;
+        left: 20px;
+        top: 10px;
+        border-radius: 16px; 
+    }
+    .block-energy-div{
+        width: 140px;
+        height: 65px;
+        left: 180px;
+        top: 10px;
+        border-radius: 16px; 
+    }
+    .block-grid-div{
+        width: 140px;
+        height: 65px;
+        left: 20px;
+        top: 85px;
+        border-radius: 16px; 
+    }
+    .block-home-div{
+        width: 140px;
+        height: 65px;
+        left: 180px;
+        top: 85px;
+        border-radius: 16px; 
+    }
+    .mining{
+        width: 40px;
+        height: 40px;
+    }
+    .block-mining-div-image{
+        position: absolute;
+        left: 10px;
+        top: 17px;
+    }
+    .block-mining-div-title{
+        position: absolute;
+        left: 40px;
+        top: 5px;
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    
+    color: #FFFFFF;
+    }
+    .block-mining-div-value{
+        position: absolute;
+        left: 70px;
+        top: 30px;
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+    }
+    .weather-div-text{
+        left: 300px;
+        font-size: 8px;
+        font-weight: 300;
+        top:5px;
+    }
+    .weather-div-mini{
+        left: 280px;
+        top:2px
+    }
+    .weather-div-title{
+        left: 20px;
+        font-size: 10px;
+        top:5px;
+    }
+    .weather-div-array-image{
+        width: 260px;
+    }
+    .weather-div-array{
+        position: absolute;
+        left: 40px;
+        top: 30px;
+    }
+    .vertical-menu-div{
+        display: block;
+        width: 390px;
+        height: 80px;
+        background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    bottom: 0px;
+    position: absolute;
+    border-top-left-radius:16px;
+    border-top-right-radius:16px;
+    }
+    .green-logo-div1{
+        position: absolute;
+        left: 30px;
+        top: 10px;
+    }
+    .greenLogo1{
+        width: 50px;
+        height: 50px;
+        
+    }
+    .home-logo-div1{
+        position: absolute;
+        left: 130px;
+        top: 20px;
+    }
+    .home1{
+        width: 40px;
+        height: 40px;
+    }
+    .setting-logo-div1{
+        position: absolute;
+        left: 310px;
+        top: 10px;
+    }
+    .wallet-logo-div1{
+        position: absolute;
+        left: 220px;
+        top: 20px;
+    }
+    .settingIcon1{
+        height: 50px;
+        width: 50px;
+    }
+}

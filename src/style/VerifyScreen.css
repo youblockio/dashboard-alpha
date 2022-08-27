@@ -1,0 +1,179 @@
+  .verify-div01 {
+    position: relative;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 42px;
+  }
+  .frame-div602 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .please-enter-the-verification {
+    position: absolute;
+    top: 40px;
+    left: 102px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    font-weight: 300;
+    display: inline-block;
+    width: 400px;
+  }
+  .rectangle-input01 {
+    border: 1px solid #0f4658;
+    background-color: transparent;
+    position: absolute;
+    top: 140px;
+    left: 102px;
+    border-radius: 20px;
+    width: 400px;
+    height: 60px;
+  }
+  .group-div01,
+  .next-div101 {
+    position: relative;
+    font-size: 24px;
+  }
+  .group-div01 {
+    width: 400px;
+    height: 111px;
+    flex-shrink: 0;
+    gap: 100px;
+    padding-top: 100px;
+  }
+  .next-div101 {
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    font-family: Inter;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+  }
+  .frame-button102,
+  .frame-div5 {
+    border-radius: 20px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+  .frame-button102 {
+    cursor: pointer;
+    border: 0;
+    padding: 30px 80px;
+    background-color: #17a40b;
+    flex-direction: row;
+    align-items: flex-start;
+    top: 3900px;
+    left: 100px;
+  }
+  .frame-div502 {
+    position: relative;
+    top: 120px;
+    left: 350px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    backdrop-filter: blur(300px);
+    flex-direction: column;
+    padding: 60px;
+    align-items: center;
+    gap: 200px;
+    border-radius: 20px;
+    width: 600px;
+  }
+  .registration2-div {
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 42px;
+    color: #fff;
+    font-family: Inter;
+    background-image: url(../assets/Registration3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .button-fix{
+    padding-left: 180px;
+    padding-top: 40px;
+  }
+  @media screen and (max-width: 400px){
+    .registration2-div{
+        height: 844px;
+        font-size: 28px;
+    }
+    .frame-div502{
+        position: absolute;
+        top: 245px;
+        left: 16px;
+        border-radius: 14px;
+        padding: 20px 30px;
+        gap: 52px;
+        width: 300px;
+        height: 260px;
+    }
+    .verify-div01 {
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        padding-left: 15px;
+      }
+      .group-div01 {
+        width: 300px;
+        gap: 50px;
+        padding: 0px;
+      }
+      .please-enter-the-verification {
+        font-size: 12px;
+        left:55px;
+        width: 200px;
+        }
+        .rectangle-input01 {
+            top: 81px;
+            left: 0;
+            border-radius: 16px;
+            width: 300px;
+            height: 40px;
+          }
+          .frame-button102 {
+            
+            padding: 20px 60px;
+            width: 300px;
+            align-items: center;
+            left:30px
+          }
+          .next-div101 {
+            font-size: 18px;
+            text-align: center;
+            padding-left: 70px;
+          }
+          .button-fix{
+            position: absolute;
+            padding:0px 0px 0px 0px;
+            top: 210px;
+          }
+  }
+
+  @media screen and (max-width: 376px){
+    .registration2-div{
+      height: 750px;
+      font-size: 26px;
+  }
+  .frame-div502{
+    position: absolute;
+    top: 200px;
+    left: 12px;
+    border-radius: 14px;
+    padding: 20px 30px;
+    gap: 52px;
+    width: 290px;
+    height: 260px;
+}
+  }

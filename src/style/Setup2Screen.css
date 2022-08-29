@@ -1,0 +1,111 @@
+
+  .congragulations-div {
+    position: relative;
+    letter-spacing: 0.3em;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .youre-all-done {
+    margin-block-start: 0;
+    margin-block-end: 20px;
+  }
+  .welcome-to-the {
+    margin: 0;
+  }
+  .youre-all-done-welcome-to-th {
+    position: relative;
+    letter-spacing: 0.2em;
+    display: inline-block;
+  }
+  .frame-div606 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 26px;
+  }
+  .begin-journey-div {
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    font-family: Inter;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+  }
+  .frame-button106,
+  .frame-div506 {
+    border-radius: 20px;
+    display: flex;
+    box-sizing: border-box;
+  }
+  .frame-button106 {
+    cursor: pointer;
+    border: 0;
+    padding: 40px 148px;
+    background-color: #17a40b;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-div506 {
+    position: absolute;
+    top: 130px;
+    left: 370px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    flex-direction: column;
+    padding: 60px 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    backdrop-filter: blur(300px);
+  }
+  
+  .setup2-div {
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 878px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 42px;
+    color: #fff;
+    font-family: Inter;
+    background-image: url(../assets/Setup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  @media screen and (max-width: 400px){
+    .setup2-div{
+        height: 844px;
+        font-size: 28px;
+    }
+    .frame-div506 {
+        top: 250px;
+        left: 35px;
+        padding: 30px 50px;
+        gap: 50px;
+        width: 330px;
+      }
+      .congragulations-div {
+        font-weight: 300;
+        font-size: 18px;
+      }
+      .frame-div606 {
+        font-size: 16px;
+      }
+      .frame-button106 {
+        padding: 20px 70px;
+      }
+      .begin-journey-div {
+        font-size: 14px;
+        font-weight: 200;
+        text-align: center;
+      }
+  }

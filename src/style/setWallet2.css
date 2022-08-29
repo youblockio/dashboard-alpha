@@ -1,0 +1,270 @@
+.SetWalletAddress2-div{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 844px;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden;
+}
+.SetWalletAddress2-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    position: absolute;
+    left: 190px;
+    top: 30px;
+}
+.SetWalletAddress2-container{
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: absolute;
+    left: 190px;
+    top: 120px;
+    width: 1100px;
+    height: 500px;
+}
+.SetWalletAddress2-container-back-div{
+    position: absolute;
+    left: 30px;
+    top: 60px;
+    cursor: pointer;
+}
+.SetWalletAddress2-container-back-div-text{
+    position: absolute;
+    left: 80px;
+    top: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+}
+.SetWalletAddress2-container-back-div-text2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    
+    color: #FFFFFF;
+    position: absolute;
+    top: 115px;
+    left: 80px; 
+}
+.SetWalletAddress2-container-back-div-text{
+    position: absolute;
+    left: 80px;
+    top: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+}
+.SetWalletAddress2-block-binnaca{
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    position: absolute;
+    top: 145px;
+    left: 80px;
+    text-align: center;
+}
+.SetWalletAddress2-container-back-div-text3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    
+    color: #FFFFFF;
+    position: absolute;
+    top: 300px;
+    left: 80px;
+}
+.SetWalletAddress2-block-walletConnect{
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    position: absolute;
+    top: 325px;
+    left: 380px;
+    text-align: center;
+}
+.SetWalletAddress2-block-fortmatice{
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    position: absolute;
+    top: 325px;
+    left: 530px;
+    text-align: center;
+}
+.SetWalletAddress2-block-Trezor{
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    position: absolute;
+    top: 325px;
+    left: 680px;
+    text-align: center;
+}
+.SetWalletAddress2-block-metamask{
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    position: absolute;
+    top: 325px;
+    left: 80px;
+    text-align: center;
+}
+.SetWalletAddress2-block-coinbase{
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    position: absolute;
+    top: 325px;
+    left: 230px;
+    text-align: center;
+}
+.SetWalletAddress2-block-ledger{
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    position: absolute;
+    top: 325px;
+    left: 830px;
+    text-align: center;
+}
+.SetWalletAddress2-block-binnaca-image{
+    width: 70px;
+    height: 70px;
+}
+.SetWalletAddress2-block-binnaca-image-div{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+.SetWalletAddress2-block-binnaca-image-text{
+    font-size: 10px;
+    padding-top: 7px;
+    color: #FFFFFF;
+    font-weight: 100;
+    line-height: 14px;
+}
+@media screen and (max-width: 400px){
+    .SetWalletAddress2-div{
+        height: 944px;
+    }
+    .SetWalletAddress2-text{
+        display: none;
+    }
+    .SetWalletAddress2-container{
+        border-radius: 16px;
+        left: 20px;
+        top: 80px;
+        width: 340px;
+        height: 800px;
+    }
+    .SetWalletAddress2-container-back-div-text{
+        left: 80px;
+        top: 65px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .SetWalletAddress2-container-back-div-text2{
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 16px;
+        top: 115px;
+        left: 140px; 
+    }
+    .SetWalletAddress2-block-binnaca{
+        width: 130px;
+        height: 130px;
+        border-radius: 14px;
+        top: 155px;
+        left: 105px;
+        text-align: center;
+    }
+    .SetWalletAddress2-container-back-div-text3{
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 16px;
+        top: 310px;
+        left: 115px;
+    }
+    .SetWalletAddress2-block-walletConnect{
+        top: 645px;
+        left: 180px;
+        text-align: center;
+    }
+    .SetWalletAddress2-block-fortmatice{
+        top: 645px;
+        left: 30px;
+        text-align: center;
+    }
+    .SetWalletAddress2-block-Trezor{
+        top: 495px;
+        left: 180px;
+        text-align: center;
+    }
+    .SetWalletAddress2-block-metamask{
+        top: 345px;
+        left: 30px;
+        text-align: center;
+    }
+    .SetWalletAddress2-block-coinbase{
+        top: 345px;
+        left: 180px;
+        text-align: center;
+    }
+    .SetWalletAddress2-block-ledger{
+        top: 495px;
+        left: 30px;
+        text-align: center;
+    }
+}

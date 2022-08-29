@@ -1,0 +1,165 @@
+.SupportScreen-div{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 844px;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden;
+}
+.SupportScreen-div-main-container{
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: absolute;
+    left: 190px;
+    top: 120px;
+    width: 1100px;
+    height: 500px;
+}
+.SupportScreen-div-main-content{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+    position: absolute;
+    left: 80px;
+    top: 120px;
+}
+.SupportScreen-div-main-address{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+    position: absolute;
+    top: 190px;
+    left: 80px;
+}
+.SupportScreen-div-main-address-value{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 136% */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+    position: absolute;
+    top: 230px;
+    left: 80px;
+}
+.SupportScreen-div-main-contact{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+    position: absolute;
+    top: 290px;
+    left: 80px;
+}
+.SupportScreen-div-main-contact-value1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 136% */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+    position: absolute;
+    top: 330px;
+    left: 80px;
+}
+.SupportScreen-div-main-contact-value2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 136% */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+    position: absolute;
+    top: 360px;
+    left: 80px;
+}
+@media screen and (max-width: 400px){
+    .SupportScreen-div-main-container{
+        left: 20px;
+        top: 120px;
+        width: 340px;
+        height: 500px;
+    }
+    .SupportScreen-div-main-content{
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 18px;
+        left: 30px;
+        top: 120px;
+        text-align: left;
+    }
+    .SupportScreen-div-main-address{
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 22px;
+        top: 190px;
+        left: 30px;
+    }
+    .SupportScreen-div-main-address-value{
+        font-size: 14px;
+        line-height: 24px;
+        top: 230px;
+        left: 30px;
+    }
+    .SupportScreen-div-main-contact{
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.2em;
+        top: 290px;
+        left: 30px;
+    }
+    .SupportScreen-div-main-contact-value1{
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 24px;
+        top: 320px;
+        left: 30px;
+    }
+    .SupportScreen-div-main-contact-value2{
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 24px;
+        top: 350px;
+        left: 30px;
+    }
+}

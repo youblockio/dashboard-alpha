@@ -1,0 +1,345 @@
+.vector-icon104 {
+    position: absolute;
+    left: 1140px;
+    top : 280px
+}
+.add-a-miner {
+  position: absolute;
+  top: 480px;
+  left: 1145px;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  display: inline-block;
+}
+.setup-and-config {
+  position: relative;
+  font-size: 42px;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  display: inline-block;
+}
+.rectangle-div704,
+.vector-icon1 {
+  position: relative;
+  flex-shrink: 0;
+  mix-blend-mode: overlay;
+}
+.rectangle-div704 {
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  width: 140px;
+  height: 140px;
+}
+.vector-icon1 {
+  width: 128px;
+  height: 80px;
+}
+.frame-input2 {
+    border: 1px solid #0f4658;
+    background-color: transparent;
+    border-radius: 30px;
+    width: 444px;
+    padding: 20px 50px;
+    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+    
+  }
+.frame-div704,
+.frame-input704 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-div704 {
+  gap: -16px;
+}
+.frame-input704 {
+border: 1px solid #0f4658;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 435px;
+  padding: 10px 100px 10px 13px;
+  box-sizing: border-box;
+}
+.please-enter-miner-id-where-ap {
+  position: relative;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  display: inline-block;
+}
+.frame-div604,
+.frame-div804 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-div804 {
+  height: 140px;
+  flex-direction: column;
+  gap: 72px;
+}
+.frame-div604 {
+  flex-direction: row;
+  gap: 30px;
+  font-size: 20px;
+}
+.please-enter-a-valid-miner-id {
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  color: #ff5252;
+  text-align: right;
+  display: none;
+}
+.tft-span {
+  font-weight: 600;
+}
+.threefold-node-id {
+  font-weight: 300;
+}
+.tftthreefold-node-id,
+.verify-div104 {
+  position: relative;
+  letter-spacing: 0.2em;
+  display: inline-block;
+}
+.verify-div104 {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: right;
+  width: 296px;
+  flex-shrink: 0;
+}
+.frame-div104 {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.rectangle-input104 {
+    border: 1px solid #0f4658;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  width: 700px;
+  height: 60px;
+}
+.group-div104 {
+  position: relative;
+  width: 700px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.frame-div904 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.group-input,
+.verify-div1 {
+  position: relative;
+  flex-shrink: 0;
+}
+.verify-div1 {
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+  text-align: right;
+  display: inline-block;
+  width: 445px;
+}
+.group-input {
+    border: 1px solid #0f4658;
+  background-color: transparent;
+  width: 700px;
+  height: 60px;
+  border-radius: 20px;
+}
+.next-div104 {
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-family: Inter;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+}
+.frame-button104,
+.frame-div504 {
+  border-radius: 20px;
+  display: flex;
+  box-sizing: border-box;
+}
+.frame-button104 {
+  cursor: pointer;
+  border: 0;
+  padding: 30px 80px;
+  background-color: #17a40b;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-div504 {
+  position: absolute;
+  top: 91px;
+  left: 175px;
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    rgba(165, 165, 165, 0.3)
+  );
+  flex-direction: column;
+  padding: 40px 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: #fff;
+}
+.setupminer1-div {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 24px;
+  color: #54afb7;
+  font-family: Inter;
+  background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+.invisible-div3{
+    display: none;
+}
+
+@media screen and (max-width: 400px){
+    .frame-div504{
+        gap: 35px;
+        padding: 20px 35px;
+        left: 28px;
+        position: relative;
+        top: 57px;
+        width: 340px;
+    }
+    .invisible-div2{
+        display: none;
+    }
+    .vector-icon3 {
+        width: 128px;
+        height: 128px;
+        
+    }
+    .setup-and-config {
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+    }
+    .frame-div704 {
+        padding-left: 20px;
+    }
+    .rectangle-div704 {
+      border-radius: 20px;
+      background-color: #d9d9d9;
+      width: 70px;
+      height: 70px;
+    }
+    .frame-input704 {
+          border-radius: 8px;
+          width: 150px;
+          padding: 7px 10px 7px 5px;
+    }
+    .vector-icon1 {
+        width: 68px;
+        height: 32px;
+        right: 20px;
+    }
+    .please-enter-miner-id-where-ap {
+        letter-spacing: 0.1em;
+        font-weight: 200;
+        font-size: 12px;
+    }
+    
+    .frame-div604 {
+        gap: 15px;
+        width: 280px;
+      }
+      .rectangle-input104 {
+      border-radius: 16px;
+      width: 300px;
+      height: 30px;
+    }
+    .group-div104 {
+        width: 300px;
+        height: 30px;
+    }
+    .frame-div104 {
+        width: 300px;
+        gap: 20px;
+      }
+      .verify-div104 {
+        font-size: 14px;
+        font-weight: 200;
+        width: 60px;
+      }
+      .tft-span {
+        font-weight: 300;
+        font-size: 18px;
+      }
+      .threefold-node-id {
+        font-weight: 200;
+        font-size: 16px;
+      }
+      .frame-div904 {
+        gap: 15px;
+        width: 300px;
+      }
+      .group-input {
+      width: 300px;
+      height: 30px;
+      border-radius: 14px;
+    }
+    .verify-div1 {
+      font-size: 14px;
+      width: 115px;
+    }
+    .frame-button104{
+      padding: 10px 30px;
+      border-radius: 12px;
+    }
+    .invisible-div3{
+      display: block;
+      padding-left: 155px;
+      padding-top: 100px;
+  }
+  .vector-icon104 {
+    cursor: pointer;
+}
+.add-a-miner1{
+  font-size: 16px;
+  color: #fff;
+  margin-top: 8px;
+  margin-left: 23px;
+}
+.next-div104 {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+
+    
+}

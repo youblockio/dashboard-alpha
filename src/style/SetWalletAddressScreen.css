@@ -1,0 +1,166 @@
+.SetWalletAddressScreen-div{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 844px;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden;
+}
+.walletAddress-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    position: absolute;
+    left: 190px;
+    top: 30px;
+}
+.walletAddress-container{
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: absolute;
+    left: 190px;
+    top: 120px;
+    width: 1100px;
+    height: 500px;
+}
+.walletAddress-container-back-div{
+    position: absolute;
+    left: 30px;
+    top: 60px;
+    cursor: pointer;
+}
+.walletAddress-container-back-div-text{
+    position: absolute;
+    left: 80px;
+    top: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+}
+.walletAddress-main-icon-div{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    top: 130px;
+    left: 80px;
+}
+.walletAddress-icon-div{
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    cursor: pointer;
+}
+.walletAddress-icon-div-image{
+    width: 200px;
+    height: 200px;
+}
+.walletAddress-container-text{
+    width: 500px;
+    position: absolute;
+    left: 440px;
+    top:130px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 250% */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+}
+.walletAddress-container-text-title{
+    width: 500px;
+    position: absolute;
+    left: 440px;
+    top:330px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 34px;
+    /* or 222% */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+@media screen and (max-width: 400px){
+    .walletAddress-text{
+        display: none;
+    }
+    .walletAddress-container{
+        border-radius: 16px;
+        left: 20px;
+        top: 120px;
+        width: 340px;
+        height: 500px;
+    }
+    .walletAddress-container-back-div-text{
+        left: 80px;
+        top: 65px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .walletAddress-main-icon-div{
+        position: absolute;
+        width: 130px;
+        height: 300px;
+        border-radius: 16px;
+        top: 130px;
+        left: 30px;
+    }
+    .walletAddress-icon-div-image{
+        width: 60px;
+        height: 60px;
+    }
+    .walletAddress-icon-div{
+        left: 30px;
+        top: 110px;
+    }
+    .walletAddress-container-text{
+        width: 160px;
+        left: 170px;
+        top:130px;
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 24px;
+    }
+    .walletAddress-container-text-title{
+        width: 160px;
+        left: 170px;
+        top:370px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 19px;
+    }
+}

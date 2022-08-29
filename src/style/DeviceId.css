@@ -1,0 +1,109 @@
+.DeviceIdScreen-div{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 844px;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden;
+}
+.DeviceIdScreen-div-main-container{
+    background: radial-gradient(
+        50% 50%at 50% 50%,
+        rgba(255, 255, 255, 0.4),
+        rgba(165, 165, 165, 0.3)
+      );
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      position: absolute;
+      left: 190px;
+      top: 120px;
+      width: 1100px;
+      height: 500px;
+}
+.DeviceIdScreen-container-input-div{
+    position: absolute;
+    left: 80px;
+    top: 140px;
+}
+.DeviceIdScreen-container-input{
+    width: 370px;
+    height: 60px;
+    background: transparent;
+    border-radius: 20px;
+}
+.DeviceIdScreen-div-main-container-buton-div{
+    left: 80px;
+    position: absolute;
+    top: 260px;
+}
+.DeviceIdScreen-div-main-container-buton{
+    background-color: #17A40B;
+    border-radius: 16px;
+    width: 270px;
+    height: 50px;
+    border: 0px;
+    cursor: pointer;
+}
+.DeviceIdScreen-div-main-container-buton-image-div{
+    position: absolute;
+    left: 60px;
+    top: 15px;
+}
+.DeviceIdScreen-div-main-container-buton-text{
+    position: absolute;
+    left: 100px;
+    top: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+@media screen and (max-width: 400px){
+    .DeviceIdScreen-div-main-container{
+          left: 20px;
+          top: 120px;
+          width: 340px;
+          height: 500px;
+    }
+    .DeviceIdScreen-container-input-div{
+        left: 30px;
+        top: 140px;
+    }
+    .DeviceIdScreen-container-input{
+        width: 270px;
+        height: 40px;
+        border-radius: 14px;
+    }
+    .DeviceIdScreen-div-main-container-buton-div{
+        left: 50px;
+        top: 240px;
+    }
+    .DeviceIdScreen-div-main-container-buton{
+        background-color: #17A40B;
+        border-radius: 14px;
+        width: 240px;
+        height: 50px;
+        border: 0px;
+        cursor: pointer;
+    }
+    .DeviceIdScreen-div-main-container-buton-image-div{
+        position: absolute;
+        left: 50px;
+        top: 15px;
+    }
+    .DeviceIdScreen-div-main-container-buton-text{
+        left: 90px;
+    }
+}

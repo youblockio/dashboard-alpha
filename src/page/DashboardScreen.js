@@ -203,9 +203,7 @@ const DashboardScreen = () => {
                         <div className="sunrise-div-value">{Data && Data[0].data.currWea.sunset}PM</div>
                     </div>
                     <div className="daylight-div">
-                        <div className="daylight-div-title">Total Daylight</div>
-                        <div className="daylight-div-title">Hours</div>
-                        <div className="daylight-div-value">8 Hours</div>
+                        <div className="daylight-div-title">Total Daylight Hours :   8 Hours</div>
                     </div>
                     {/* <div className="efficiency-div">
                         <div className="daylight-div-title">Peak</div>
@@ -273,6 +271,11 @@ const DashboardScreen = () => {
                     </div>
                     <div className="Network-unit-div">
                         <div className="Network-unit-title">Network Unit</div>
+                        <img src={network} alt='storage' className="cpu" />
+                        <div className="Network-unit-value">1200</div>
+                    </div>
+                    <div className="Network-unit-div1">
+                        <div className="Network-unit-title">HRU Unit</div>
                         <img src={network} alt='storage' className="cpu" />
                         <div className="Network-unit-value">1200</div>
                     </div>

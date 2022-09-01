@@ -375,6 +375,31 @@ left: 20px;
 
     color: #7CA0A9;
 }
+
+@media screen and (max-width: 1440px){
+    .wallet-main-div{
+        height: 740px;
+    }
+    .wallet-text{
+        left:130px
+    }
+    .TB-div{
+        left:130px
+    }
+    .ERs-div{
+        left:130px
+    }
+    .ERt-div{
+        left: 460px;
+    }
+    .graph-srt-div{
+        left:130px
+    }
+    .RH-div{
+        left:790px
+    }
+}
+
 @media screen and (max-width: 400px){
     .wallet-main-div{
         position: absolute;
@@ -612,26 +637,3 @@ left: 20px;
     }
 }
 
-@media screen and (max-width: 1440px){
-    .wallet-main-div{
-        height: 740px;
-    }
-    .wallet-text{
-        left:130px
-    }
-    .TB-div{
-        left:130px
-    }
-    .ERs-div{
-        left:130px
-    }
-    .ERt-div{
-        left: 460px;
-    }
-    .graph-srt-div{
-        left:130px
-    }
-    .RH-div{
-        left:790px
-    }
-}

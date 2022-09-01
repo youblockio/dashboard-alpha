@@ -114,6 +114,9 @@
     cursor: pointer;
 }
 @media screen and (max-width: 400px){
+    .SetWalletAddressScreen-div{
+        height: 844px;
+    }
     .walletAddress-text{
         display: none;
     }

@@ -611,3 +611,27 @@ left: 20px;
         color: #7CA0A9;
     }
 }
+
+@media screen and (max-width: 1440px){
+    .wallet-main-div{
+        height: 740px;
+    }
+    .wallet-text{
+        left:150px
+    }
+    .TB-div{
+        left:150px
+    }
+    .ERs-div{
+        left:150px
+    }
+    .ERt-div{
+        left: 480px;
+    }
+    .graph-srt-div{
+        left:150px
+    }
+    .RH-div{
+        left:820px
+    }
+}

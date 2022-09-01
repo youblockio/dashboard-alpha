@@ -30,32 +30,48 @@ import { useNavigate } from "react-router-dom";
 const DashboardScreen = () => {
     const navigate = useNavigate();
     const [Data, setData] = useState();
+    const [currentCity, setCurrentCity] = useState("");
+    let nodeId='0002608353-000001-1c7b3'
+
+    const getLocation = () => {
+        navigator.geolocation.getCurrentPosition(success);
+        function success(pos) {
+          const crd = pos.coords;
+          getCurrentLocation(crd.latitude, crd.longitude);
+        }
+      };
+
+
+      const getCurrentLocation = async (lat, lon) => {
+    
+        let city = await fetch(
+          `https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lon}&key=c5e7e9d67f7b4965bee9b4b0f2b077d9`
+        );
+        city = await city.json();
+       
+        city = city.results[0].formatted;
+        
+        setCurrentCity(city);
+      };
+
     const apiData = async() =>{
        await Promise.all([
             fetch('https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/weather').then(resp => resp.json()),
             fetch('https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/pilotview/incomeInfo').then(resp => resp.json()),
             fetch('https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/pilotview/countGeneration').then(resp => resp.json()),
+            fetch(`https://us-central1-dashboard-alpha.cloudfunctions.net/threefoldApi/?nodeId=${nodeId}`).then(resp => resp.json()),
           ]).then(res=> setData(prevState => prevState=res))
     }
     console.log(Data);
-    // [0].data.currWea.currTemp
 
-    // async function fetchData() {
-    //     const response = await fetch('https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/weather');
-    //     // waits until the request completes...
-    //     console.log(response);
-    //   };
 
-    // const randomMeme = () => {
-    //     fetch("https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/weather").then(res => res.json()).then(result => {
-    //       console.log(result);
-          
-    //     })
-    //   }
+
       useEffect(() => {
-        // randomMeme();
+        getLocation();
         apiData();
       },[]);
+
+      
 
   return (
     <div className="main">
@@ -85,7 +101,7 @@ const DashboardScreen = () => {
                  <div className="EE-value-text">$ 7.5</div>
             </div>
             <div className='ME-div'>
-                 <div className="EE-text">Total Earned</div>
+                 <div className="EE-text">Mining Earning</div>
                  <div className="EE-value-text">$ 39</div>
             </div>
             <div className="solar-cell-div">
@@ -148,10 +164,33 @@ const DashboardScreen = () => {
         <div className="graph-coloumn">
             <div className="graph-div">
                 <div className="refresh-div">last updated </div>
+                <div className='chart-div'>
+                    <div className='bar-div'>
+                        <div className='bar1'></div>
+                        <div className='bar2'></div>
+                    </div>
+                    <div className='bar-div'>
+                        <div className='bar1'></div>
+                        <div className='bar2'></div>
+                    </div>
+                    <div className='bar-div'>
+                        <div className='bar1'></div>
+                        <div className='bar2'></div>
+                    </div>
+                    <div className='bar-div'>
+                        <div className='bar1'></div>
+                        <div className='bar2'></div>
+                    </div>
+                    <div className='bar-div'>
+                        <div className='bar1'></div>
+                        <div className='bar2'></div>
+                    </div>
+                    
+                </div>
             </div>
             <div className="geolocation">
                 <div className="refresh-div">last updated </div>
-                <div className="geolocation-title-div">Geolocation: Cannes, France</div>
+                <div className="geolocation-title-div">{currentCity}</div>
                 <div className="geolocation-center-div">
                     <div className="sunrise-div">
                         <img alt='sunrise' src={sunrise} className="sunrise" />
@@ -168,14 +207,14 @@ const DashboardScreen = () => {
                         <div className="daylight-div-title">Hours</div>
                         <div className="daylight-div-value">8 Hours</div>
                     </div>
-                    <div className="efficiency-div">
+                    {/* <div className="efficiency-div">
                         <div className="daylight-div-title">Peak</div>
                         <div className="daylight-div-title">Efficiency</div>
                         <div className="daylight-div-value">4 Hours</div>
-                    </div>
+                    </div> */}
                 </div>
-                    <div className="current-div">Current Efficiency: </div>
-                    <div className="current-div-value">85%</div>
+                    {/* <div className="current-div">Current Efficiency: </div>
+                    <div className="current-div-value">85%</div> */}
             </div>
             <div className="block">
                 <div className="block-mining-div">
@@ -230,7 +269,7 @@ const DashboardScreen = () => {
                     <div className="compute-unit-div">
                         <div className="compute-unit-title">Compute Unit</div>
                         <img src={cpu} alt='storage' className="cpu" />
-                        <div className="compute-unit-value">937</div>
+                        <div className="compute-unit-value">{Data && Data[3].nodeResourcesTotalById.cru}</div>
                     </div>
                     <div className="Network-unit-div">
                         <div className="Network-unit-title">Network Unit</div>

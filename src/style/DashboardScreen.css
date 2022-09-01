@@ -10,7 +10,7 @@
     background-position: top;
     flex-direction: row;
     gap: 70px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .vertical-menu-div{
     display: none;
@@ -62,7 +62,7 @@
     border-radius: 8px;
     font-size: 10px;
     color: white;
-    display: none;
+    /* display: none; */
 }
 .EE-div{
     position: absolute;
@@ -143,6 +143,37 @@
       rgba(165, 165, 165, 0.3)
     );
     border-radius: 14px;
+    
+}
+
+.chart-div{
+    /* border: 1px red solid; */
+    height: 80%;
+    display: flex;
+    width: 90%;
+    margin: 9% auto 0 auto;
+    gap: 2%;
+}
+.bar-div{
+    /* border: 1px green solid; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: baseline;
+
+}
+.bar1{
+    /* border: 1px white solid; */
+    width: 95%;
+    height: 50%;
+    background: linear-gradient(180deg, #5451FF 0%, rgba(84, 81, 255, 0) 100%);
+    
+}
+.bar2{
+    /* border: 1px white solid; */
+    width: 95%;
+    height: 100%;
+    background: linear-gradient(180deg, #93FFAA 0%, rgba(147, 255, 170, 0) 100%);
 }
 .geolocation{
     position: absolute;
@@ -173,7 +204,7 @@
 .MS-div{
     top: 80px;
     position: absolute;
-    width: 350px;
+    width: 300px;
     height:80px;
     background-color: #03a400;
     border-radius: 14px;
@@ -183,7 +214,7 @@
 .CS-div{
     top: 170px;
     position: absolute;
-    width: 350px;
+    width: 300px;
     height:80px;
     background-color: #cc9300;
     border-radius: 14px;
@@ -193,7 +224,7 @@
 .picture-unit-div{
     top: 260px;
     position: absolute;
-    width: 350px;
+    width: 300px;
     height:280px;
     background: radial-gradient(
     50% 50%at 50% 50%,
@@ -245,12 +276,12 @@
 
 .MS-div-image{
     position: absolute;
-    left: 270px;
+    left: 230px;
     top: 9px;
 }
 .CS-div-image{
     position: absolute;
-    left: 270px;
+    left: 230px;
     top: 9px;
 }
 .MS-div-title{

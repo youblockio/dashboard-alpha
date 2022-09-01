@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import "../style/LoginScreen.css"
-import googleButton from "../assets/image 58.png"
+import googleButton from "../assets/GButton.png"
 import { useNavigate } from "react-router-dom";
 import { UserAuth } from '../context/AuthContext';
 

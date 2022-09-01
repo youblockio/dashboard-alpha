@@ -113,6 +113,60 @@
     color: #FFFFFF;
     cursor: pointer;
 }
+@media screen and (max-width: 420px){
+    .SetWalletAddressScreen-div{
+        height: 896px;
+    }
+    .walletAddress-text{
+        display: none;
+    }
+    .walletAddress-container{
+        border-radius: 16px;
+        left: 35px;
+        top: 120px;
+        width: 340px;
+        height: 500px;
+    }
+    .walletAddress-container-back-div-text{
+        left: 80px;
+        top: 65px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .walletAddress-main-icon-div{
+        position: absolute;
+        width: 130px;
+        height: 300px;
+        border-radius: 16px;
+        top: 130px;
+        left: 30px;
+    }
+    .walletAddress-icon-div-image{
+        width: 60px;
+        height: 60px;
+    }
+    .walletAddress-icon-div{
+        left: 30px;
+        top: 110px;
+    }
+    .walletAddress-container-text{
+        width: 160px;
+        left: 170px;
+        top:130px;
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 24px;
+    }
+    .walletAddress-container-text-title{
+        width: 160px;
+        left: 170px;
+        top:370px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 19px;
+    }
+}
 @media screen and (max-width: 400px){
     .SetWalletAddressScreen-div{
         height: 844px;

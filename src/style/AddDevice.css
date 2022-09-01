@@ -156,7 +156,92 @@
     left: 380px;
     top: 60px;
 }
+@media screen and (max-width: 420px){
+    .AddDevice-div{
+        height: 896px;
+    }
+    .AddDevice-div-main-text{
+        display: none;
+    }
+    .AddDevice-div-main-container{
+        width: 340px;
+        left: 35px;
+        height: 500px;
+    }
+    .AddDevice-div-main-container-button-div{
+        left: 30px;
+    }
+    .AddDevice-div-main-container-button{
+        width: 270px;
+        height: 70px;
+        border-radius: 16px;
+    }
+    .AddDevice-div-main-container-button-image-div{
+        left: 80px;
+        top: 20px;
+    }
+    .AddDevice-div-main-container-button-image{
+        width: 30px;
+        height: 30px;
+    }
+    .AddDevice-div-main-container-button-text{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    left: 120px;
+    top: 25px;
+    }
+    .AddDevice-div-main-miner-solar-div{
+        left:30px;
+        top:200px;
+        width: 270px;
+        height: 70px;
+        border-radius: 16px;
+    }
+    .AddDevice-div-main-miner-solar-div-small{
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        top: 15px;
+        border-radius: 7px;
+    }
+    .AddDevice-div-main-miner-solar-div-title{
+        font-weight: 200;
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 0.1em;
+        left: 60px;
+        top: 15px;
+    }
+    .AddDevice-div-main-miner-solar-div-subtitle{
+        font-weight: 200;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.1em;
+        left: 60px;
+        top: 45px;
+    }
+    .AddDevice-div-main-miner-solar-div-value{
+        font-weight: 200;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.1em;
+        left: 105px;
+        top: 45px;
+    }
+    .AddDevice-div-main-miner-solar-div-time{
+        font-weight: 200;
+        font-size: 6px;
+        line-height: 12px;
+        letter-spacing: 0.1em;
+        left: 170px;
+        top: 45px;
+    }
+}
 @media screen and (max-width: 400px){
+    .AddDevice-div{
+        height: 844px;
+    }
     .AddDevice-div-main-text{
         display: none;
     }

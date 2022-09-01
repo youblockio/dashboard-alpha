@@ -112,7 +112,64 @@
     top: 360px;
     left: 80px;
 }
+@media screen and (max-width: 420px){
+    .SupportScreen-div{
+        height: 896px;
+    }
+    .SupportScreen-div-main-container{
+        left: 35px;
+        top: 120px;
+        width: 340px;
+        height: 500px;
+    }
+    .SupportScreen-div-main-content{
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 18px;
+        left: 30px;
+        top: 120px;
+        text-align: left;
+    }
+    .SupportScreen-div-main-address{
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 22px;
+        top: 190px;
+        left: 30px;
+    }
+    .SupportScreen-div-main-address-value{
+        font-size: 14px;
+        line-height: 24px;
+        top: 230px;
+        left: 30px;
+    }
+    .SupportScreen-div-main-contact{
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.2em;
+        top: 290px;
+        left: 30px;
+    }
+    .SupportScreen-div-main-contact-value1{
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 24px;
+        top: 320px;
+        left: 30px;
+    }
+    .SupportScreen-div-main-contact-value2{
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 24px;
+        top: 350px;
+        left: 30px;
+    }
+}
 @media screen and (max-width: 400px){
+    .SupportScreen-div{
+        height: 844px;
+    }
     .SupportScreen-div-main-container{
         left: 20px;
         top: 120px;

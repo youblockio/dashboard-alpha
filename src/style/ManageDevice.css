@@ -106,13 +106,66 @@
     bottom: 0px;
     left: 200px;
 }
+@media screen and (max-width: 420px){
+    .managedevice-div{
+        height: 896px;
+    }
+    .ManageDevice-div-main-text{
+        display: none;
+    }
+    .ManageDevice-div-main-container{
+        left: 35px;
+        top: 120px;
+        width: 340px;
+        height: 600px;
+    }
+    .ManageDevice-container-back-div-text{
+        left: 70px;
+        top: 65px;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .ManageDevice-div-main-container-TFT{
+        left: 30px;
+        top: 120px;
+        width: 280px;
+        height: 220px;
+    }
+    .ManageDevice-div-main-container-Solar{
+        position: absolute;
+        left: 30px;
+        top: 360px;
+        width: 280px;
+        height: 220px;
+    }
+    .ManageDevice-div-main-container-TFT-text{
+        left: 20px;
+        top: 50px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .ManageDevice-div-main-container-TFT-image{
+        width: 140px;
+        height: 163px;
+    }
+    .ManageDevice-div-main-container-TFT-image-div{
+        position: absolute;
+        bottom: 0px;
+        left: 120px;
+    }
+}
 @media screen and (max-width: 400px){
+    .managedevice-div{
+        height: 844px;
+    }
     .ManageDevice-div-main-text{
         display: none;
     }
     .ManageDevice-div-main-container{
         left: 20px;
-        top: 120px;
+        top: 100px;
         width: 340px;
         height: 600px;
     }

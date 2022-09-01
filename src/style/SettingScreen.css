@@ -80,6 +80,40 @@
     color: #FF6B6B;
     padding: 20px;
 }
+@media screen and (max-width: 420px){
+    .setting-div-main{
+        height: 896px;
+    }
+    .setting-text{
+        display: none;
+    }
+    .setting-div-button-container{
+        width: 340px;
+        left: 35px;
+        height: 440px;
+    }
+    .setting-div-button{
+        left: 20px;
+        top:40px;
+        
+    }
+    .setting-div-button-text{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 20px;
+    }
+    .setting-div-button-text1{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 20px;
+    }
+    .setting-div-button-divider{
+        width: 250px;
+        left: 25px;
+    }
+}
 @media screen and (max-width: 400px){
     .setting-div-main{
         height: 844px;

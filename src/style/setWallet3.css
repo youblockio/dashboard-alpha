@@ -111,7 +111,75 @@
     
     
 }
+@media screen and (max-width: 420px){
+    .SetwalletAddress3-div{
+        height: 896px;
+    }
+    .SetWalletAddress3-text{
+        display: none;
+    }
+    .SetWalletAddress3-container{
+        left: 35px;
+        top: 120px;
+        width: 340px;
+        height: 490px;
+    }
+    .SetWalletAddress3-container-back-div-text{
+        top: 65px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .SetWalletAddress3-div-main-input-div{
+        position: absolute;
+        top: 120px;
+        left: 30px;
+    }
+    .SetWalletAddress3-div-main-input-div2{
+        position: absolute;
+        top: 240px;
+        left: 30px;
+    }
+    .SetWalletAddress3-div-main-button{
+        position: absolute;
+        top: 360px;
+        left: 30px;
+    }
+    .SetWalletAddress3-button{
+        border-radius: 16px;
+        width: 254px;
+        height: 69px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .SetWalletAddress3-div-main-input-text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+    
+        letter-spacing: 0.2em;
+    
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+    .SetWalletAddress3-div-main-input{
+        border-radius: 12px;
+        box-sizing: border-box;
+        width: 254px;
+        height: 40px;
+        background-color: transparent;
+        
+        
+    }
+}
 @media screen and (max-width: 400px){
+    .SetwalletAddress3-div{
+        height: 844px;
+    }
     .SetWalletAddress3-text{
         display: none;
     }

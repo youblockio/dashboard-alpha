@@ -194,9 +194,84 @@
     font-weight: 100;
     line-height: 14px;
 }
+
+@media screen and (max-width: 420px){
+    .SetWalletAddress2-div{
+        height: 900px;
+    }
+    .SetWalletAddress2-text{
+        display: none;
+    }
+    .SetWalletAddress2-container{
+        border-radius: 16px;
+        left: 35px;
+        top: 50px;
+        width: 340px;
+        height: 800px;
+    }
+    .SetWalletAddress2-container-back-div-text{
+        left: 80px;
+        top: 65px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .SetWalletAddress2-container-back-div-text2{
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 16px;
+        top: 115px;
+        left: 140px; 
+    }
+    .SetWalletAddress2-block-binnaca{
+        width: 130px;
+        height: 130px;
+        border-radius: 14px;
+        top: 155px;
+        left: 105px;
+        text-align: center;
+    }
+    .SetWalletAddress2-container-back-div-text3{
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 16px;
+        top: 310px;
+        left: 115px;
+    }
+    .SetWalletAddress2-block-walletConnect{
+        top: 645px;
+        left: 180px;
+        text-align: center;
+    }
+    .SetWalletAddress2-block-fortmatice{
+        top: 645px;
+        left: 30px;
+        text-align: center;
+    }
+    .SetWalletAddress2-block-Trezor{
+        top: 495px;
+        left: 180px;
+        text-align: center;
+    }
+    .SetWalletAddress2-block-metamask{
+        top: 345px;
+        left: 30px;
+        text-align: center;
+    }
+    .SetWalletAddress2-block-coinbase{
+        top: 345px;
+        left: 180px;
+        text-align: center;
+    }
+    .SetWalletAddress2-block-ledger{
+        top: 495px;
+        left: 30px;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 400px){
     .SetWalletAddress2-div{
-        height: 944px;
+        height: 880px;
     }
     .SetWalletAddress2-text{
         display: none;
@@ -204,7 +279,7 @@
     .SetWalletAddress2-container{
         border-radius: 16px;
         left: 20px;
-        top: 80px;
+        top: 30px;
         width: 340px;
         height: 800px;
     }

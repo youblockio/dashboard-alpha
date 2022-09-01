@@ -70,7 +70,50 @@
 
     color: #FFFFFF;
 }
+@media screen and (max-width: 420px){
+    .DeviceIdScreen-div{
+        height: 896px;
+    }
+    .DeviceIdScreen-div-main-container{
+        left: 35px;
+        top: 120px;
+        width: 340px;
+        height: 500px;
+  }
+  .DeviceIdScreen-container-input-div{
+      left: 30px;
+      top: 140px;
+  }
+  .DeviceIdScreen-container-input{
+      width: 270px;
+      height: 40px;
+      border-radius: 14px;
+  }
+  .DeviceIdScreen-div-main-container-buton-div{
+      left: 50px;
+      top: 240px;
+  }
+  .DeviceIdScreen-div-main-container-buton{
+      background-color: #17A40B;
+      border-radius: 14px;
+      width: 240px;
+      height: 50px;
+      border: 0px;
+      cursor: pointer;
+  }
+  .DeviceIdScreen-div-main-container-buton-image-div{
+      position: absolute;
+      left: 50px;
+      top: 15px;
+  }
+  .DeviceIdScreen-div-main-container-buton-text{
+      left: 90px;
+  }
+}
 @media screen and (max-width: 400px){
+    .DeviceIdScreen-div{
+        height: 844px;
+    }
     .DeviceIdScreen-div-main-container{
           left: 20px;
           top: 120px;

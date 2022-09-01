@@ -1540,51 +1540,51 @@ color: #FFFFFF;
 
 @media screen and (max-width: 1440px){
     .menu-div{
-        left: 20px;
+        left: 15px;
     }
     .main{
         height: 740px;
     }
     .home-text{
-        left: 150px;
+        left: 130px;
     }
     .TE-div{
-        left: 150px;
+        left: 130px;
     }
     .EE-div{
-        left: 150px;
+        left: 130px;
     }
     .ME-div{
-        left:380px
+        left:360px
     }
     .solar-cell-div{
-        left:150px
+        left:130px
     }
     .weather-div{
-        left:150px
+        left:130px
     }
     .consumption-div{
-        left:150px
+        left:130px
     }
     .graph-div{
-        left:615px
+        left:595px
     }
     .geolocation{
-        left: 615px;
+        left:595px
     }
     .block{
-        left: 615px;
+        left:595px
     }
     .MS-div{
-        left: 1080px;
+        left: 1060px;
     }
     .CS-div{
-        left: 1080px;
+        left: 1060px;
     }
     .picture-unit-div{
-        left: 1080px;
+        left: 1060px;
     }
     .emission-div{
-        left: 1080px;
+        left: 1060px;
     }
 }

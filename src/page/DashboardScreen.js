@@ -71,7 +71,9 @@ const DashboardScreen = () => {
         apiData();
       },[]);
 
-      
+    const c = { time: Data && Data[2].data.time };
+
+    
 
   return (
     <div className="main">
@@ -92,7 +94,7 @@ const DashboardScreen = () => {
         <div className="home-coloumn">
             <div className="home-text">HOME</div>
             <div className="TE-div">
-                <div className="refresh-div">last updated </div>
+                <div className="refresh-div">last updated {new Date(c.time).toLocaleDateString()}</div>
                 <div className="TE-text">Total Earned</div>
                 <div className="TE-value-text">$ {Data && Data[1].data.totalIncome}</div>
             </div>
@@ -262,22 +264,22 @@ const DashboardScreen = () => {
                     <div className="storage-unit-div">
                         <div className="storage-unit-title">Storage Unit</div>
                         <img src={btc} alt='storage' className="cpu" />
-                        <div className="storage-unit-value">1200</div>
+                        <div className="storage-unit-value">{Data && Data[3].nodeResourcesTotalById.sru.substring(0,4)}</div>
                     </div>
                     <div className="compute-unit-div">
                         <div className="compute-unit-title">Compute Unit</div>
                         <img src={cpu} alt='storage' className="cpu" />
-                        <div className="compute-unit-value">{Data && Data[3].nodeResourcesTotalById.cru}</div>
+                        <div className="compute-unit-value">{Data && Data[3].nodeResourcesTotalById.cru.substring(0,4)}</div>
                     </div>
                     <div className="Network-unit-div">
                         <div className="Network-unit-title">Network Unit</div>
                         <img src={network} alt='storage' className="cpu" />
-                        <div className="Network-unit-value">1200</div>
+                        <div className="Network-unit-value">{Data && Data[3].nodeResourcesTotalById.mru.substring(0,4)}</div>
                     </div>
                     <div className="Network-unit-div1">
-                        <div className="Network-unit-title">HRU Unit</div>
+                        <div className="Network-unit-title">Hardware Unit</div>
                         <img src={network} alt='storage' className="cpu" />
-                        <div className="Network-unit-value">1200</div>
+                        <div className="Network-unit-value">{Data && Data[3].nodeResourcesTotalById.hru.substring(0,4)}</div>
                     </div>
                 </div>
                 <div className="cloudmining-image-div">

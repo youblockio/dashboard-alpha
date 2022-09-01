@@ -229,7 +229,113 @@
 .invisible-div{
     display: none;
 }
+@media screen and (max-width: 420px){
+  .frame-div555{
+    display: none;
+}
+.frame-div888{
+    left: 30px;
+    position: relative;
+    top: 45px;
+    padding: 30px;
+    gap: 34px;
+    width: 350px;
+    color: #fff;
+    text-align: center;
+}
+.frame-div90 {
+    gap: 45px;
+  }
+  .frame-input {
+    border-radius: 16px;
+    width: 300px;
+    padding: 20px 35px;
+  }
+  .registration-div {
+    font-size: 24px;
+    letter-spacing: 0.4em;
+    font-weight: 300;
+  }
+  .please-enter-your-details{
+    font-size: 14px;
+    text-align: center;
+  }
+  .next-div107 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .frame-button2 {
+    padding: 20px 50px;
+    width: 300px;
+  }
+  .registration-div5{
+    display: block;
+    font-size: 24px;
+    letter-spacing: 0.4em;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.frame-div11{
+    display: block;
+}
+.p-div1{
+    display: block;
+    padding-left: 30px;
 
+}
+.frame-button3{
+    display: block;
+    cursor: pointer;
+    border: 0;
+    background-color: #17a40b;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    width: 300px;
+    border-radius: 16px;
+}
+.image-58-icon1 {
+    border-radius: 11-px;
+    width: 250px;
+    height: 38px;
+    object-fit: cover;
+    padding-top: 8px;
+    cursor: pointer;
+}
+.frame-p1 {
+    border-radius: 60px;
+    border: 1px solid #3a4b4c;
+    box-sizing: border-box;
+    position: relative;
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .or-div1 {
+    position: relative;
+    letter-spacing: 0.1em;
+    font-weight: 200;
+    display: inline-block;
+  }
+  
+  .invisible-div{
+    display: block;
+    gap: 25px;
+    align-items: center;
+  }
+  .continue-to-login1 {
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    font-family: Inter;
+    color: #fff;
+  }
+}
 @media screen and (max-width: 400px){
     .frame-div555{
         display: none;

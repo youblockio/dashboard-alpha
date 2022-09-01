@@ -111,7 +111,76 @@
     background-repeat: no-repeat;
     background-position: top;
   }
-  
+  @media screen and (max-width: 420px){
+    .onboarding1-div{
+      height: 896px;
+      font-size: 28px; 
+  }
+  .frame-div{
+      position: relative;
+      top: 75px;
+      left: 35px;
+      border-radius: 14px;
+      padding: 20px 30px;
+      gap: 32px;
+      width: 330px; 
+  }
+  .frame-div2 {
+      gap: 60px;
+      font-size: 14px;
+    }
+    .lorem-ipsum-dolor-sit-amet-co {
+      font-weight: 200;
+      width: 200px;
+    }
+    .frame-button {
+      padding: 10px 30px;
+      background-color: #17a40b;
+      border-radius: 14px;
+    }
+    .next-div {
+      font-size: 14px;
+    }
+    .frame-div1 {
+      gap: 30px;
+    }
+    .masternatureblue-globe-icon {
+      width: 51px;
+      height: 40.10px;
+    }  
+}
+
+@media screen and (max-width: 380px){
+  .onboarding1-div{
+    height: 844px;
+    font-size: 26px; 
+}
+.frame-div{
+  position: relative;
+  top: 75px;
+  left: 28px;
+  border-radius: 14px;
+  padding: 20px 30px;
+  gap: 32px;
+  width: 330px; 
+}
+}
+
+@media screen and (max-width: 350px){
+  .onboarding1-div{
+    height: 844px;
+    font-size: 26px; 
+}
+.frame-div{
+  position: relative;
+  top: 75px;
+  left: 10px;
+  border-radius: 14px;
+  padding: 20px 30px;
+  gap: 32px;
+  width: 300px; 
+}
+  }
   @media screen and (max-width: 400px){
     .onboarding1-div{
         height: 844px;

@@ -127,6 +127,53 @@
     background-repeat: no-repeat;
     background-position: top;
   }
+  @media screen and (max-width: 420px){
+    .login1-div{
+      height: 896px;
+      font-size: 28px; 
+  }
+  .frame-div508{
+      gap: 20px;
+      position: relative;
+      top: 100px;
+      left: 40px;
+      border-radius: 14px;
+      padding: 20px 30px;
+      width: 330px; 
+  }
+  .please-enter-your-login-detail {
+      font-size: 14px;
+      font-weight: 200;
+      padding-bottom: 20px;
+    }
+    .frame-button108 {
+      padding: 15px 40px;
+      border-radius: 16px;
+    }
+    .next-div108 {
+      font-size: 18px;
+      letter-spacing: 0.1em;
+      font-weight: 300;
+    }
+    .create-an-account {
+      font-size: 18px;
+      letter-spacing: 0.3em;
+      font-weight: 300;
+    }
+    .frame-input108 {
+      border-radius: 20px;
+      width: 300px;
+      padding: 10px 30px;
+    }
+    .line-div {
+      width: 300.05px;
+    }
+    .image-53-icon {
+      width: 238px;
+      height: 34px;
+      object-fit: cover;
+    }
+  }
   @media screen and (max-width: 400px){
     .login1-div{
         height: 844px;
@@ -135,7 +182,7 @@
     .frame-div508{
         gap: 20px;
         position: relative;
-        top: 145px;
+        top: 100px;
         left: 30px;
         border-radius: 14px;
         padding: 20px 30px;

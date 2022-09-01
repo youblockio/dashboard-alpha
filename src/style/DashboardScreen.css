@@ -10,7 +10,7 @@
     background-position: top;
     flex-direction: row;
     gap: 70px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .vertical-menu-div{
     display: none;
@@ -1535,5 +1535,56 @@ color: #FFFFFF;
     .settingIcon1{
         height: 50px;
         width: 50px;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .menu-div{
+        left: 20px;
+    }
+    .main{
+        height: 740px;
+    }
+    .home-text{
+        left: 150px;
+    }
+    .TE-div{
+        left: 150px;
+    }
+    .EE-div{
+        left: 150px;
+    }
+    .ME-div{
+        left:380px
+    }
+    .solar-cell-div{
+        left:150px
+    }
+    .weather-div{
+        left:150px
+    }
+    .consumption-div{
+        left:150px
+    }
+    .graph-div{
+        left:615px
+    }
+    .geolocation{
+        left: 615px;
+    }
+    .block{
+        left: 615px;
+    }
+    .MS-div{
+        left: 1080px;
+    }
+    .CS-div{
+        left: 1080px;
+    }
+    .picture-unit-div{
+        left: 1080px;
+    }
+    .emission-div{
+        left: 1080px;
     }
 }

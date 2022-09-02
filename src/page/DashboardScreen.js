@@ -101,7 +101,7 @@ const DashboardScreen = () => {
     const bar2H = (100 / 300) * item.selfConsumptionPower;
 
     return (
-      <div className="bar-div">
+      <div className="bar-div" key={item.time}>
         <div className="bar1" style={{ height: `${bar1H}%` }}></div>
         <div className="bar2" style={{ height: `${bar2H}%` }}></div>
       </div>

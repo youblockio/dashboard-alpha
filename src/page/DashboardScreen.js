@@ -96,13 +96,13 @@ const DashboardScreen = () => {
   console.log(consumption);
 
   const bars = Data && consumption.map((item) => {
-    const bar1H = (100/300)*item.pac;
-    const bar2H = (100/300)*item.selfConsumptionPower;
+    const bar1H = (100 / 300) * item.pac;
+    const bar2H = (100 / 300) * item.selfConsumptionPower;
 
     return (
       <div className="bar-div">
-        <div className="bar1" style={{height: `${bar1H}%`}}></div>
-        <div className="bar2" style={{height: `${bar2H}%`}}></div>
+        <div className="bar1" style={{ height: `${bar1H}%` }}></div>
+        <div className="bar2" style={{ height: `${bar2H}%` }}></div>
       </div>
     );
   });
@@ -147,10 +147,10 @@ const DashboardScreen = () => {
         <div className="home-text">HOME</div>
         <div className="TE-div">
           <div className="refresh-div">
-          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
-          <div className="refresh-image-div">
-            <img src={refreshIcon} alt="" className="refresh-image" />
-          </div>
+            <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+            <div className="refresh-image-div">
+              <img src={refreshIcon} alt="" className="refresh-image" />
+            </div>
           </div>
           <div className="TE-text">Total Earned</div>
           <div className="TE-value-text">
@@ -167,10 +167,10 @@ const DashboardScreen = () => {
         </div>
         <div className="solar-cell-div">
           <div className="refresh-div">
-          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
-          <div className="refresh-image-div" onClick={apiData}>
-            <img src={refreshIcon} alt="" className="refresh-image" />
-          </div>
+            <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+            <div className="refresh-image-div" onClick={apiData}>
+              <img src={refreshIcon} alt="" className="refresh-image" />
+            </div>
           </div>
           <div className="solar-cell-image-div">
             <img
@@ -209,10 +209,10 @@ const DashboardScreen = () => {
         </div>
         <div className="consumption-div">
           <div className="refresh-div">
-          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
-          <div className="refresh-image-div" onClick={apiData}>
-            <img src={refreshIcon} alt="" className="refresh-image" />
-          </div>
+            <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+            <div className="refresh-image-div" onClick={apiData}>
+              <img src={refreshIcon} alt="" className="refresh-image" />
+            </div>
           </div>
           <div className="self-production-div">
             <div className="self-production-div-title">
@@ -277,32 +277,12 @@ const DashboardScreen = () => {
       <div className="graph-coloumn">
         <div className="graph-div">
           <div className="refresh-div">
-          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
-          <div className="refresh-image-div" onClick={apiData}>
-            <img src={refreshIcon} alt="" className="refresh-image" />
-          </div>
+            <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+            <div className="refresh-image-div" onClick={apiData}>
+              <img src={refreshIcon} alt="" className="refresh-image" />
+            </div>
           </div>
           <div className="chart-div">
-            {/* <div className="bar-div">
-              <div className="bar1"></div>
-              <div className="bar2"></div>
-            </div>
-            <div className="bar-div">
-              <div className="bar1"></div>
-              <div className="bar2"></div>
-            </div>
-            <div className="bar-div">
-              <div className="bar1"></div>
-              <div className="bar2"></div>
-            </div>
-            <div className="bar-div">
-              <div className="bar1"></div>
-              <div className="bar2"></div>
-            </div>
-            <div className="bar-div">
-              <div className="bar1"></div>
-              <div className="bar2"></div>
-            </div> */}
             {Data && bars}
           </div>
         </div>
@@ -318,10 +298,10 @@ const DashboardScreen = () => {
         </div>
         <div className="geolocation">
           <div className="refresh-div">
-          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
-          <div className="refresh-image-div" onClick={apiData}>
-            <img src={refreshIcon} alt="" className="refresh-image" />
-          </div>
+            <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+            <div className="refresh-image-div" onClick={apiData}>
+              <img src={refreshIcon} alt="" className="refresh-image" />
+            </div>
           </div>
           <div className="geolocation-title-div">{currentCity}</div>
           <div className="geolocation-center-div">
@@ -386,7 +366,7 @@ const DashboardScreen = () => {
       </div>
       <div className="profile-coloumn">
         <div className="connect-wallet-div">
-          <ConnectButton  chainStatus={{ smallScreen: 'icon' , largeScreen:'full'}} showBalance={{ smallScreen:false , largeScreen:true}} accountStatus={{ smallScreen: 'avatar', largeScreen: 'full', }} />
+          <ConnectButton chainStatus={{ smallScreen: 'icon', largeScreen: 'full' }} showBalance={{ smallScreen: false, largeScreen: true }} accountStatus={{ smallScreen: 'avatar', largeScreen: 'full', }} />
         </div>
         <div className="MS-div">
           <div className="MS-div-title">Miner Status</div>
@@ -404,10 +384,10 @@ const DashboardScreen = () => {
         </div>
         <div className="picture-unit-div">
           <div className="refresh-div1">
-          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
-          <div className="refresh-image-div" onClick={apiData}>
-            <img src={refreshIcon} alt="" className="refresh-image" />
-          </div>
+            <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+            <div className="refresh-image-div" onClick={apiData}>
+              <img src={refreshIcon} alt="" className="refresh-image" />
+            </div>
           </div>
           <div className="picture-unit">
             <div className="storage-unit-div">

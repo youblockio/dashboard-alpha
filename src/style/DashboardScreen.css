@@ -2574,3 +2574,174 @@
         width: 50px;
     }
 }
+
+@media screen and (max-width: 465px){
+    .TE-div {
+        left: 5px;
+        top: 80px;
+        width: 340px;
+        height: 100px;
+        border-radius: 12px;
+    }
+
+    .EE-div {
+        width: 165px;
+        height: 80px;
+        border-radius: 12px;
+        left: 5px;
+        top: 200px;
+
+    }
+
+    .ME-div {
+        position: absolute;
+        width: 165px;
+        height: 80px;
+        left: 180px;
+        border-radius: 12px;
+        top: 200px;
+    }
+
+    .picture-unit-div {
+        top: 300px;
+        position: absolute;
+        width: 165px;
+        height: 290px;
+        border-radius: 12px;
+        left: 180px
+    }
+
+    .MS-div {
+        top: 300px;
+        width: 165px;
+        height: 60px;
+        border-radius: 12px;
+        left: 5px;
+    }
+
+    .CS-div {
+        top: 380px;
+        width: 165px;
+        height: 60px;
+        border-radius: 12px;
+        left: 5px;
+    }
+
+    .emission-div {
+        position: absolute;
+        width: 165px;
+        height: 130px;
+        border-radius: 12px;
+        left: 5px;
+        top: 460px;
+    }
+
+    .solar-cell-div {
+        left: 5px;
+        width: 340px;
+        height: 140px;
+        border-radius: 12px;
+        top: 610px;
+    }
+
+    .consumption-div {
+        left: 5px;
+        width: 340px;
+        height: 70px;
+        border-radius: 12px;
+        top: 770px;
+    }
+
+    .weather-div {
+        left: 5px;
+        width: 340px;
+        height: 120px;
+        border-radius: 12px;
+        top: 860px;
+    }
+
+    .graph-div {
+        left: 5px;
+        top: 1000px;
+        width: 340px;
+        height: 160px;
+        border-radius: 12px;
+    }
+
+    .block {
+        left: 5px;
+        width: 340px;
+        height: 160px;
+        border-radius: 12px;
+        top: 1200px;
+    }
+
+    .geolocation {
+        left: 5px;
+        width: 340px;
+        height: 130px;
+        border-radius: 12px;
+        top: 1375px;
+    }
+
+    .connect-wallet-div {
+        width: 160px;
+        height: 40px;
+        left: 10px;
+        top: 10px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .vertical-menu-div {
+        display: block;
+        width: 360px;
+        height: 80px;
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        bottom: 0px;
+        position: absolute;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+
+    .green-logo-div1 {
+        position: absolute;
+        left: 30px;
+        top: 10px;
+    }
+
+    .greenLogo1 {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .home-logo-div1 {
+        position: absolute;
+        left: 130px;
+        top: 20px;
+    }
+
+    .home1 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .setting-logo-div1 {
+        position: absolute;
+        left: 290px;
+        top: 10px;
+    }
+
+    .wallet-logo-div1 {
+        position: absolute;
+        left: 210px;
+        top: 20px;
+    }
+
+    .settingIcon1 {
+        height: 50px;
+        width: 50px;
+    }
+}

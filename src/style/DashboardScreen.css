@@ -59,9 +59,25 @@
     top: 8px;
     left: 280px;
     border-radius: 8px;
-    font-size: 10px;
+    font-size: 0.5em;
     color: white;
+    
     /* display: none; */
+}
+.refresh-div-title{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.refresh-image-div{
+    position: absolute;
+    left: 140px;
+    cursor: pointer;
+    top: 4px;
+}
+.refresh-image{
+    width: 12px;
+    height: 12px;
 }
 
 .EE-div {
@@ -138,7 +154,48 @@
     border-radius: 14px;
 
 }
-
+.graph-denotion-div{
+    position: absolute;
+    left: 680px;
+    top: 310px;
+}
+.graph-denotion-consumption-div{
+   position: absolute;
+    left: 120px;
+    top:0px;
+    width: 200px;
+}
+.graph-denotion-production-div{
+     width: 200px;
+ }
+.graph-denotion-production-bar{
+    background: linear-gradient(180deg, #5451FF 0%, rgba(84, 81, 255, 0) 100%);
+    width: 15px;
+    height: 15px;
+}
+.graph-denotion-consumption-bar{
+    background: linear-gradient(180deg, #93FFAA 0%, rgba(147, 255, 170, 0) 100%);
+    width: 15px;
+    height: 15px;
+}
+.graph-denotion-production-title{
+    position: absolute;
+    top:0px;
+    left: 20px;
+    font-size: 10px;
+    color: white;
+    font-weight: 100;
+    
+}
+.graph-denotion-consumption-title{
+    position: absolute;
+    top:0px;
+    left: 20px;
+    font-size: 10px;
+    color: white;
+    font-weight: 100;
+    
+}
 .chart-div {
     /* border: 1px red solid; */
     height: 80%;
@@ -735,7 +792,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 31px;
 
     color: #FFFFFF;
@@ -961,6 +1018,30 @@
 
     color: #FFFFFF;
 }
+.block-mining-div-value1 {
+    position: absolute;
+    left: 60px;
+    top: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 8px;
+    line-height: 12px;
+
+    color: #FFFFFF;
+}
+.block-mining-div-value2 {
+    position: absolute;
+    left: 60px;
+    top: 35px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 8px;
+    line-height: 12px;
+
+    color: #FFFFFF;
+}
 
 .green-logo-div {
     position: absolute;
@@ -1053,6 +1134,9 @@
     .graph-div {
         left: 595px
     }
+    .graph-denotion-div{
+        left: 620px;
+    }
 
     .geolocation {
         left: 595px
@@ -1086,7 +1170,7 @@
 
     .main {
         position: absolute;
-        height: 1600px;
+        height: 1620px;
         display: flex;
     }
 
@@ -1186,13 +1270,17 @@
         height: 160px;
         border-radius: 12px;
     }
+    .graph-denotion-div{
+        left: 30px;
+        top: 1170px;
+    }
 
     .block {
         left: 20px;
         width: 380px;
         height: 170px;
         border-radius: 12px;
-        top: 1180px;
+        top: 1200px;
     }
 
     .geolocation {
@@ -1200,7 +1288,7 @@
         width: 380px;
         height: 140px;
         border-radius: 12px;
-        top: 1360px;
+        top: 1380px;
     }
 
     .connect-wallet-div {
@@ -1419,7 +1507,7 @@
 
     .compute-unit-div {
         position: absolute;
-        left: 45px;
+        left: 43px;
     }
 
     .Network-unit-div {
@@ -1783,7 +1871,7 @@
 @media screen and (max-width: 400px) {
     .main {
         position: absolute;
-        height: 1580px;
+        height: 1600px;
         display: flex;
     }
 
@@ -1905,7 +1993,7 @@
         width: 340px;
         height: 160px;
         border-radius: 12px;
-        top: 1180px;
+        top: 1200px;
     }
 
     .geolocation {
@@ -1913,7 +2001,7 @@
         width: 340px;
         height: 130px;
         border-radius: 12px;
-        top: 1360px;
+        top: 1375px;
     }
 
     .connect-wallet-div {
@@ -2124,7 +2212,7 @@
 
     .compute-unit-div {
         position: absolute;
-        left: 38px;
+        left: 35px;
     }
 
     .Network-unit-div {

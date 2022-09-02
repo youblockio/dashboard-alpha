@@ -26,6 +26,7 @@ import home from "../assets/homeicon.png";
 import walletlogo from "../assets/Group1.png";
 import settingIcon from "../assets/Vector.png";
 import { useNavigate } from "react-router-dom";
+import refreshIcon from "../assets/Vector1.png";
 
 const DashboardScreen = () => {
   const navigate = useNavigate();
@@ -146,7 +147,10 @@ const DashboardScreen = () => {
         <div className="home-text">HOME</div>
         <div className="TE-div">
           <div className="refresh-div">
-            last updated {Data && time} {Data && date}{" "}
+          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+          <div className="refresh-image-div">
+            <img src={refreshIcon} alt="" className="refresh-image" />
+          </div>
           </div>
           <div className="TE-text">Total Earned</div>
           <div className="TE-value-text">
@@ -162,7 +166,12 @@ const DashboardScreen = () => {
           <div className="EE-value-text">$ 39</div>
         </div>
         <div className="solar-cell-div">
-          <div className="refresh-div">last updated {Data && time} </div>
+          <div className="refresh-div">
+          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+          <div className="refresh-image-div" onClick={apiData}>
+            <img src={refreshIcon} alt="" className="refresh-image" />
+          </div>
+          </div>
           <div className="solar-cell-image-div">
             <img
               src={solarPanelImage}
@@ -199,7 +208,12 @@ const DashboardScreen = () => {
           </div>
         </div>
         <div className="consumption-div">
-          <div className="refresh-div">last updated {Data && time}</div>
+          <div className="refresh-div">
+          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+          <div className="refresh-image-div" onClick={apiData}>
+            <img src={refreshIcon} alt="" className="refresh-image" />
+          </div>
+          </div>
           <div className="self-production-div">
             <div className="self-production-div-title">
               Self Production Today
@@ -262,7 +276,12 @@ const DashboardScreen = () => {
       </div>
       <div className="graph-coloumn">
         <div className="graph-div">
-          <div className="refresh-div">last updated </div>
+          <div className="refresh-div">
+          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+          <div className="refresh-image-div" onClick={apiData}>
+            <img src={refreshIcon} alt="" className="refresh-image" />
+          </div>
+          </div>
           <div className="chart-div">
             {/* <div className="bar-div">
               <div className="bar1"></div>
@@ -287,8 +306,23 @@ const DashboardScreen = () => {
             {Data && bars}
           </div>
         </div>
+        <div className="graph-denotion-div">
+          <div className="graph-denotion-production-div">
+            <div className="graph-denotion-production-bar" />
+            <div className="graph-denotion-production-title"> Self Production</div>
+          </div>
+          <div className="graph-denotion-consumption-div">
+            <div className="graph-denotion-consumption-bar" />
+            <div className="graph-denotion-consumption-title"> Self Consumption</div>
+          </div>
+        </div>
         <div className="geolocation">
-          <div className="refresh-div">last updated </div>
+          <div className="refresh-div">
+          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+          <div className="refresh-image-div" onClick={apiData}>
+            <img src={refreshIcon} alt="" className="refresh-image" />
+          </div>
+          </div>
           <div className="geolocation-title-div">{currentCity}</div>
           <div className="geolocation-center-div">
             <div className="sunrise-div">
@@ -338,8 +372,8 @@ const DashboardScreen = () => {
             <div className="block-mining-div-image">
               <img src={icon7} alt="mining" className="mining" />
             </div>
-            <div className="block-mining-div-title">Mining Consumption</div>
-            <div className="block-mining-div-value">2 kWh</div>
+            <div className="block-mining-div-value1">From Grid : </div>
+            <div className="block-mining-div-value2">To Grid : </div>
           </div>
           <div className="block-home-div">
             <div className="block-mining-div-image">
@@ -352,7 +386,7 @@ const DashboardScreen = () => {
       </div>
       <div className="profile-coloumn">
         <div className="connect-wallet-div">
-          <ConnectButton />
+          <ConnectButton  chainStatus={{ smallScreen: 'icon' , largeScreen:'full'}} showBalance={{ smallScreen:false , largeScreen:true}} accountStatus={{ smallScreen: 'avatar', largeScreen: 'full', }} />
         </div>
         <div className="MS-div">
           <div className="MS-div-title">Miner Status</div>
@@ -369,7 +403,12 @@ const DashboardScreen = () => {
           </div>
         </div>
         <div className="picture-unit-div">
-          <div className="refresh-div1">last updated </div>
+          <div className="refresh-div1">
+          <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
+          <div className="refresh-image-div" onClick={apiData}>
+            <img src={refreshIcon} alt="" className="refresh-image" />
+          </div>
+          </div>
           <div className="picture-unit">
             <div className="storage-unit-div">
               <div className="storage-unit-title">Storage Unit</div>

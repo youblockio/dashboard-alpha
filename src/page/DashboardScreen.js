@@ -72,8 +72,9 @@ const DashboardScreen = () => {
         "https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/chart/17246/powerDay?date=2022-09-02"
       ).then((resp) => resp.json()),
     ]).then((res) => setData((prevState) => (prevState = res)));
+    console.log("print");
   };
-  console.log(Data);
+  
 
   useEffect(() => {
     getLocation();
@@ -168,8 +169,8 @@ const DashboardScreen = () => {
         <div className="solar-cell-div">
           <div className="refresh-div">
             <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
-            <div className="refresh-image-div" onClick={apiData}>
-              <img src={refreshIcon} alt="" className="refresh-image" />
+            <div className="refresh-image-div" >
+              <img src={refreshIcon} alt="" className="refresh-image" onClick={apiData} />
             </div>
           </div>
           <div className="solar-cell-image-div">
@@ -210,8 +211,8 @@ const DashboardScreen = () => {
         <div className="consumption-div">
           <div className="refresh-div">
             <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
-            <div className="refresh-image-div" onClick={apiData}>
-              <img src={refreshIcon} alt="" className="refresh-image" />
+            <div className="refresh-image-div" >
+              <img src={refreshIcon} alt="" className="refresh-image" onClick={apiData}/>
             </div>
           </div>
           <div className="self-production-div">
@@ -278,8 +279,8 @@ const DashboardScreen = () => {
         <div className="graph-div">
           <div className="refresh-div">
             <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
-            <div className="refresh-image-div" onClick={apiData}>
-              <img src={refreshIcon} alt="" className="refresh-image" />
+            <div className="refresh-image-div" >
+              <img src={refreshIcon} alt="" className="refresh-image" onClick={apiData} />
             </div>
           </div>
           <div className="chart-div">
@@ -299,8 +300,8 @@ const DashboardScreen = () => {
         <div className="geolocation">
           <div className="refresh-div">
             <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
-            <div className="refresh-image-div" onClick={apiData}>
-              <img src={refreshIcon} alt="" className="refresh-image" />
+            <div className="refresh-image-div" >
+              <img src={refreshIcon} alt="" className="refresh-image" onClick={apiData} />
             </div>
           </div>
           <div className="geolocation-title-div">{currentCity}</div>
@@ -394,28 +395,28 @@ const DashboardScreen = () => {
               <div className="storage-unit-title">Storage Unit</div>
               <img src={btc} alt="storage" className="cpu" />
               <div className="storage-unit-value">
-                {Data && Data[3].nodeResourcesTotalById.sru.substring(0, 4)}
+                {Data && Data[3].nodeResourcesTotalById.sru}
               </div>
             </div>
             <div className="compute-unit-div">
               <div className="compute-unit-title">Compute Unit</div>
               <img src={cpu} alt="storage" className="cpu" />
               <div className="compute-unit-value">
-                {Data && Data[3].nodeResourcesTotalById.cru.substring(0, 4)}
+                {Data && Data[3].nodeResourcesTotalById.cru}
               </div>
             </div>
             <div className="Network-unit-div">
               <div className="Network-unit-title">Network Unit</div>
               <img src={network} alt="storage" className="cpu" />
               <div className="Network-unit-value">
-                {Data && Data[3].nodeResourcesTotalById.mru.substring(0, 4)}
+                {Data && Data[3].nodeResourcesTotalById.mru}
               </div>
             </div>
             <div className="Network-unit-div1">
               <div className="Network-unit-title">Hardware Unit</div>
               <img src={network} alt="storage" className="cpu" />
               <div className="Network-unit-value">
-                {Data && Data[3].nodeResourcesTotalById.hru.substring(0, 4)}
+                {Data && Data[3].nodeResourcesTotalById.hru}
               </div>
             </div>
           </div>

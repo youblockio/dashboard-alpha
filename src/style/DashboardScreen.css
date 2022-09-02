@@ -59,8 +59,7 @@
     top: 8px;
     left: 280px;
     border-radius: 8px;
-    font-size: 0.5em;
-    color: white;
+    
     
     /* display: none; */
 }
@@ -68,12 +67,14 @@
     position: absolute;
     left: 10px;
     top: 5px;
+    font-size: 0.5em;
+    color: white;
 }
 .refresh-image-div{
     position: absolute;
     left: 140px;
     cursor: pointer;
-    top: 4px;
+    top: -2px;
 }
 .refresh-image{
     width: 12px;
@@ -731,8 +732,8 @@
 .storage-unit-value {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 200;
+    font-size: 7px;
     line-height: 22px;
     /* identical to box height */
     text-align: center;
@@ -744,8 +745,8 @@
 .compute-unit-value {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 300;
+    font-size: 8px;
     line-height: 22px;
     /* identical to box height */
     text-align: center;
@@ -756,8 +757,8 @@
 .Network-unit-value {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 200;
+    font-size: 7px;
     line-height: 22px;
     /* identical to box height */
     text-align: center;
@@ -1096,6 +1097,13 @@
 }
 
 @media screen and (max-width: 1440px) {
+    .refresh-div-title{
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        font-size: 0.3em;
+        color: white;
+    }
     .menu-div {
         left: 15px;
     }
@@ -1563,17 +1571,17 @@
 
     .storage-unit-value {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 5px;
     }
 
     .compute-unit-value {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 7px;
     }
 
     .Network-unit-value {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 5px;
     }
     .refresh-div1 {
         display: none;
@@ -2266,17 +2274,17 @@
 
     .storage-unit-value {
         font-weight: 400;
-        font-size: 10px;
+        font-size: 5px;
     }
 
     .compute-unit-value {
         font-weight: 400;
-        font-size: 10px;
+        font-size: 6px;
     }
 
     .Network-unit-value {
         font-weight: 400;
-        font-size: 10px;
+        font-size: 5px;
     }
 
     .refresh-div {
@@ -2576,7 +2584,7 @@
     }
 }
 
-@media screen and (max-width: 465px){
+@media screen and (max-width: 365px){
     .TE-div {
         left: 5px;
         top: 80px;

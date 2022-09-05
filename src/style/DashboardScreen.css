@@ -2243,13 +2243,13 @@
     .self-production-div {
         position: absolute;
         top: 20px;
-        left: 20px;
+        left: 30px;
     }
 
     .self-consumption-div {
         position: absolute;
         top: 20px;
-        left: 170px;
+        left: 190px;
     }
 
     .self-production-div-title {

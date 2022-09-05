@@ -2224,17 +2224,17 @@
 
     .storage-unit-value {
         font-weight: 400;
-        font-size: 5px;
+        font-size: 10px;
     }
 
     .compute-unit-value {
         font-weight: 400;
-        font-size: 7px;
+        font-size: 10px;
     }
 
     .Network-unit-value {
         font-weight: 400;
-        font-size: 5px;
+        font-size: 10px;
     }
     .refresh-div1 {
         display: none;
@@ -2927,17 +2927,17 @@
 
     .storage-unit-value {
         font-weight: 400;
-        font-size: 5px;
+        font-size: 10px;
     }
 
     .compute-unit-value {
         font-weight: 400;
-        font-size: 6px;
+        font-size: 10px;
     }
 
     .Network-unit-value {
         font-weight: 400;
-        font-size: 5px;
+        font-size: 10px;
     }
 
     .refresh-div {

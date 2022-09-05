@@ -395,28 +395,28 @@ const DashboardScreen = () => {
               <div className="storage-unit-title">Storage Unit</div>
               <img src={btc} alt="storage" className="cpu" />
               <div className="storage-unit-value">
-                {Data && Data[3].nodeResourcesTotalById.sru}
+                {Data && Data[3].nodeResourcesTotalById.sru.substring(0, 3)}
               </div>
             </div>
             <div className="compute-unit-div">
               <div className="compute-unit-title">Compute Unit</div>
               <img src={cpu} alt="storage" className="cpu" />
               <div className="compute-unit-value">
-                {Data && Data[3].nodeResourcesTotalById.cru}
+                {Data && Data[3].nodeResourcesTotalById.cru.substring(0, 3)}
               </div>
             </div>
             <div className="Network-unit-div">
               <div className="Network-unit-title">Network Unit</div>
               <img src={network} alt="storage" className="cpu" />
               <div className="Network-unit-value">
-                {Data && Data[3].nodeResourcesTotalById.mru}
+                {Data && Data[3].nodeResourcesTotalById.mru.substring(0, 3)}
               </div>
             </div>
             <div className="Network-unit-div1">
               <div className="Network-unit-title">Hardware Unit</div>
               <img src={network} alt="storage" className="cpu" />
               <div className="Network-unit-value">
-                {Data && Data[3].nodeResourcesTotalById.hru}
+                {Data && Data[3].nodeResourcesTotalById.hru.substring(0, 3)}
               </div>
             </div>
           </div>

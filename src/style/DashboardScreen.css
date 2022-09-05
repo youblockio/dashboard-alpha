@@ -733,7 +733,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 200;
-    font-size: 7px;
+    font-size: 12px;
     line-height: 22px;
     /* identical to box height */
     text-align: center;
@@ -746,7 +746,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 8px;
+    font-size: 12px;
     line-height: 22px;
     /* identical to box height */
     text-align: center;
@@ -758,7 +758,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 200;
-    font-size: 7px;
+    font-size: 12px;
     line-height: 22px;
     /* identical to box height */
     text-align: center;
@@ -1170,6 +1170,167 @@
     .emission-div {
         left: 1060px;
     }
+}
+
+@media screen and (max-width: 1040px){
+    
+    .menu-div {
+        display: block;
+        width: 80px;
+        height: 500px;
+        border-radius: 14px;
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        top: 120px;
+        position: absolute;
+        left: 10px;
+        flex-direction: column;
+        gap: 90px;
+    }
+
+    .main {
+        height: 1125px;
+    }
+
+    .home-text {
+        left: 100px;
+    }
+
+    .TE-div {
+        left: 100px;
+        width: 450px;
+        height: 120px;
+    }
+    .EE-div {
+        left: 100px;
+    }
+
+    .ME-div {
+        left: 330px
+    }
+
+    .solar-cell-div {
+        left: 100px
+    }
+
+    .weather-div {
+        left: 100px
+    }
+
+    .consumption-div {
+        left: 100px
+    }
+
+    .graph-div {
+        left: 565px
+    }
+    .graph-denotion-div{
+        left: 580px;
+    }
+
+    .geolocation {
+        left: 565px
+    }
+
+    .block {
+        left: 565px
+    }
+
+    .MS-div {
+        left: 100px;
+        width: 450px;
+        top: 740px;
+    }
+
+    .CS-div {
+        left: 100px;
+        width: 450px;
+        top: 840px;
+    }
+
+    .picture-unit-div {
+        left: 565px;
+        width: 450px;
+        top: 740px;
+        height: 370px;
+    }
+
+    .emission-div {
+        left: 100px;
+        width: 450px;
+        top: 940px;
+    }
+    .MS-div-image {
+        position: absolute;
+        left: 350px;
+        top: 9px;
+    }
+    
+    .CS-div-image {
+        position: absolute;
+        left: 350px;
+        top: 9px;
+    }
+    .picture-unit {
+        position: absolute;
+        top: 40px;
+        gap: 10px;
+        left: 110px;
+    }
+    .cloudmining-image-div-image {
+        width: 160px;
+        height: 140px;
+    }
+    
+    .cloudmining-image-div {
+        position: absolute;
+        left: 155px;
+        top: 130px;
+    }
+    .cloudmining-image-div-title {
+        left: 40px;
+        top: 135px;
+    }
+    
+    .cloudmining-image-div-value {
+        left: 40px;
+        top: 154px;
+    }
+    
+    .picture-unit-div-title {
+        left: 140px;
+        top: 329px;
+    }
+    
+    .picture-unit-div-title1 {
+        left: 270px;
+        top: 329px;
+    }
+    .emission-div-title-1 {
+        top: 20px;
+        left: 280px;
+    }
+    
+    .emission-div-title-2 {
+        left: 280px;
+        top: 85px;
+    }
+    
+    .emission-div-title-3 {
+        left: 280px;
+        top: 100px;
+    }
+    
+    .emission-div-title-1-value {
+        top: 40px;
+        left: 290px;
+    }
+    
+    .emission-div-title-2-value {
+        left: 290px;
+        top: 120px;
+    } 
 }
 
 @media screen and (max-width: 420px) {

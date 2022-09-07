@@ -872,3 +872,87 @@ left: 20px;
     }
 }
 
+
+@media screen and (min-width: 1650px){
+    .wallet-main-div{
+        width: 100%;
+        position: relative;
+        background-color: #000;
+        display: flex;
+        height: 1120px;
+        background-image: url(../assets/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        flex-direction: row;
+        gap: 70px;
+        overflow: hidden;
+    }
+    .wallet-text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 27px;
+        /* identical to box height */
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+        position: absolute;
+        left: 240px;
+        top: 130px;
+    }
+    .TB-div{
+        width: 650px;
+        height: 150px;
+        background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        left: 240px;
+        top: 180px;
+    }
+    .ERs-div{
+        height: 150px;
+        width: 320px;
+        background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        left: 240px;
+        top: 350px;
+    }
+    .ERt-div{
+        height: 150px;
+        width: 320px;
+        background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        left: 570px;
+        top: 350px;
+    }
+    .graph-srt-div{
+        width: 650px;
+        height: 300px;
+        background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        left: 240px;
+        top: 520px;
+    }
+    .RH-div{
+        background: radial-gradient(
+          50% 50%at 50% 50%,
+          rgba(255, 255, 255, 0.4),
+          rgba(165, 165, 165, 0.3)
+        );
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        width: 600px;
+        height: 640px;
+        left: 970px;
+        top: 180px;
+    }
+}

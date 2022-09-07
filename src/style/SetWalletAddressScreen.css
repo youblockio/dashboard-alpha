@@ -221,3 +221,36 @@
         line-height: 19px;
     }
 }
+
+@media screen and (min-width: 1650px){
+    .SetWalletAddressScreen-div{
+        height: 1120px;
+    }
+    .walletAddress-container{
+        background: radial-gradient(
+          50% 50%at 50% 50%,
+          rgba(255, 255, 255, 0.4),
+          rgba(165, 165, 165, 0.3)
+        );
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        left: 230px;
+        top: 230px;
+        width: 1100px;
+        height: 500px;
+    }
+    .walletAddress-text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 27px;
+        /* identical to box height */
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+        position: absolute;
+        left: 230px;
+        top: 130px;
+    }
+}

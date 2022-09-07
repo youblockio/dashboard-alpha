@@ -3,7 +3,7 @@ import "../style/SettingScreen.css"
 import greenLogo from "../assets/greenLogo.png";
 import home from "../assets/homeicon.png";
 import walletlogo from "../assets/Group1.png";
-import settingIcon from "../assets/Vector.png";
+import settingIcon from "../assets/largeSettingIcon2.png";
 import { useNavigate } from "react-router-dom";
 import { UserAuth } from '../context/AuthContext';
 

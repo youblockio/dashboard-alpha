@@ -2,7 +2,7 @@ import React from 'react'
 import greenLogo from "../assets/greenLogo.png";
 import home from "../assets/homeicon.png";
 import walletlogo from "../assets/Group1.png";
-import settingIcon from "../assets/Vector.png";
+import settingIcon from "../assets/largeSettingIcon2.png";
 import backButton from "../assets/backButton.png";
 import TFTlogo from "../assets/image 69.png";
 import solarLogo from "../assets/image 68.png";

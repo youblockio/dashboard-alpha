@@ -3460,8 +3460,8 @@
     
     }
     .graph-denotion-div{
-        left: 680px;
-        top: 410px;
+        left: 780px;
+        top: 450px;
     }
     .graph-denotion-consumption-div{
        position: absolute;
@@ -3581,8 +3581,8 @@
         height: 40px;
     
         position: absolute;
-        left: 1150px;
-        top: 10px;
+        left: 1300px;
+        top: 50px;
         border-radius: 14px;
         flex-direction: column;
         cursor: pointer;

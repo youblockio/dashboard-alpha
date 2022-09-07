@@ -3407,3 +3407,184 @@
         width: 50px;
     }
 }
+
+
+@media screen and (min-width: 1650px){
+    .main {
+        height: 1120px;
+    }
+    .menu-div {
+        top: 230px;
+        left: 60px;
+    }
+    
+    .home-text {
+        left: 240px;
+        top: 90px;
+    }
+    
+    .TE-div {
+        left: 240px;
+        top: 140px;
+    }
+    
+    .EE-div {
+        left: 240px;
+        top: 310px;
+    }
+    
+    .ME-div {
+        left: 470px;
+        top: 310px;
+    }
+    
+    .solar-cell-div {
+        left: 240px;
+        top: 440px;
+    }
+    
+    .weather-div {
+        left: 240px;
+        top: 640px;
+    }
+    
+    .consumption-div {
+        left: 240px;
+        top: 820px;
+    }
+    
+    .graph-div {
+        left: 760px;
+        top: 140px;
+        height: 260px;
+    
+    }
+    .graph-denotion-div{
+        left: 680px;
+        top: 410px;
+    }
+    .graph-denotion-consumption-div{
+       position: absolute;
+        left: 120px;
+        top:0px;
+        width: 200px;
+    }
+    .graph-denotion-production-div{
+         width: 200px;
+     }
+    .graph-denotion-production-bar{
+        background: linear-gradient(180deg, #5451FF 0%, rgba(84, 81, 255, 0) 100%);
+        width: 15px;
+        height: 15px;
+    }
+    .graph-denotion-consumption-bar{
+        background: linear-gradient(180deg, #93FFAA 0%, rgba(147, 255, 170, 0) 100%);
+        width: 15px;
+        height: 15px;
+    }
+    .graph-denotion-production-title{
+        position: absolute;
+        top:0px;
+        left: 20px;
+        font-size: 10px;
+        color: white;
+        font-weight: 100;
+        
+    }
+    .graph-denotion-consumption-title{
+        position: absolute;
+        top:0px;
+        left: 20px;
+        font-size: 10px;
+        color: white;
+        font-weight: 100;
+        
+    }
+    .chart-div {
+        /* border: 1px red solid; */
+        height: 80%;
+        display: flex;
+        width: 90%;
+        margin: 9% auto 0 auto;
+        gap: 2%;
+    }
+    
+    .bar-div {
+        /* border: 1px green solid; */
+        height: 100%;
+        width: 20%;
+        display: flex;
+        transform: rotatex(180deg);
+    }
+    
+    .bar1 {
+        /* border: 1px white solid; */
+        width: 75%;
+        height: 50%;
+        background: linear-gradient(360deg, #5451FF 0%, rgba(84, 81, 255, 0) 100%);
+    
+    }
+    
+    .bar2 {
+        /* border: 1px white solid; */
+        width: 75%;
+        height: 70%;
+        background: linear-gradient(360deg, #93FFAA 0%, rgba(147, 255, 170, 0) 100%);
+    }
+    
+    .geolocation {
+        left: 760px;
+        top: 500px;
+    }
+    
+    .block {
+        left: 760px;
+        top: 720px;
+    }
+    
+    .MS-div {
+        top: 140px;
+        left: 1280px;
+    }
+    
+    .CS-div {
+        top: 270px;
+        left: 1280px;
+    }
+    
+    .picture-unit-div {
+        top: 420px;
+        left: 1280px
+    }
+    
+    .emission-div {
+        left: 1280px;
+        top: 750px;
+    }
+    
+    .refresh-div1 {
+        position: absolute;
+        width: 160px;
+        height: 20px;
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        top: 8px;
+        left: 180px;
+        border-radius: 8px;
+        font-size: 10px;
+        display: none;
+    }
+    
+    .connect-wallet-div {
+        width: 200px;
+        height: 40px;
+    
+        position: absolute;
+        left: 1150px;
+        top: 10px;
+        border-radius: 14px;
+        flex-direction: column;
+        cursor: pointer;
+    }
+}

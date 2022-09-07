@@ -1,3 +1,4 @@
+
   .welcome-div {
     position: relative;
     letter-spacing: 0.3em;
@@ -111,6 +112,9 @@
     background-repeat: no-repeat;
     background-position: top;
   }
+  
+
+
   @media screen and (max-width: 420px){
     .onboarding1-div{
       height: 896px;
@@ -250,4 +254,21 @@
     gap: 32px;
     width: 300px; 
 }
+  }
+
+  @media screen and (min-width: 2048px){
+    .onboarding1-div{
+      height: 1120px;
+      font-size: 28px; 
+  }
+  .frame-div{
+    position: relative;
+    top: 175px;
+    left: 100px;
+    border-radius: 17px;
+    padding: 50px 60px;
+    gap: 32px;
+    width: 560px; 
+  }
+  
   }

@@ -519,11 +519,6 @@
 .weather-div-array>div>div:nth-child(3){
     margin-top: -10px;
 }
-
-.weather-main-div{
-    
-}
-
 .emission-div-title-1 {
     font-family: 'Inter';
     font-style: normal;

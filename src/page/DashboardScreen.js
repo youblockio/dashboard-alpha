@@ -109,11 +109,12 @@ const DashboardScreen = () => {
   let item = weather ? (
     weather.map((item) => {
       return (
-        <div key={item.id}>
+        <div key={item.id} >
           <div>
             <img
               src={`http://openweathermap.org/img/w/${item.icon}.png`}
               alt={item.icon}
+              className="item.icon"
             ></img>
           </div>
           <div>

@@ -32,6 +32,7 @@ const DashboardScreen = () => {
   const navigate = useNavigate();
   const [Data, setData] = useState();
   const [currentCity, setCurrentCity] = useState("");
+  const [weather,setWeather] = useState([]);
   let nodeId = "0002608353-000001-1c7b3";
 
   const getLocation = () => {
@@ -39,6 +40,7 @@ const DashboardScreen = () => {
     function success(pos) {
       const crd = pos.coords;
       getCurrentLocation(crd.latitude, crd.longitude);
+      getWeatherOnLocation(crd.latitude, crd.longitude);
     }
   };
   //////sss
@@ -75,6 +77,57 @@ const DashboardScreen = () => {
     console.log("print");
   };
   
+  const getWeatherOnLocation = async (lat, lon) => {
+    let res = await fetch(
+      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=daily&appid=2d1b7d0c1cb8298b08ab15e2f4c3b160`
+    );
+    let data = await res.json();
+    
+    if (data) {
+      data = data.hourly.map((item) => {
+        let date = new Date(item.dt * 1000).toTimeString();
+        date = date.split(":");
+        +date[0] >= 12
+          ? (date = date[0] + ":" + date[1] + " PM")
+          : (date = date[0] + ":" + date[1] + " AM");
+  
+        let temp = (item.temp - 273).toFixed(1) + "°C";
+        return {
+          time: date,
+          temp: temp,
+          icon: item.weather[0].icon,
+          id: Math.random(100).toString(),
+        };
+      });
+      data = data.slice(0, 6);
+    }
+    setWeather(data);
+    console.log(data);
+
+  };
+
+  let item = weather ? (
+    weather.map((item) => {
+      return (
+        <div key={item.id}>
+          <div>
+            <img
+              src={`http://openweathermap.org/img/w/${item.icon}.png`}
+              alt={item.icon}
+            ></img>
+          </div>
+          <div>
+            <h4>{item.temp}</h4>
+          </div>
+          <div>
+            <p>{item.time}</p>
+          </div>
+        </div>
+      );
+    })
+  ) : (
+    <p>Data is Loading....</p>
+  );
 
   useEffect(() => {
     getLocation();
@@ -198,11 +251,7 @@ const DashboardScreen = () => {
           </div>
           <div className="weather-div-title">Todays’ Production</div>
           <div className="weather-div-array">
-            <img
-              alt="group sun"
-              src={groupSun}
-              className="weather-div-array-image"
-            />
+            {item}
           </div>
           <div className="temperature-array">
             <div></div>

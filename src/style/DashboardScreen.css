@@ -498,9 +498,24 @@
 }
 
 .weather-div-array {
-    position: absolute;
-    left: 40px;
-    top: 35px;
+    /* position: absolute; */
+    /* left: 40px;
+    top: 35px; */
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin:0px auto;
+    font-size: 14px;
+}
+
+.weather-div-array>div>div:nth-child(2){
+    margin-top: -20px;
+}
+.weather-div-array>div>div:nth-child(3){
+    margin-top: -10px;
 }
 
 .emission-div-title-1 {

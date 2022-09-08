@@ -2497,7 +2497,7 @@
 
     .weather-div-array {
         color: white;
-    padding-top: 0px;
+    padding-top: 20px;
     border-radius: 30px;
     display: flex;
     justify-content: space-evenly;
@@ -3210,7 +3210,7 @@
 
     .weather-div-array {
         color: white;
-    padding-top: 0px;
+    padding-top: 20px;
     border-radius: 30px;
     display: flex;
     justify-content: space-evenly;

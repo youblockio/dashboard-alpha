@@ -99,7 +99,7 @@ const DashboardScreen = () => {
           id: Math.random(100).toString(),
         };
       });
-      data = data.slice(0, 6);
+      data = data.slice(0, 5);
     }
     setWeather(data);
     console.log(data);

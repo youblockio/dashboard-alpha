@@ -27,6 +27,15 @@ import walletlogo from "../assets/Group1.png";
 import settingIcon from "../assets/largeSettingIcon2.png";
 import { useNavigate } from "react-router-dom";
 import refreshIcon from "../assets/Vector1.png";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer
+} from "recharts";
+
 
 const DashboardScreen = () => {
   const navigate = useNavigate();
@@ -43,7 +52,6 @@ const DashboardScreen = () => {
       getWeatherOnLocation(crd.latitude, crd.longitude);
     }
   };
-  //////sss
 
   const getCurrentLocation = async (lat, lon) => {
     let city = await fetch(
@@ -74,7 +82,7 @@ const DashboardScreen = () => {
         "https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/chart/17246/powerDay?date=2022-09-02"
       ).then((resp) => resp.json()),
     ]).then((res) => setData((prevState) => (prevState = res)));
-    console.log("print");
+    // console.log("print");
   };
   
   const getWeatherOnLocation = async (lat, lon) => {
@@ -102,7 +110,7 @@ const DashboardScreen = () => {
       data = data.slice(0, 5);
     }
     setWeather(data);
-    console.log(data);
+    // console.log(data);
 
   };
 
@@ -137,7 +145,7 @@ const DashboardScreen = () => {
 
   const time = Data && Data[2].data.time.split("T")[1].split(".")[0];
   const date = Data && Data[2].data.time.split("T")[0];
-  console.log(time);
+  // console.log(time);
 
   const consumption =
     Data &&
@@ -148,21 +156,26 @@ const DashboardScreen = () => {
       );
     });
 
-  console.log(consumption);
-
+  //console.log(consumption);
+ let data = []
   const bars = Data && consumption.map((item) => {
     const bar1H = (100 / 300) * item.pac;
     const bar2H = (100 / 300) * item.selfConsumptionPower;
 
-    return (
-      <div className="bar-div" key={item.time}>
-        <div className="bar1" style={{ height: `${bar1H}%` }}></div>
-        <div className="bar2" style={{ height: `${bar2H}%` }}></div>
-      </div>
-    );
+    let item2 = {
+      time:item.time,
+      pac: item.pac,
+      sc: item.selfConsumptionPower
+    }
+
+    data.push(item2);
+    return data;
   });
 
-  console.log(Data)
+
+  console.log(bars);
+  console.log(data);
+
 
   return (
     <div className="main">
@@ -334,17 +347,36 @@ const DashboardScreen = () => {
             </div>
           </div>
           <div className="chart-div">
-            {Data && bars}
+            {/* {Data && bars} */}
+            <ResponsiveContainer width="100%" height="100%" color="white">
+            <BarChart
+              data={data}
+              width={400}
+              height={200}
+              margin={{
+                top: 5,
+                right: 10,
+                left: -20,
+                bottom: 5,
+              }}
+            >
+              <XAxis dataKey="time" stroke="#ffff" />
+              <YAxis  stroke="#ffff" />
+              {/* <Tooltip /> */}
+              <Bar dataKey="pac" fill="#5451FF" barSize={12} />
+              <Bar dataKey="sc" fill="#93FFAA" barSize={12} />
+            </BarChart>
+            </ResponsiveContainer>
           </div>
         </div>
         <div className="graph-denotion-div">
           <div className="graph-denotion-production-div">
             <div className="graph-denotion-production-bar" />
-            <div className="graph-denotion-production-title"> Self Production</div>
+            <div className="graph-denotion-production-title"> Self Production (kWh)</div>
           </div>
           <div className="graph-denotion-consumption-div">
             <div className="graph-denotion-consumption-bar" />
-            <div className="graph-denotion-consumption-title"> Self Consumption</div>
+            <div className="graph-denotion-consumption-title"> Self Consumption (kWh)</div>
           </div>
         </div>
         <div className="geolocation">
@@ -372,7 +404,7 @@ const DashboardScreen = () => {
             </div>
             <div className="daylight-div">
               <div className="daylight-div-title">
-                Total Daylight Hours : 8 Hours
+                Total Daylight Hours : {Data && (Data[0].data.currWea.sunset.substring(0,2) - Data[0].data.currWea.sunrise.substring(0,2))} Hours
               </div>
             </div>
             {/* <div className="efficiency-div">

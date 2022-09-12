@@ -199,11 +199,11 @@
 }
 .chart-div {
     /* border: 1px red solid; */
-    height: 80%;
+    height: 90%;
     display: flex;
-    width: 90%;
-    margin: 9% auto 0 auto;
-    gap: 2%;
+    width: 99%;
+    margin: 7% auto 0 auto;
+    
 }
 
 .bar-div {

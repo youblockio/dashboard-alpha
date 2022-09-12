@@ -176,6 +176,17 @@ const DashboardScreen = () => {
   console.log(bars);
   console.log(data);
 
+  const CustomToolTip = ({ active, payload, label}) => {
+    if(active && payload && payload.length){
+      return(
+        <div className="custom-tooltip-div">
+          <p className="pacText">{`Self Production :  ${payload[0].value} Kwh`}</p>
+          <p className="scText">{`Self Consumption : ${payload[1].value} Kwh`}</p>
+        </div>
+      )
+    }
+  }
+
 
   return (
     <div className="main">
@@ -362,7 +373,7 @@ const DashboardScreen = () => {
             >
               <XAxis dataKey="time" stroke="#ffff" />
               <YAxis  stroke="#ffff" />
-              {/* <Tooltip /> */}
+              <Tooltip content={<CustomToolTip />} />
               <Bar dataKey="pac" fill="#5451FF" barSize={12} />
               <Bar dataKey="sc" fill="#93FFAA" barSize={12} />
             </BarChart>

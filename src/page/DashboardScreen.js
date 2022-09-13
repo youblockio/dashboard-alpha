@@ -424,17 +424,17 @@ const DashboardScreen = () => {
                         <div className="daylight-div-value">4 Hours</div>
                     </div> */}
           </div>
-          {/* <div className="current-div">Current Efficiency: </div>
-                    <div className="current-div-value">85%</div> */}
+          <div className="current-div">Current Efficiency: </div>
+                    <div className="current-div-value">85%</div>
         </div>
         <div className="block">
-          <div className="block-mining-div">
+          {/* <div className="block-mining-div">
             <div className="block-mining-div-image">
               <img src={miner1} alt="mining" className="mining" />
             </div>
             <div className="block-mining-div-title">Mining Consumption</div>
             <div className="block-mining-div-value">2 kWh</div>
-          </div>
+          </div> */}
           <div className="block-energy-div">
             <div className="block-mining-div-image">
               <img src={icon6} alt="mining" className="mining" />
@@ -470,14 +470,14 @@ const DashboardScreen = () => {
           </div>
         </div>
         <div className="CS-div">
-          <div className="CS-div-title">Current Energy Consumption</div>
+          {/* <div className="CS-div-title">Current Energy Consumption</div>
           <div className="CS-div-value">1.9 kWh</div>
           <div className="CS-div-image">
             <img src={fireBoult} alt="fireboult" className="Miner" />
-          </div>
+          </div> */}
         </div>
         <div className="picture-unit-div">
-          <div className="refresh-div1">
+          {/* <div className="refresh-div1">
             <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
             <div className="refresh-image-div" onClick={apiData}>
               <img src={refreshIcon} alt="" className="refresh-image" />
@@ -523,7 +523,7 @@ const DashboardScreen = () => {
             <div className="cloudmining-image-div-value">Price: $0.0938</div>
           </div>
           <div className="picture-unit-div-title">TFT Earnings Last month:</div>
-          <div className="picture-unit-div-title1">+211</div>
+          <div className="picture-unit-div-title1">+211</div> */}
         </div>
         <div className="emission-div">
           <div className="emission-div-title-1">CO2 Emissions Saved</div>

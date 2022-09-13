@@ -66,18 +66,24 @@
     top: 420px;
 }
 .RH-div{
-    background: radial-gradient(
+    /* background: radial-gradient(
       50% 50%at 50% 50%,
       rgba(255, 255, 255, 0.4),
       rgba(165, 165, 165, 0.3)
     );
     backdrop-filter: blur(20px);
-    border-radius: 20px;
+    border-radius: 20px; */
     position: absolute;
     width: 600px;
     height: 640px;
     left: 870px;
     top: 80px;
+}
+.RH-div-advertise-image-div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto 0% 0% 9%;
 }
 .W-text{
     font-size: 14px;
@@ -402,7 +408,7 @@ left: 20px;
 @media screen and (max-width: 420px){
     .wallet-main-div{
         position: absolute;
-        height: 1250px ;
+        height: 896px ;
         display: flex;
     }
     .wallet-text{
@@ -437,11 +443,25 @@ left: 20px;
         top: 380px;
     }
     .RH-div{
-        width: 380px;
-        height: 640px;
+        width: 370px;
+        height: 546px;
         left: 20px;
         top: 600px;
     }
+    .RH-div-advertise-image{
+        width: 260px;
+        height: 346px;
+    }
+    .RH-div-advertise-image-div{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin: 0px 0px 0px 0px
+        
+
+    }
+
     .W-text{
         font-size: 12px;
         padding-left: 30px;
@@ -638,7 +658,7 @@ left: 20px;
 @media screen and (max-width: 400px){
     .wallet-main-div{
         position: absolute;
-        height: 1250px ;
+        height: 896px ;
         display: flex;
     }
     .wallet-text{
@@ -942,13 +962,13 @@ left: 20px;
         top: 520px;
     }
     .RH-div{
-        background: radial-gradient(
+        /* background: radial-gradient(
           50% 50%at 50% 50%,
           rgba(255, 255, 255, 0.4),
           rgba(165, 165, 165, 0.3)
         );
         backdrop-filter: blur(20px);
-        border-radius: 20px;
+        border-radius: 20px; */
         position: absolute;
         width: 600px;
         height: 640px;

@@ -9,6 +9,7 @@ import refreshIcon from "../assets/Vector1.png";
 import graphWallet from "../assets/graphwallet.png";
 import walletbtc from "../assets/walletBTC1.png";
 import walletbtc1 from "../assets/walletBTC.png";
+import largeYoublockLogo from "../assets/large-logo-Youblock.png";
 
 const WalletScreen = () => {
     const navigate = useNavigate();
@@ -65,7 +66,10 @@ const WalletScreen = () => {
             </div>
         </div>
         <div className="RH-div">
-            <div className="RH-text">Reward History</div>
+            <div className="RH-div-advertise-image-div">
+                <img src={largeYoublockLogo} alt='' className="RH-div-advertise-image" />
+            </div>
+            {/* <div className="RH-text">Reward History</div>
             <div className="RH-dark-div">
                 <div className="RH-div-image">
                     <img src={walletbtc1} alt='btc' className="RH-image" />
@@ -143,7 +147,7 @@ const WalletScreen = () => {
                     <div className="RH-dark-div-value-main">1.34578</div>
                     <div className="RH-dark-div-value-main1">$ 24</div>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
   )

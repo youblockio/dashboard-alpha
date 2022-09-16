@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect,useState} from 'react';
 import "../style/WalletScreen.css";
 import greenLogo from "../assets/greenLogo.png";
 import home from "../assets/homeicon.png";
@@ -13,6 +13,34 @@ import largeYoublockLogo from "../assets/large-logo-Youblock.png";
 
 const WalletScreen = () => {
     const navigate = useNavigate();
+    const [Data , setData] = useState();
+    const [today,setToday] = useState();
+    const [month,setMonth] = useState();
+    const [year,setYear] = useState();
+    const [totalEarning,setTotalEarning] = useState(true);
+    const [text, setText] = useState(" Total");
+    
+
+
+
+    const apiData2 = async() => {
+        await Promise.all([
+            fetch(
+                "https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/station/17246/realtime"
+              ).then((resp) => resp.json()),
+          ]).then((res) => setData((prevState) => (prevState = res)));
+    };
+
+    console.log(Data);
+
+    useEffect(() => {
+        apiData2();
+      }, []);
+
+    // const handleClick = (event) => {
+    //    console.log(event.target.getAttribute("value"))
+    // }
+
   return (
     <div className="wallet-main-div">
         <div className='menu-div'>
@@ -32,19 +60,22 @@ const WalletScreen = () => {
         <div className="wallet-coloumn">
             <div className="wallet-text">WALLET</div>
             <div className="TB-div">
-                <div className="W-text">Total Balance</div>
-                <div className="W-value-text">$ 36,500</div>
+                <div className="W-text">{text} Earning</div>
+                <div className="TB-div-button1-div" onClick={()=>{setToday(true); setMonth(false); setYear(false); setTotalEarning(false); setText("Today")}}>Today</div>
+                <div className="TB-div-button2-div"  onClick={()=>{setMonth(true); setYear(false); setToday(false); setTotalEarning(false); setText("Month")}}>Month</div>
+                <div className="TB-div-button3-div"  onClick={()=>{setYear(true); setMonth(false); setToday(false); setTotalEarning(false); setText("Yearly")}}>Year</div>
+                <div className="W-value-text">$ {Data && (today && Data[0].data.realtimeVO.eToday)} {Data && (month && Data[0].data.realtimeVO.emonth)} {Data && (year && Data[0].data.realtimeVO.eyear)} {Data && (totalEarning && Data[0].data.realtimeVO.eTotal)}</div>
             </div>
             <div className="ERs-div">
-                <div className="ERs-text">Earned Rewards (Solar)</div>
-                <div className="refresh-last-div">
+                <div className="ERs-text">Earnings</div>
+                {/*<div className="refresh-last-div">
                     <img alt='refresh' src={refreshIcon} />
-                </div>
-                <div className="refresh-last-div-status">LAST UPDATED: 12:23:33 31/07/22</div>
-                <div className="ERs-subtitle">Solar wt/hr $ 12.56579</div>
+                </div>*/}
+                
+                <div className="ERs-subtitle">Electricity Cost: $ 12.56579 wt/hr</div>
                 <div className="ERs-value-div">$ 20,500</div>
             </div>
-            <div className="ERt-div">
+            {/* <div className="ERt-div">
                 <div className="ERs-text">Earned Rewards (TFT)</div>
                 <div className="refresh-last-div">
                     <img alt='refresh' src={refreshIcon} />
@@ -52,9 +83,9 @@ const WalletScreen = () => {
                 <div className="refresh-last-div-status">LAST UPDATED: 12:23:33 31/07/22</div>
                 <div className="ERs-subtitle">TFT 12.56579</div>
                 <div className="ERs-value-div">$ 16,000</div>
-            </div>
+            </div> */}
             <div className="graph-srt-div">
-                <div className="graph-srt-div-image">
+                {/* <div className="graph-srt-div-image">
                     <img src={graphWallet} alt='graph' className="graph-image" />
                 </div>
                 <div className="TFT-value-div">TFT</div>
@@ -62,7 +93,37 @@ const WalletScreen = () => {
                 <div className="TFT-value">25%</div>
                 <div className="SRT-value-div">Solar</div>
                 <div className="SRT-value-div1">Earning Efficiency</div>
-                <div className="SRT-value">45%</div>
+                <div className="SRT-value">45%</div> */}
+                <div className="graph-srt-main-div">
+                    <div className="graph-srt-main-text">Plant Overview</div>
+                    <div className="graph-srt-main-text-divider" />
+                    <div className="graph-srt-text-group1">
+                        <div className="graph-srt-text-id">ID:</div>
+                        <div className="graph-srt-text-id-value">{Data && Data[0].data.id}</div>
+                    </div>
+                    <div className="graph-srt-text-group1">
+                        <div className="graph-srt-text-id">Type:</div>
+                        <div className="graph-srt-text-id-value">{Data && Data[0].data.type}</div>
+                    </div>
+                    <div className="graph-srt-text-group1">
+                        <div className="graph-srt-text-id">Created At:</div>
+                        <div className="graph-srt-text-id-value">{Data && Data[0].data.createAt}</div>
+                    </div>
+                    <div className="graph-srt-text-group1">
+                        <div className="graph-srt-text-id">Plant Capacity:</div>
+                        <div className="graph-srt-text-id-value">{Data && Data[0].data.id}</div>
+                    </div>
+                    <div className="graph-srt-text-group1-divider"/>
+                    <div className="graph-srt-text-group1">
+                        <div className="graph-srt-text-id">Owner:</div>
+                        <div className="graph-srt-text-id-value">{Data && Data[0].data.owner}</div>
+                    </div>
+                    <div className="graph-srt-text-group1">
+                        <div className="graph-srt-text-id">Address:</div>
+                        <div className="graph-srt-text-id-value">{Data && Data[0].data.address}</div>
+                    </div>
+                    <div className="graph-srt-text-group1-divider"/>
+                </div>
             </div>
         </div>
         <div className="RH-div">

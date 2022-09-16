@@ -1,8 +1,13 @@
 import React,{useState,useEffect} from 'react'
+import {toast, ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../style/LoginScreen.css"
 import googleButton from "../assets/GButton.png"
 import { useNavigate } from "react-router-dom";
 import { UserAuth } from '../context/AuthContext';
+
+
+
 
 const LoginScreen = () => {
   const navigate = useNavigate();
@@ -20,6 +25,15 @@ const LoginScreen = () => {
     } catch (e) {
       setError(e.message)
       console.log(e.message)
+      toast.error(e.message, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
     }
   };
 
@@ -44,6 +58,7 @@ const LoginScreen = () => {
 
   return (
     <div className="login1-div">
+    <ToastContainer />
       <form onSubmit={handleSubmit} className="frame-div508">
         <div className="login-div">LOGIN</div>
         <div className="please-enter-your-login-detail">

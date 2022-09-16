@@ -1,4 +1,6 @@
 import React from 'react'
+import {toast, ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import greenLogo from "../assets/greenLogo.png";
 import home from "../assets/homeicon.png";
 import walletlogo from "../assets/Group1.png";
@@ -8,10 +10,19 @@ import roundAdd from "../assets/circle-addSmall.png";
 import { useNavigate } from "react-router-dom";
 import "../style/DeviceId.css";
 
+
+
 const DeviceIdScreen = () => {
+
+  const notify =()=> toast.error("hello", {
+    autoClose: 5000,
+    });
+  
+
   const navigate = useNavigate();
   return (
     <div className="DeviceIdScreen-div">
+    <ToastContainer />
       <div className='menu-div'>
            <div className="green-logo-div">
             <img src={greenLogo} alt='home' className="greenLogo" />
@@ -34,10 +45,11 @@ const DeviceIdScreen = () => {
             </div>
             <div className="ManageDevice-container-back-div-text">ENTER MINER ID</div>
             <div className="DeviceIdScreen-container-input-div">
-              <input className="DeviceIdScreen-container-input" placeholder="verify" />
+              <input className="DeviceIdScreen-container-input" placeholder="veri" />
             </div>
             <div className="DeviceIdScreen-div-main-container-buton-div">
-              <button className="DeviceIdScreen-div-main-container-buton" onClick={(e) => {e.preventDefault(); navigate("/confirmDevice");}}>
+              {/* <button className="DeviceIdScreen-div-main-container-buton" onClick={(e) => {e.preventDefault(); navigate("/confirmDevice");}}> */}
+              <button className="DeviceIdScreen-div-main-container-buton" onClick={notify}>
                 <div className="DeviceIdScreen-div-main-container-buton-image-div">
                   <img src={roundAdd} alt='' className="DeviceIdScreen-div-main-container-buton-image" />
                 </div>

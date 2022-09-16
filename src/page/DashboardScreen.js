@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../style/DashboardScreen.css";
+import {toast, ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import miner from "../assets/Miner.png";
 import fireBoult from "../assets/fireboult.png";
@@ -27,6 +29,11 @@ import walletlogo from "../assets/Group1.png";
 import settingIcon from "../assets/largeSettingIcon2.png";
 import { useNavigate } from "react-router-dom";
 import refreshIcon from "../assets/Vector1.png";
+import faultLogo from "../assets/FaultSolarLogo.png";
+import onlinePlantLogo from "../assets/onlineSolarLogo.png";
+import plantLogo from "../assets/PlantSolarLogo.png";
+import warningLogo from "../assets/WarningSolarLogo.png";
+import smallLogo from "../assets/small-logo-youblock.png";
 import {
   BarChart,
   Bar,
@@ -41,7 +48,7 @@ const DashboardScreen = () => {
   const navigate = useNavigate();
   const [Data, setData] = useState();
   const [currentCity, setCurrentCity] = useState("");
-  const [weather,setWeather] = useState([]);
+  const [weather, setWeather] = useState([]);
   let nodeId = "0002608353-000001-1c7b3";
 
   const getLocation = () => {
@@ -81,16 +88,24 @@ const DashboardScreen = () => {
       fetch(
         "https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/chart/17246/powerDay?date=2022-09-02"
       ).then((resp) => resp.json()),
+      fetch(
+        "https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/station/17246/realtime"
+      ).then((resp) => resp.json()),
+      fetch(
+        "https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/station/17246/deviceStatus"
+      ).then((resp) => resp.json()),
     ]).then((res) => setData((prevState) => (prevState = res)));
     // console.log("print");
   };
-  
+
+  console.log(Data);
+
   const getWeatherOnLocation = async (lat, lon) => {
     let res = await fetch(
       `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=daily&appid=2d1b7d0c1cb8298b08ab15e2f4c3b160`
     );
     let data = await res.json();
-    
+
     if (data) {
       data = data.hourly.map((item) => {
         let date = new Date(item.dt * 1000).toTimeString();
@@ -98,7 +113,7 @@ const DashboardScreen = () => {
         +date[0] >= 12
           ? (date = date[0] + ":" + date[1] + " PM")
           : (date = date[0] + ":" + date[1] + " AM");
-  
+
         let temp = (item.temp - 273).toFixed(1) + "°C";
         return {
           time: date,
@@ -138,10 +153,19 @@ const DashboardScreen = () => {
     <p>Data is Loading....</p>
   );
 
+  const notify = () =>
+    toast.success("Logged in Successfully.", {
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: 3000,
+    });
+
   useEffect(() => {
     getLocation();
     apiData();
-  }, []);
+    notify();
+  },[]);
+
+
 
   const time = Data && Data[2].data.time.split("T")[1].split(".")[0];
   const date = Data && Data[2].data.time.split("T")[0];
@@ -157,13 +181,13 @@ const DashboardScreen = () => {
     });
 
   //console.log(consumption);
- let data = []
+  let data = []
   const bars = Data && consumption.map((item) => {
     const bar1H = (100 / 300) * item.pac;
     const bar2H = (100 / 300) * item.selfConsumptionPower;
 
     let item2 = {
-      time:item.time,
+      time: item.time,
       pac: item.pac,
       sc: item.selfConsumptionPower
     }
@@ -176,9 +200,9 @@ const DashboardScreen = () => {
   console.log(bars);
   console.log(data);
 
-  const CustomToolTip = ({ active, payload, label}) => {
-    if(active && payload && payload.length){
-      return(
+  const CustomToolTip = ({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      return (
         <div className="custom-tooltip-div">
           <p className="pacText">{`Self Production :  ${payload[0].value} Kwh`}</p>
           <p className="scText">{`Self Consumption : ${payload[1].value} Kwh`}</p>
@@ -190,6 +214,7 @@ const DashboardScreen = () => {
 
   return (
     <div className="main">
+    <ToastContainer />
       <div className="menu-div">
         <div className="green-logo-div">
           <img src={greenLogo} alt="home" className="greenLogo" />
@@ -286,7 +311,7 @@ const DashboardScreen = () => {
           <div className="refresh-div">
             <div className="refresh-div-title"> last updated {Data && time} {Data && date}{" "}</div>
             <div className="refresh-image-div" >
-              <img src={refreshIcon} alt="" className="refresh-image" onClick={apiData}/>
+              <img src={refreshIcon} alt="" className="refresh-image" onClick={apiData} />
             </div>
           </div>
           <div className="self-production-div">
@@ -360,23 +385,23 @@ const DashboardScreen = () => {
           <div className="chart-div">
             {/* {Data && bars} */}
             <ResponsiveContainer width="100%" height="100%" color="white">
-            <BarChart
-              data={data}
-              width={400}
-              height={200}
-              margin={{
-                top: 5,
-                right: 10,
-                left: -20,
-                bottom: 5,
-              }}
-            >
-              <XAxis dataKey="time" stroke="#ffff" />
-              <YAxis  stroke="#ffff" />
-              <Tooltip content={<CustomToolTip />} />
-              <Bar dataKey="pac" fill="#5451FF" barSize={12} />
-              <Bar dataKey="sc" fill="#93FFAA" barSize={12} />
-            </BarChart>
+              <BarChart
+                data={data}
+                width={400}
+                height={200}
+                margin={{
+                  top: 5,
+                  right: 10,
+                  left: -20,
+                  bottom: 5,
+                }}
+              >
+                <XAxis dataKey="time" stroke="#ffff" />
+                <YAxis stroke="#ffff" />
+                <Tooltip content={<CustomToolTip />} />
+                <Bar dataKey="pac" fill="#5451FF" barSize={12} />
+                <Bar dataKey="sc" fill="#93FFAA" barSize={12} />
+              </BarChart>
             </ResponsiveContainer>
           </div>
         </div>
@@ -415,7 +440,7 @@ const DashboardScreen = () => {
             </div>
             <div className="daylight-div">
               <div className="daylight-div-title">
-                Total Daylight Hours : {Data && (Data[0].data.currWea.sunset.substring(0,2) - Data[0].data.currWea.sunrise.substring(0,2))} Hours
+                Total Daylight Hours : {Data && (Data[0].data.currWea.sunset.substring(0, 2) - Data[0].data.currWea.sunrise.substring(0, 2))} Hours
               </div>
             </div>
             {/* <div className="efficiency-div">
@@ -425,7 +450,7 @@ const DashboardScreen = () => {
                     </div> */}
           </div>
           <div className="current-div">Current Efficiency: </div>
-                    <div className="current-div-value">85%</div>
+          <div className="current-div-value">85%</div>
         </div>
         <div className="block">
           {/* <div className="block-mining-div">
@@ -475,6 +500,24 @@ const DashboardScreen = () => {
           <div className="CS-div-image">
             <img src={fireBoult} alt="fireboult" className="Miner" />
           </div> */}
+          <div className="CS-main-group-div">
+            <div className="CS-main-group1">
+              <img src={plantLogo} alt="" className="CS-main-group1-image" />
+              <div>Total Plant: {Data && Data[6].data.total}</div>
+            </div>
+            <div className="CS-main-group2">
+              <img src={onlinePlantLogo} alt="" className="CS-main-group1-image" />
+              <div className="CS-main-group2-text">Online: {Data && Data[6].data.online}</div>
+            </div>
+            <div className="CS-main-group3">
+              <img src={warningLogo} alt="" className="CS-main-group1-image" />
+              <div className="CS-main-group3-text">Warning: {Data && Data[6].data.warning}</div>
+            </div>
+            <div className="CS-main-group4">
+              <img alt="" src={faultLogo} className="CS-main-group1-image" />
+              <div className="CS-main-group4-text">Fault: {Data && Data[6].data.fault}</div>
+            </div>
+          </div>
         </div>
         <div className="picture-unit-div">
           {/* <div className="refresh-div1">
@@ -524,6 +567,12 @@ const DashboardScreen = () => {
           </div>
           <div className="picture-unit-div-title">TFT Earnings Last month:</div>
           <div className="picture-unit-div-title1">+211</div> */}
+          <div className="picture-unit-main-div">
+            <div className="picture-unit-main-image-div">
+              <img src={smallLogo} alt="" className="picture-unit-main-image" />
+            </div>
+            <div className="picture-unit-main-text">A step towards a better tomorrow, together</div>
+          </div>
         </div>
         <div className="emission-div">
           <div className="emission-div-title-1">CO2 Emissions Saved</div>

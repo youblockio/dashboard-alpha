@@ -6,6 +6,8 @@ import walletlogo from "../assets/Group1.png";
 import settingIcon from "../assets/largeSettingIcon2.png";
 import backButton from "../assets/backButton.png";
 import smallAddButton from "../assets/smallAdd.png";
+import pen from "../assets/pen.png";
+import trash from "../assets/trash.png";
 import { useNavigate } from "react-router-dom";
 
 const AddDevice = () => {
@@ -47,6 +49,12 @@ const AddDevice = () => {
               <div className="AddDevice-div-main-miner-solar-div-subtitle">Status:</div>
               <div className="AddDevice-div-main-miner-solar-div-value">Running</div>
               <div className="AddDevice-div-main-miner-solar-div-time">Last Updated: 05-31-22</div>
+              <div className="edit-icon-div">
+                <img className="edit-icon" src={pen} alt="" />
+              </div>
+              <div className="trash-icon-div">
+                <img className="trash-icon" src={trash} alt="" />
+              </div>
             </div>
           </div>
         </div>

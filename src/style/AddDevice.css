@@ -156,6 +156,18 @@
     left: 380px;
     top: 60px;
 }
+.edit-icon-div{
+    position: absolute;
+    top: 13px;
+    left: 640px;
+    cursor: pointer;
+}
+.trash-icon-div{
+    position: absolute;
+    top: 53px;
+    left: 640px;
+    cursor: pointer;
+}
 @media screen and (max-width: 420px){
     .AddDevice-div{
         height: 896px;

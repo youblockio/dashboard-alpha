@@ -54,7 +54,7 @@ p{
 }
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 1025px) {
     .section2{
         display: block;
         text-align: center;

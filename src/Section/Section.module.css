@@ -30,6 +30,7 @@ p{
     width: 90%;
     margin: auto;
     align-items: center;
+    border: 1px red solid;
 }
 
 .para{
@@ -51,4 +52,23 @@ p{
 }
 .tagline>img{
     width: 20%;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .section2{
+        display: block;
+        text-align: center;
+    }
+    .images{
+        width: 50%;
+    }
+
+    .mid_head{
+        text-align: center;
+        margin-right: 100px; 
+   }
+   .mid_para{
+    margin-left: 0px;
+   }
 }

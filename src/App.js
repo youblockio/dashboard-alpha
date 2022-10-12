@@ -11,10 +11,10 @@ function App() {
   }
   return (
     <div>
-      <Header></Header>
+      {show && <Header/>}
       {show && <Section onSet={formOpen}/>}
       {!show && <Form></Form>}
-      <img src={footer} style={{width: "100%"}}></img>
+      {show && <img src={footer} style={{width: "100%"}}></img>}
     </div>
   );
 }

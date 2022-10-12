@@ -38,8 +38,8 @@ const Header = () => {
         <div>Importateur</div>
         <div>Distributeur</div>
       </div>
-      <div>
-        <img src={header2} alt="header" className={styles.header_img}></img>
+      <div className={styles.headerDiv}>
+        <img src={header2} alt="header" className={styles.header_img2}></img>
       </div>
     </div>
   );

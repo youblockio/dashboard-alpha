@@ -66,6 +66,12 @@ ul li {
 .header_img {
   width: 100%;
 }
+.headerDiv{
+  text-align: center;
+}
+.header_img2{
+  width: 50%;
+}
 
 .options {
   display: flex;

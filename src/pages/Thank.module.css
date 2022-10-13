@@ -1,0 +1,18 @@
+h1{
+    /* width: 50%;
+    margin: auto; */
+    font-size: 50px;
+    text-align: center;
+    color: aqua;
+    font-weight: 800;
+}
+
+p{
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+.text{
+    margin-bottom: 80px;
+}

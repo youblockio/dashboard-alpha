@@ -1,6 +1,10 @@
+import Nav from "../Nav/Nav";
+import footer from "../assets/footer.png"
 
 const Form = ()=>{
     return(
+        <>
+        <Nav/>
         <iframe
         id="JotFormIFrame-222571248233048"
         title="Bon de commande LED"
@@ -17,6 +21,8 @@ const Form = ()=>{
         scrolling="yes"
       >
       </iframe>
+      <img src={footer} style={{width: "100%"}}></img>
+      </>
     )
 }
 

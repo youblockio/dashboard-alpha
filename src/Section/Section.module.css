@@ -43,13 +43,13 @@ p{
  margin-left: 350px;
 }
 
-.tagline{
+.tagline>a{
     display: flex;
     width: 100%;
     justify-content: space-around;
     margin-top: 20px;
 }
-.tagline>img{
+.tagline>a>img{
     width: 20%;
 }
 

@@ -1,21 +1,13 @@
-import React,{useState} from "react";
-import Header from "./Header/Header";
-import Section from "./Section/Section";
-import footer from "./assets/footer.png";
+import { Routes, Route } from "react-router-dom";
 import Form from "./Form/Form";
+import Home from "./pages/Home";
 
 function App() {
-  const [show , setShow] = useState(true)
-  const formOpen = ()=>{
-    setShow(false)
-  }
   return (
-    <div>
-      {show && <Header/>}
-      {show && <Section onSet={formOpen}/>}
-      {!show && <Form></Form>}
-      {show && <img src={footer} style={{width: "100%"}}></img>}
-    </div>
+    <Routes>
+      <Route path="/" element={<Home/>}></Route>
+      <Route path="/form" element={<Form/>}></Route>
+    </Routes>
   );
 }
 

@@ -3,10 +3,8 @@ import image1 from "../assets/borne-page-intro.png";
 import image2 from "../assets/image2.png";
 import image3 from "../assets/image3.png";
 import image4 from "../assets/image4.png";
-const Section = (props) => {
-  const formHandler = ()=>{
-    props.onSet()
-  }
+import { Link } from "react-router-dom";
+const Section = () => {
   return (
     <div>
       <div className={styles.section}>
@@ -121,7 +119,9 @@ const Section = (props) => {
           </div>
         </div>
         <div className={styles.tagline}>
-          <img src={image4} onClick={formHandler} style={{cursor:"pointer"}}></img>
+          <a href="/form">
+          <img src={image4} className={styles.action} style={{cursor:"pointer"}}></img>
+          </a>
         </div>
       </div>
     </div>

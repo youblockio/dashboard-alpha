@@ -491,10 +491,19 @@ left: 20px;
     }
     .ERs-div{
         height: 130px;
-        width: 185px;
+        width: 380px;
         border-radius: 16px;
         left: 20px;
         top: 230px;
+    }
+    .TB-div-button1-div{
+        display: none;
+    }
+    .TB-div-button2-div{
+        display: none;
+    }
+    .TB-div-button3-div{
+        display: none;
     }
     .ERt-div{
         height: 130px;
@@ -505,7 +514,7 @@ left: 20px;
     }
     .graph-srt-div{
         width: 380px;
-        height: 200px;
+        height: 250px;
         border-radius: 16px;
         left: 20px;
         top: 380px;
@@ -562,14 +571,14 @@ left: 20px;
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
-        top: 65px;
+        top: 45px;
         left: 15px;
     }
     .ERs-value-div{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 24px;
-    top: 100px;
+    top: 75px;
     left: 20px;
     
     }
@@ -722,6 +731,31 @@ left: 20px;
     
         color: #7CA0A9;
     }
+    .graph-srt-main-text{
+        color: white;
+        letter-spacing: 0.09em;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .graph-srt-text-id{
+        color: white;
+        font-weight: 200;
+        font-size: 10px;
+        position: absolute;
+        letter-spacing: 1px;
+        
+    }
+    .graph-srt-text-id-value{
+        color: white;
+        font-weight: 200;
+        font-size: 10px;
+        position: absolute;
+        left: 120px; 
+        letter-spacing: 1px; 
+    }
+    .graph-srt-main-div{
+        gap: 20px;
+    }
 }
 @media screen and (max-width: 400px){
     .wallet-main-div{
@@ -741,7 +775,7 @@ left: 20px;
     }
     .ERs-div{
         height: 130px;
-        width: 165px;
+        width: 340px;
         border-radius: 16px;
         left: 20px;
         top: 230px;
@@ -755,7 +789,7 @@ left: 20px;
     }
     .graph-srt-div{
         width: 340px;
-        height: 200px;
+        height: 230px;
         border-radius: 16px;
         left: 20px;
         top: 380px;
@@ -798,14 +832,14 @@ left: 20px;
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
-        top: 65px;
+        top: 45px;
         left: 15px;
     }
     .ERs-value-div{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 24px;
-    top: 100px;
+    top: 75px;
     left: 20px;
     
     }
@@ -957,6 +991,40 @@ left: 20px;
         letter-spacing: 0.1em;
     
         color: #7CA0A9;
+    }
+    .graph-srt-main-text{
+        color: white;
+        letter-spacing: 0.09em;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .graph-srt-text-id{
+        color: white;
+        font-weight: 200;
+        font-size: 10px;
+        position: absolute;
+        letter-spacing: 1px;
+        
+    }
+    .graph-srt-text-id-value{
+        color: white;
+        font-weight: 200;
+        font-size: 10px;
+        position: absolute;
+        left: 120px; 
+        letter-spacing: 1px; 
+    }
+    .graph-srt-main-div{
+        gap: 20px;
+    }
+    .TB-div-button1-div{
+        display: none;
+    }
+    .TB-div-button2-div{
+        display: none;
+    }
+    .TB-div-button3-div{
+        display: none;
     }
 }
 

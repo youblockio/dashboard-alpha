@@ -168,6 +168,16 @@
     left: 640px;
     cursor: pointer;
 }
+.AddDevice-div-main-miner-solar-div-title-input{
+    position: absolute;
+    left: 110px;
+    top: 20px;
+}
+.AddDevice-div-main-miner-solar-div-title-button{
+    position: absolute;
+    left: 280px;
+    top: 20px;
+}
 @media screen and (max-width: 420px){
     .AddDevice-div{
         height: 896px;

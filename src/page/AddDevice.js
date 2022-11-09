@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../style/AddDevice.css";
 import greenLogo from "../assets/greenLogo.png";
 import home from "../assets/homeicon.png";
@@ -12,6 +12,13 @@ import { useNavigate } from "react-router-dom";
 
 const AddDevice = () => {
   const navigate = useNavigate();
+  const [edit, setEdit] = useState( false);
+  const [name, setName] = useState("solar panel id");
+
+  const handleChange = (e) => {
+    setEdit(false);
+  }
+  
   return (
     <div className="AddDevice-div">
       <div className='menu-div'>
@@ -45,13 +52,45 @@ const AddDevice = () => {
             </div>
             <div className="AddDevice-div-main-miner-solar-div">
               <div className="AddDevice-div-main-miner-solar-div-small" />
-              <div className="AddDevice-div-main-miner-solar-div-title">MinerName / SolarPanelId</div>
+              <>
+                {
+                  edit === true ? (
+                    <>
+                    <input 
+                    placeholder="Enter Name" 
+                    className="AddDevice-div-main-miner-solar-div-title-input"
+                    onChange={(e) => {setName(e.target.value);}}
+                    value={name}>
+
+                    </input>
+                    <button
+                    className="AddDevice-div-main-miner-solar-div-title-button"
+                    onClick={handleChange}
+                    >submit</button>
+                    </>
+                  ) : (
+                    
+                    <div className="AddDevice-div-main-miner-solar-div-title">{name}</div>
+                  )
+                }
+              </>
+              
               <div className="AddDevice-div-main-miner-solar-div-subtitle">Status:</div>
               <div className="AddDevice-div-main-miner-solar-div-value">Running</div>
               <div className="AddDevice-div-main-miner-solar-div-time">Last Updated: 05-31-22</div>
-              <div className="edit-icon-div">
-                <img className="edit-icon" src={pen} alt="" />
-              </div>
+              <>{
+                edit === true ? (
+                  <div className="edit-icon-div" style={{display:"none"}} onClick={()=>{setEdit(true)}}>
+                    <img className="edit-icon" src={pen} alt="" />
+                  </div>
+                ) : (
+                  <div className="edit-icon-div"  style={{display:"block"}} onClick={()=>{setEdit(true)}}>
+                    <img className="edit-icon" src={pen} alt="" />
+                  </div>
+                )
+              }
+              
+              </>
               <div className="trash-icon-div">
                 <img className="trash-icon" src={trash} alt="" />
               </div>

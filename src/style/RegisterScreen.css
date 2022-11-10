@@ -1,0 +1,501 @@
+
+.social-login-div {
+  position: relative;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  display: inline-block;
+}
+.image-58-icon {
+  position: relative;
+  border-radius: 100px;
+  width: 322px;
+  height: 48px;
+  flex-shrink: 0;
+  object-fit: cover;
+  cursor: pointer;
+}
+.frame-div777 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.or-div {
+  position: relative;
+  letter-spacing: 0.1em;
+  font-weight: 200;
+  display: inline-block;
+}
+.frame-p {
+  margin: 0;
+  border-radius: 111px;
+  border: 1px solid #3a4b4c;
+  box-sizing: border-box;
+  position: relative;
+  width: 330px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.continue-to-login {
+  position: relative;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  font-family: Inter;
+  color: #fff;
+  text-align: left;
+}
+.frame-button101 {
+  cursor: pointer;
+  border: 0;
+  padding: 40px 30px;
+  background-color: #17a40b;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-div555,
+.frame-div666 {
+  display: flex;
+  align-items: center;
+}
+.frame-div666 {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 65px;
+}
+.frame-div555 {
+  position: absolute;
+  top: 160px;
+  left: 112px;
+  border-radius: 20px;
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    rgba(165, 165, 165, 0.3)
+  );
+  backdrop-filter: blur(100px);
+  flex-direction: row;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.registration-div {
+  position: relative;
+  font-size: 42px;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+}
+.emailusername-has-already-bee,
+.please-enter-your-details {
+  position: relative;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  display: none;
+}
+.please-enter-your-details {
+  color: #fff;
+  display: inline-block;
+}
+.frame-input {
+  border: 1px solid #0f4658;
+  background-color: transparent;
+  border-radius: 30px;
+  box-sizing: border-box;
+  position: relative;
+  width: 444px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.frame-div78 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 30px;
+}
+.password-must-contain {
+  text-transform: capitalize;
+}
+.password-must-contain-characte1 {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.a-z-span1 {
+  text-transform: lowercase;
+}
+.a-za-z-p {
+  margin: 0;
+}
+.password-must-contain-characte {
+  position: relative;
+  letter-spacing: 0.1em;
+  display: none;
+}
+.frame-div90 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 65px;
+}
+.next-div107 {
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-family: Inter;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+}
+.frame-button2,
+.frame-div888 {
+  border-radius: 20px;
+  display: flex;
+  box-sizing: border-box;
+}
+.frame-button2 {
+  cursor: pointer;
+  border: 0;
+  padding: 30px 80px;
+  background-color: #17a40b;
+  width: 444px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top:50px
+}
+.frame-div888 {
+  position: absolute;
+  top: 40px;
+  left: 786px;
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    rgba(165, 165, 165, 0.3)
+  );
+  backdrop-filter: blur(100px);
+  flex-direction: column;
+  padding: 60px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 54px;
+  text-align: center;
+  font-size: 20px;
+  color: #ff5252;
+}
+.registration1-div {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 970px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 42px;
+  color: #fff;
+  font-family: Inter;
+  background-image: url(../assets/Registration2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.registration-div5{
+    display: none;
+}
+.frame-div11{
+    display: none;
+}
+.frame-p1{
+    display: none;
+
+}
+.frame-button3{
+    display: none;
+}
+.invisible-div{
+    display: none;
+}
+@media screen and (max-width: 420px){
+  .registration1-div {
+    height: 1044px;
+  }
+  .frame-div555{
+    display: none;
+}
+.frame-div888{
+    left: 30px;
+    position: relative;
+    top: 45px;
+    padding: 30px;
+    gap: 34px;
+    width: 350px;
+    color: #fff;
+    text-align: center;
+}
+.frame-div90 {
+    gap: 45px;
+  }
+  .frame-input {
+    border-radius: 16px;
+    width: 300px;
+    padding: 20px 35px;
+  }
+  .registration-div {
+    font-size: 24px;
+    letter-spacing: 0.4em;
+    font-weight: 300;
+  }
+  .please-enter-your-details{
+    font-size: 14px;
+    text-align: center;
+  }
+  .next-div107 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .frame-button2 {
+    padding: 20px 50px;
+    width: 300px;
+  }
+  .registration-div5{
+    display: block;
+    font-size: 24px;
+    letter-spacing: 0.4em;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.frame-div11{
+    display: block;
+}
+.p-div1{
+    display: block;
+    padding-left: 30px;
+
+}
+.frame-button3{
+    display: block;
+    cursor: pointer;
+    border: 0;
+    background-color: #17a40b;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    width: 300px;
+    border-radius: 16px;
+}
+.image-58-icon1 {
+    border-radius: 11-px;
+    width: 250px;
+    height: 38px;
+    object-fit: cover;
+    padding-top: 8px;
+    cursor: pointer;
+}
+.frame-p1 {
+    border-radius: 60px;
+    border: 1px solid #3a4b4c;
+    box-sizing: border-box;
+    position: relative;
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .or-div1 {
+    position: relative;
+    letter-spacing: 0.1em;
+    font-weight: 200;
+    display: inline-block;
+  }
+  
+  .invisible-div{
+    display: block;
+    gap: 25px;
+    align-items: center;
+  }
+  .continue-to-login1 {
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    font-family: Inter;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 400px){
+    .frame-div555{
+        display: none;
+    }
+    .frame-div888{
+        left: 23px;
+        position: relative;
+        top: 45px;
+        padding: 30px;
+        gap: 34px;
+        width: 350px;
+        color: #fff;
+        text-align: center;
+    }
+    .frame-div90 {
+        gap: 45px;
+      }
+      .frame-input {
+        border-radius: 16px;
+        width: 300px;
+        padding: 20px 35px;
+      }
+      .registration-div {
+        font-size: 24px;
+        letter-spacing: 0.4em;
+        font-weight: 300;
+      }
+      .please-enter-your-details{
+        font-size: 14px;
+        text-align: center;
+      }
+      .next-div107 {
+        font-size: 18px;
+        font-weight: 300;
+      }
+      .frame-button2 {
+        padding: 20px 50px;
+        width: 300px;
+      }
+      .registration-div5{
+        display: block;
+        font-size: 24px;
+        letter-spacing: 0.4em;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+    .frame-div11{
+        display: block;
+    }
+    .p-div1{
+        display: block;
+        padding-left: 30px;
+    
+    }
+    .frame-button3{
+        display: block;
+        cursor: pointer;
+        border: 0;
+        background-color: #17a40b;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 50px;
+        width: 300px;
+        border-radius: 16px;
+    }
+    .image-58-icon1 {
+        border-radius: 11-px;
+        width: 250px;
+        height: 38px;
+        object-fit: cover;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .frame-p1 {
+        border-radius: 60px;
+        border: 1px solid #3a4b4c;
+        box-sizing: border-box;
+        position: relative;
+        width: 230px;
+        display: flex;
+        flex-direction: row;
+        padding: 7px;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .or-div1 {
+        position: relative;
+        letter-spacing: 0.1em;
+        font-weight: 200;
+        display: inline-block;
+      }
+      
+      .invisible-div{
+        display: block;
+        gap: 25px;
+        align-items: center;
+      }
+      .continue-to-login1 {
+        position: relative;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        font-family: Inter;
+        color: #fff;
+      }
+}
+
+@media screen and (min-width: 1650px){
+  .registration1-div {
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 1120px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 42px;
+    color: #fff;
+    font-family: Inter;
+    background-image: url(../assets/Registration2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .frame-div555 {
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    border-radius: 20px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    backdrop-filter: blur(100px);
+    flex-direction: row;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .frame-div888 {
+    position: absolute;
+    top: 100px;
+    left: 986px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    backdrop-filter: blur(100px);
+    flex-direction: column;
+    padding: 60px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 54px;
+    text-align: center;
+    font-size: 20px;
+    color: #ff5252;
+  }
+}

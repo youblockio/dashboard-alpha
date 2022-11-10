@@ -1,0 +1,1114 @@
+.wallet-main-div{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 750px;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden;
+}
+.wallet-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    position: absolute;
+    left: 190px;
+    top: 30px;
+}
+.TB-div{
+    width: 650px;
+    height: 150px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: absolute;
+    left: 190px;
+    top: 80px;
+}
+.ERs-div{
+    height: 150px;
+    width: 650px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: absolute;
+    left: 190px;
+    top: 250px;
+}
+.graph-srt-div{
+    width: 650px;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: absolute;
+    left: 190px;
+    top: 420px;
+}
+.RH-div{
+    /* background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    backdrop-filter: blur(20px);
+    border-radius: 20px; */
+    position: absolute;
+    width: 600px;
+    height: 640px;
+    left: 870px;
+    top: 80px;
+}
+.RH-div-advertise-image-div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto 0% 0% 9%;
+}
+.W-text{
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: white;
+}
+.TB-div-button1-div{
+    background:radial-gradient(50% 50%at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    rgba(165, 165, 165, 0.3));
+    width: 70px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: small; 
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 240px;
+    color: white;
+    cursor: pointer;
+}
+.TB-div-button2-div{
+    background:radial-gradient(50% 50%at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    rgba(165, 165, 165, 0.3));
+    width: 70px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: small; 
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 320px;
+    color: white;
+    cursor: pointer;
+}
+.TB-div-button3-div{
+    background:radial-gradient(50% 50%at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    rgba(165, 165, 165, 0.3));
+    width: 70px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: small; 
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    color: white;
+    cursor: pointer;
+}
+.W-value-text{
+    font-size: 66px;
+    padding-top: 34px;
+    padding-left: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+.ERs-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.refresh-last-div{
+    position: absolute;
+    left: 280px;
+    top: 15px;
+}
+.refresh-last-div-status{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: left;
+    text-transform: lowercase;
+
+    color: #FFFFFF;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+.ERs-subtitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: #40A3AE;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+.ERs-value-div{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 61px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+position: absolute;
+top: 70px;
+left: 20px;
+
+}
+.graph-image{
+    width: 431px;
+    height: 161px;
+}
+.graph-srt-div-image{
+    position: absolute;
+    left: 40px;
+    top: 70px;
+}
+.TFT-value-div{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: #E9FB1C;
+    position: absolute;
+    left: 500px;
+    top: 40px;
+}
+.TFT-value-div1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: white;
+    position: absolute;
+    left: 540px;
+    top: 40px;
+}
+.TFT-value{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    color: #E9FB1C;
+    position: absolute;
+    left: 530px;
+    top: 80px;
+}
+.SRT-value-div{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: #27A0FB;
+    position: absolute;
+    left: 500px;
+    top: 160px;
+}
+.SRT-value-div1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: white;
+    position: absolute;
+    left: 550px;
+    top: 160px;
+}
+.SRT-value{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    color: #27A0FB;
+    position: absolute;
+    left: 530px;
+    top: 200px;
+}
+.RH-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.RH-dark-div{
+    width:600px;
+    height: 90px;
+    background-color: #24414a;
+    position: absolute;
+    top: 90px;
+    flex-direction: row;
+}
+.RH-dark-div1{
+    width:600px;
+    height: 90px;
+    position: absolute;
+    top: 180px;
+    flex-direction: row;
+}
+.RH-dark-div2{
+    width:600px;
+    height: 90px;
+    position: absolute;
+    top: 270px;
+    flex-direction: row;
+    background-color: #24414a;
+}
+.RH-dark-div3{
+    width:600px;
+    height: 90px;
+    position: absolute;
+    top: 360px;
+    flex-direction: row;
+}
+.RH-dark-div4{
+    width:600px;
+    height: 90px;
+    position: absolute;
+    top: 450px;
+    flex-direction: row;
+    background-color: #24414a;
+}
+.RH-dark-div5{
+    width:600px;
+    height: 90px;
+    position: absolute;
+    top: 540px;
+    flex-direction: row;
+}
+.RH-image{
+    width: 60px;
+    height: 60px;
+}
+.RH-div-image{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+.RH-dark-div-text{
+    position: absolute;
+    left: 140px;
+    top: 20px;
+}
+.RH-dark-div-value{
+    position: absolute;
+    left: 400px;
+    top: 20px;
+    text-align: right;
+}
+.RH-dark-div-text-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+.RH-dark-div-text-subtitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: #7CA0A9;
+}
+.RH-dark-div-value-main{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+.RH-dark-div-value-main1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: #7CA0A9;
+}
+.graph-srt-main-div{
+    display: flex;
+    width: 50%;
+    height: 70%;
+    flex-direction: column;
+    margin-left: 7%;
+    margin-top: 4%;
+    gap:7%
+}
+.graph-srt-text-group1{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.graph-srt-main-text{
+    color: white;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    font-size: larger;
+}
+.graph-srt-text-id{
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+}
+.graph-srt-text-id-value{
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: right;
+    
+}
+
+@media screen and (max-width: 1440px){
+    .wallet-main-div{
+        height: 740px;
+    }
+    .wallet-text{
+        left:130px
+    }
+    .TB-div{
+        left:130px
+    }
+    .ERs-div{
+        left:130px
+    }
+    .ERt-div{
+        left: 460px;
+    }
+    .graph-srt-div{
+        left:130px
+    }
+    .RH-div{
+        left:790px
+    }
+}
+@media screen and (max-width: 420px){
+    .wallet-main-div{
+        position: absolute;
+        height: 896px ;
+        display: flex;
+    }
+    .wallet-text{
+        display: none;
+    }
+    .TB-div{
+        width: 380px;
+        height: 130px;
+        border-radius: 16px;
+        left: 20px;
+        top: 80px;
+    }
+    .ERs-div{
+        height: 130px;
+        width: 380px;
+        border-radius: 16px;
+        left: 20px;
+        top: 230px;
+    }
+    .TB-div-button1-div{
+        display: none;
+    }
+    .TB-div-button2-div{
+        display: none;
+    }
+    .TB-div-button3-div{
+        display: none;
+    }
+    .ERt-div{
+        height: 130px;
+        width: 185px;
+        border-radius: 16px;
+        left: 215px;
+        top: 230px;
+    }
+    .graph-srt-div{
+        width: 380px;
+        height: 250px;
+        border-radius: 16px;
+        left: 20px;
+        top: 380px;
+    }
+    .RH-div{
+        width: 370px;
+        height: 546px;
+        left: 20px;
+        top: 600px;
+    }
+    .RH-div-advertise-image{
+        width: 260px;
+        height: 346px;
+    }
+    .RH-div-advertise-image-div{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin: 0px 0px 0px 0px
+        
+
+    }
+
+    .W-text{
+        font-size: 12px;
+        padding-left: 30px;
+    }
+    .W-value-text{
+        font-size: 48px;
+        padding-top: 24px;
+        padding-left: 30px;
+        font-weight: 400;
+        line-height: 51px;
+    }
+    .ERs-text{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        left: 15px;
+        top: 10px;
+    }
+    .refresh-last-div{
+        display: none;
+    }
+    .refresh-last-div-status{
+        font-weight: 100;
+        font-size: 10px;
+        line-height: 12px;
+        top: 50px;
+        left: 15px;
+    }
+    .ERs-subtitle{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        top: 45px;
+        left: 15px;
+    }
+    .ERs-value-div{
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 24px;
+    top: 75px;
+    left: 20px;
+    
+    }
+    .graph-image{
+        width: 211px;
+        height: 111px;
+    }
+    .graph-srt-div-image{
+        position: absolute;
+        left: 20px;
+        top: 40px;
+    }
+    .TFT-value-div{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.1em;
+        left: 240px;
+        top: 20px;
+    }
+    .TFT-value-div1{
+        font-size: 10px;
+        line-height: 12px;
+        left: 270px;
+        top: 20px;
+    }
+    .TFT-value{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32px;
+        left: 260px;
+        top: 50px;
+    }
+    .SRT-value-div{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        left: 240px;
+        top: 100px;
+    }
+    .SRT-value-div1{
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 12px;
+        left: 270px;
+        top: 100px;
+    }
+    .SRT-value{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32px;
+        left: 260px;
+        top: 130px;
+    }
+    .RH-text{
+        font-size: 14px;
+        line-height: 17px;
+        left: 20px;
+        top: 20px;
+    }
+    .RH-dark-div{
+        width:380px;
+        height: 90px;
+        background-color: #24414a;
+        position: absolute;
+        top: 90px;
+        flex-direction: row;
+    }
+    .RH-dark-div1{
+        width:380px;
+        height: 90px;
+        position: absolute;
+        top: 180px;
+        flex-direction: row;
+    }
+    .RH-dark-div2{
+        width:380px;
+        height: 90px;
+        position: absolute;
+        top: 270px;
+        flex-direction: row;
+        background-color: #24414a;
+    }
+    .RH-dark-div3{
+        width:380px;
+        height: 90px;
+        position: absolute;
+        top: 360px;
+        flex-direction: row;
+    }
+    .RH-dark-div4{
+        width:380px;
+        height: 90px;
+        position: absolute;
+        top: 450px;
+        flex-direction: row;
+        background-color: #24414a;
+    }
+    .RH-dark-div5{
+        width:380px;
+        height: 90px;
+        position: absolute;
+        top: 540px;
+        flex-direction: row;
+    }
+    .RH-image{
+        width: 40px;
+        height: 40px;
+    }
+    .RH-div-image{
+        position: absolute;
+        left: 20px;
+        top: 25px;
+    }
+    .RH-dark-div-text{
+        position: absolute;
+        left: 70px;
+        top: 30px;
+    }
+    .RH-dark-div-value{
+        position: absolute;
+        left: 260px;
+        top: 20px;
+        text-align: right;
+    }
+    .RH-dark-div-text-title{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .RH-dark-div-text-subtitle{
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .RH-dark-div-value-main{
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .RH-dark-div-value-main1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+    
+        letter-spacing: 0.1em;
+    
+        color: #7CA0A9;
+    }
+    .graph-srt-main-text{
+        color: white;
+        letter-spacing: 0.09em;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .graph-srt-text-id{
+        color: white;
+        font-weight: 200;
+        font-size: 10px;
+        position: absolute;
+        letter-spacing: 1px;
+        
+    }
+    .graph-srt-text-id-value{
+        color: white;
+        font-weight: 200;
+        font-size: 10px;
+        position: absolute;
+        left: 120px; 
+        letter-spacing: 1px; 
+    }
+    .graph-srt-main-div{
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 400px){
+    .wallet-main-div{
+        position: absolute;
+        height: 896px ;
+        display: flex;
+    }
+    .wallet-text{
+        display: none;
+    }
+    .TB-div{
+        width: 340px;
+        height: 130px;
+        border-radius: 16px;
+        left: 20px;
+        top: 80px;
+    }
+    .ERs-div{
+        height: 130px;
+        width: 340px;
+        border-radius: 16px;
+        left: 20px;
+        top: 230px;
+    }
+    .ERt-div{
+        height: 130px;
+        width: 165px;
+        border-radius: 16px;
+        left: 195px;
+        top: 230px;
+    }
+    .graph-srt-div{
+        width: 340px;
+        height: 230px;
+        border-radius: 16px;
+        left: 20px;
+        top: 380px;
+    }
+    .RH-div{
+        width: 340px;
+        height: 640px;
+        left: 20px;
+        top: 600px;
+    }
+    .W-text{
+        font-size: 12px;
+        padding-left: 30px;
+    }
+    .W-value-text{
+        font-size: 48px;
+        padding-top: 24px;
+        padding-left: 30px;
+        font-weight: 400;
+        line-height: 51px;
+    }
+    .ERs-text{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        left: 15px;
+        top: 10px;
+    }
+    .refresh-last-div{
+        display: none;
+    }
+    .refresh-last-div-status{
+        font-weight: 100;
+        font-size: 10px;
+        line-height: 12px;
+        top: 50px;
+        left: 15px;
+    }
+    .ERs-subtitle{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        top: 45px;
+        left: 15px;
+    }
+    .ERs-value-div{
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 24px;
+    top: 75px;
+    left: 20px;
+    
+    }
+    .graph-image{
+        width: 211px;
+        height: 111px;
+    }
+    .graph-srt-div-image{
+        position: absolute;
+        left: 20px;
+        top: 40px;
+    }
+    .TFT-value-div{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.1em;
+        left: 240px;
+        top: 20px;
+    }
+    .TFT-value-div1{
+        font-size: 10px;
+        line-height: 12px;
+        left: 270px;
+        top: 20px;
+    }
+    .TFT-value{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32px;
+        left: 260px;
+        top: 50px;
+    }
+    .SRT-value-div{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        left: 240px;
+        top: 100px;
+    }
+    .SRT-value-div1{
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 12px;
+        left: 270px;
+        top: 100px;
+    }
+    .SRT-value{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32px;
+        left: 260px;
+        top: 130px;
+    }
+    .RH-text{
+        font-size: 14px;
+        line-height: 17px;
+        left: 20px;
+        top: 20px;
+    }
+    .RH-dark-div{
+        width:340px;
+        height: 90px;
+        background-color: #24414a;
+        position: absolute;
+        top: 90px;
+        flex-direction: row;
+    }
+    .RH-dark-div1{
+        width:340px;
+        height: 90px;
+        position: absolute;
+        top: 180px;
+        flex-direction: row;
+    }
+    .RH-dark-div2{
+        width:340px;
+        height: 90px;
+        position: absolute;
+        top: 270px;
+        flex-direction: row;
+        background-color: #24414a;
+    }
+    .RH-dark-div3{
+        width:340px;
+        height: 90px;
+        position: absolute;
+        top: 360px;
+        flex-direction: row;
+    }
+    .RH-dark-div4{
+        width:340px;
+        height: 90px;
+        position: absolute;
+        top: 450px;
+        flex-direction: row;
+        background-color: #24414a;
+    }
+    .RH-dark-div5{
+        width:340px;
+        height: 90px;
+        position: absolute;
+        top: 540px;
+        flex-direction: row;
+    }
+    .RH-image{
+        width: 40px;
+        height: 40px;
+    }
+    .RH-div-image{
+        position: absolute;
+        left: 20px;
+        top: 25px;
+    }
+    .RH-dark-div-text{
+        position: absolute;
+        left: 70px;
+        top: 30px;
+    }
+    .RH-dark-div-value{
+        position: absolute;
+        left: 220px;
+        top: 20px;
+        text-align: right;
+    }
+    .RH-dark-div-text-title{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .RH-dark-div-text-subtitle{
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .RH-dark-div-value-main{
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .RH-dark-div-value-main1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+    
+        letter-spacing: 0.1em;
+    
+        color: #7CA0A9;
+    }
+    .graph-srt-main-text{
+        color: white;
+        letter-spacing: 0.09em;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .graph-srt-text-id{
+        color: white;
+        font-weight: 200;
+        font-size: 10px;
+        position: absolute;
+        letter-spacing: 1px;
+        
+    }
+    .graph-srt-text-id-value{
+        color: white;
+        font-weight: 200;
+        font-size: 10px;
+        position: absolute;
+        left: 120px; 
+        letter-spacing: 1px; 
+    }
+    .graph-srt-main-div{
+        gap: 20px;
+    }
+    .TB-div-button1-div{
+        display: none;
+    }
+    .TB-div-button2-div{
+        display: none;
+    }
+    .TB-div-button3-div{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1650px){
+    .wallet-main-div{
+        width: 100%;
+        position: relative;
+        background-color: #000;
+        display: flex;
+        height: 1120px;
+        background-image: url(../assets/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        flex-direction: row;
+        gap: 70px;
+        overflow: hidden;
+    }
+    .wallet-text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 27px;
+        /* identical to box height */
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+        position: absolute;
+        left: 240px;
+        top: 130px;
+    }
+    .TB-div{
+        width: 650px;
+        height: 150px;
+        background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        left: 240px;
+        top: 180px;
+    }
+    .ERs-div{
+        height: 150px;
+        width: 320px;
+        background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        left: 240px;
+        top: 350px;
+    }
+    .ERt-div{
+        height: 150px;
+        width: 320px;
+        background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        left: 570px;
+        top: 350px;
+    }
+    .graph-srt-div{
+        width: 650px;
+        height: 300px;
+        background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        left: 240px;
+        top: 520px;
+    }
+    .RH-div{
+        /* background: radial-gradient(
+          50% 50%at 50% 50%,
+          rgba(255, 255, 255, 0.4),
+          rgba(165, 165, 165, 0.3)
+        );
+        backdrop-filter: blur(20px);
+        border-radius: 20px; */
+        position: absolute;
+        width: 600px;
+        height: 640px;
+        left: 970px;
+        top: 180px;
+    }
+}

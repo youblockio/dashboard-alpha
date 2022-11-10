@@ -1,0 +1,251 @@
+
+  .login-div,
+  .please-enter-your-login-detail {
+    position: relative;
+    letter-spacing: 0.3em;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .please-enter-your-login-detail {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+  }
+  .please-enter-a-valid-miner-id {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    color: #ff5252;
+    text-align: right;
+    display: none;
+  }
+  .frame-input108 {
+    border: 1px solid #0f4658;
+    background-color: transparent;
+    border-radius: 30px;
+    width: 444px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .image-53-icon,
+  .line-div {
+    position: relative;
+    flex-shrink: 0;
+  }
+  .line-div {
+    border-top: 1px solid #6f9da8;
+    box-sizing: border-box;
+    width: 500.05px;
+    height: 1px;
+  }
+  .image-53-icon {
+    width: 338px;
+    height: 44px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .frame-div608 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 45px;
+  }
+  .next-div108 {
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    font-family: Inter;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+  }
+  .frame-button108 {
+    cursor: pointer;
+    border: 0;
+    padding: 30px 80px;
+    background-color: #17a40b;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .create-an-account {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 0.3em;
+    font-weight: 500;
+    font-family: Inter;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+  }
+  .frame-div508 {
+    position: absolute;
+    top: 40px;
+    left: 450px;
+    width: 585px;
+    border-radius: 20px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .login1-div {
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 830px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    font-family: Inter;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  @media screen and (max-width: 420px){
+    .login1-div{
+      height: 896px;
+      font-size: 28px; 
+  }
+  .frame-div508{
+      gap: 20px;
+      position: relative;
+      top: 100px;
+      left: 40px;
+      border-radius: 14px;
+      padding: 20px 30px;
+      width: 330px; 
+  }
+  .please-enter-your-login-detail {
+      font-size: 14px;
+      font-weight: 200;
+      padding-bottom: 20px;
+    }
+    .frame-button108 {
+      padding: 15px 40px;
+      border-radius: 16px;
+    }
+    .next-div108 {
+      font-size: 18px;
+      letter-spacing: 0.1em;
+      font-weight: 300;
+    }
+    .create-an-account {
+      font-size: 18px;
+      letter-spacing: 0.3em;
+      font-weight: 300;
+    }
+    .frame-input108 {
+      border-radius: 20px;
+      width: 300px;
+      padding: 10px 30px;
+    }
+    .line-div {
+      width: 300.05px;
+    }
+    .image-53-icon {
+      width: 238px;
+      height: 34px;
+      object-fit: cover;
+    }
+  }
+  @media screen and (max-width: 400px){
+    .login1-div{
+        height: 844px;
+        font-size: 28px; 
+    }
+    .frame-div508{
+        gap: 20px;
+        position: relative;
+        top: 100px;
+        left: 30px;
+        border-radius: 14px;
+        padding: 20px 30px;
+        width: 330px; 
+    }
+    .please-enter-your-login-detail {
+        font-size: 14px;
+        font-weight: 200;
+        padding-bottom: 20px;
+      }
+      .frame-button108 {
+        padding: 15px 40px;
+        border-radius: 16px;
+      }
+      .next-div108 {
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+      }
+      .create-an-account {
+        font-size: 18px;
+        letter-spacing: 0.3em;
+        font-weight: 300;
+      }
+      .frame-input108 {
+        border-radius: 20px;
+        width: 300px;
+        padding: 10px 30px;
+      }
+      .line-div {
+        width: 300.05px;
+      }
+      .image-53-icon {
+        width: 238px;
+        height: 34px;
+        object-fit: cover;
+      }
+  }
+
+  @media screen and (min-width: 1650px){
+    .login1-div{
+      height: 1120px;
+      font-size: 42px; 
+  }
+  .frame-div508 {
+    position: absolute;
+    top: 130px;
+    left: 550px;
+    width: 585px;
+    border-radius: 20px;
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  }
+  

@@ -1,0 +1,172 @@
+.SetwalletAddress4-div{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 750px;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden;
+}
+.SetWalletAddress4-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    position: absolute;
+    left: 190px;
+    top: 30px;
+}
+.SetWalletAddress4-container{
+    background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 165, 165, 0.3)
+    );
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: absolute;
+    left: 190px;
+    top: 120px;
+    width: 1100px;
+    height: 500px;
+}
+.SetWalletAddress4-container-back-div-text{
+    position: absolute;
+    left: 80px;
+    top: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+}
+.SetWalletAddress4-container-back-div-text-main{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.2em;
+    position: absolute;
+    left: 80px;
+    top: 240px;
+    color: #FFFFFF;
+}
+@media screen and (max-width: 420px){
+    .SetwalletAddress4-div{
+        height: 896px;
+    }
+    .SetWalletAddress4-text{
+        display: none;
+        width: 100%;
+    }
+    .SetWalletAddress4-container{
+        left: 35px;
+        top: 120px;
+        width: 340px;
+        height: 500px;
+    }
+    .SetWalletAddress4-container-back-div-text{
+        left: 30px;
+        top: 60px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .SetWalletAddress4-container-back-div-text-main{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        left: 0px;
+        top: 200px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px){
+    .SetwalletAddress4-div{
+        height: 844px;
+    }
+    .SetWalletAddress4-text{
+        display: none;
+        width: 100%;
+    }
+    .SetWalletAddress4-container{
+        left: 20px;
+        top: 120px;
+        width: 340px;
+        height: 500px;
+    }
+    .SetWalletAddress4-container-back-div-text{
+        left: 30px;
+        top: 60px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .SetWalletAddress4-container-back-div-text-main{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        left: 0px;
+        top: 200px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1650px){
+    .SetwalletAddress4-div{
+        width: 100%;
+        position: relative;
+        background-color: #000;
+        display: flex;
+        height: 1120px;
+        background-image: url(../assets/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        flex-direction: row;
+        gap: 70px;
+        overflow: hidden;
+    }
+    .SetWalletAddress4-text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 27px;
+        /* identical to box height */
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+        position: absolute;
+        left: 230px;
+        top: 130px;
+    }
+    .SetWalletAddress4-container{
+        background: radial-gradient(
+          50% 50%at 50% 50%,
+          rgba(255, 255, 255, 0.4),
+          rgba(165, 165, 165, 0.3)
+        );
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        position: absolute;
+        left: 230px;
+        top: 230px;
+        width: 1100px;
+        height: 500px;
+    } 
+}

@@ -79,113 +79,113 @@ function App() {
           <Route
             path='/'
             element={
-              <ProtectedRoutes>
+             
                 <DashboardScreen />
-              </ProtectedRoutes>
+             
             }
           /> 
            <Route
             path='/wallet'
             element={
-              <ProtectedRoutes>
+              
                 <WalletScreen />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/settings'
             element={
-              <ProtectedRoutes>
+              
                 <SettingScreen />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/support'
             element={
-              <ProtectedRoutes>
+              
                 <SupportScreen />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/setwallet'
             element={
-              <ProtectedRoutes>
+              
                 <SetWalletAddressScreen />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/managedevice'
             element={
-              <ProtectedRoutes>
+              
                 <ManageDeviceScreen />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/choosewallet'
             element={
-              <ProtectedRoutes>
+              
                 <SetWalletAddress2 />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/enterWalletAddress'
             element={
-              <ProtectedRoutes>
+              
                 <SetWalletAddress3 />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/confirmWallet'
             element={
-              <ProtectedRoutes>
+              
                 <SetWalletAddress4 />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/addDevice'
             element={
-              <ProtectedRoutes>
+              
                 <AddDevice />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/addDeviceSolar'
             element={
-              <ProtectedRoutes>
+              
                 <AddDeviceSolar />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/enterId'
             element={
-              <ProtectedRoutes>
+              
                 <DeviceIdScreen />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/enterIdSolar'
             element={
-              <ProtectedRoutes>
+              
                 <DeviceIdSolar />
-              </ProtectedRoutes>
+              
             }
           />
           <Route
             path='/confirmDevice'
             element={
-              <ProtectedRoutes>
+              
                 <DeviceConfirmationScreen />
-              </ProtectedRoutes>
+              
             }
           />
         

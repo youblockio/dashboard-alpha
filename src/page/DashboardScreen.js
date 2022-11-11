@@ -223,7 +223,7 @@ const DashboardScreen = () => {
           className="home-logo-div"
           onClick={(e) => {
             e.preventDefault();
-            navigate("/dashboard");
+            navigate("/");
           }}
         >
           <img src={home} alt="home" className="home" />
@@ -349,7 +349,7 @@ const DashboardScreen = () => {
             className="home-logo-div1"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/dashboard");
+              navigate("/");
             }}
           >
             <img src={home} alt="home" className="home1" />
@@ -440,7 +440,7 @@ const DashboardScreen = () => {
             </div>
             <div className="daylight-div">
               <div className="daylight-div-title">
-                Total Daylight Hours : {Data && (Data[0].data.currWea.sunset.substring(0, 2) - Data[0].data.currWea.sunrise.substring(0, 2))} Hours
+                Total Daylight Hours : {Data && (parseInt(Data[0].data.currWea.sunset) - parseInt(Data[0].data.currWea.sunrise))} Hours
               </div>
             </div>
             {/* <div className="efficiency-div">

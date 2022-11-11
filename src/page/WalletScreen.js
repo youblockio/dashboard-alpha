@@ -48,7 +48,7 @@ const WalletScreen = () => {
                     <img src={greenLogo} alt='home' className="greenLogo" />
                 </div>
                 <div className="home-logo-div">
-                    <img src={home} alt='home' className="home" onClick={(e) => { e.preventDefault(); navigate("/dashboard"); }} />
+                    <img src={home} alt='home' className="home" onClick={(e) => { e.preventDefault(); navigate("/"); }} />
                 </div>
                 <div className="wallet-logo-div" onClick={(e) => { e.preventDefault(); navigate("/wallet"); }}>
                     <img src={walletlogo} alt='home' className="home" />

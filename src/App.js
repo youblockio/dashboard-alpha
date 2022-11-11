@@ -66,10 +66,10 @@ function App() {
       <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
         <Routes>
-          <Route path="/" element={<OnboardingScreen />}></Route>
+          {/* <Route path="/" element={<OnboardingScreen />}></Route>
           <Route path="/onboarding" element={<OnboardingScreen2 />}></Route>
           <Route path="/onboarding2" element={<OnboardingScreen3 />}></Route>
-          <Route path="/register" element={<RegisterScreen />}></Route>
+          <Route path="/register" element={<RegisterScreen />}></Route> */}
           {/* <Route path="/verify" element={<VerifyScreen />}></Route>
           <Route path="/success" element={<SuccessScreen />}></Route> */}
           <Route path="/login" element={<LoginScreen />}></Route>
@@ -77,7 +77,7 @@ function App() {
           <Route path="/setup2" element={<Setup2Screen />}></Route>
           <Route path="/dashboard" element={<HomeScreen />}></Route> */}
           <Route
-            path='/dashboard'
+            path='/'
             element={
               <ProtectedRoutes>
                 <DashboardScreen />

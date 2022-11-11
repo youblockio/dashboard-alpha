@@ -15,7 +15,7 @@ const Setup2Screen = () => {
               <p className="welcome-to-the">Welcome to the Youblock Family</p>
             </div>
           </div>
-          <button className="frame-button106" onClick={(e) => {e.preventDefault(); navigate("/dashboard");}}>
+          <button className="frame-button106" onClick={(e) => {e.preventDefault(); navigate("/");}}>
             <div className="begin-journey-div">Begin Journey</div>
           </button>
         </div>

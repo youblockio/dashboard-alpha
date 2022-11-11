@@ -21,7 +21,7 @@ const LoginScreen = () => {
     setError('')
     try {
       await signIn(email, password)
-      navigate('/dashboard')
+      navigate('/')
     } catch (e) {
       setError(e.message)
       console.log(e.message)

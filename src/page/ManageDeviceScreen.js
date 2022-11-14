@@ -34,12 +34,12 @@ const ManageDeviceScreen = () => {
               <img src={backButton} alt='backbutton' />
             </div>
             <div className="ManageDevice-container-back-div-text">MANAGE DEVICES ON YOUR ACCOUNT</div>
-            <div className="ManageDevice-div-main-container-TFT" onClick={(e) => {e.preventDefault(); navigate("/addDevice");}}>
+            {/* <div className="ManageDevice-div-main-container-TFT" onClick={(e) => {e.preventDefault(); navigate("/addDevice");}}>
               <div className="ManageDevice-div-main-container-TFT-text">TFT Miner</div>
               <div className="ManageDevice-div-main-container-TFT-image-div">
                 <img src={TFTlogo} alt='' className="ManageDevice-div-main-container-TFT-image" />
               </div>
-            </div>
+            </div> */}
             <div className="ManageDevice-div-main-container-Solar" onClick={(e) => {e.preventDefault(); navigate("/addDeviceSolar");}}>
               <div className="ManageDevice-div-main-container-TFT-text">Solar Panel</div>
               <div className="ManageDevice-div-main-container-TFT-image-div">

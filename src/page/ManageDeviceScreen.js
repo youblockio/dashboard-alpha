@@ -17,7 +17,7 @@ const ManageDeviceScreen = () => {
            <div className="green-logo-div">
             <img src={greenLogo} alt='home' className="greenLogo" />
            </div> 
-           <div className="home-logo-div" onClick={(e) => {e.preventDefault(); navigate("/dashboard");}}>
+           <div className="home-logo-div" onClick={(e) => {e.preventDefault(); navigate("/");}}>
             <img src={home} alt='home' className="home" />
            </div>
            <div className="wallet-logo-div" onClick={(e) => {e.preventDefault(); navigate("/wallet");}}>

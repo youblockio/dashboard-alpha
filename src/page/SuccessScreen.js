@@ -14,7 +14,7 @@ const SuccessScreen = () => {
           <p className="please-click-next">Please click Next</p>
           <p className="to-set-up">to set up the system</p>
         </div>
-        <button className="frame-button103" onClick={(e) => {e.preventDefault(); navigate("/dashboard");}}>
+        <button className="frame-button103" onClick={(e) => {e.preventDefault(); navigate("/");}}>
           <div className="next-div103">Next</div>
         </button>
       </div>

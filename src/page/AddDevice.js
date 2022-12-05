@@ -43,7 +43,7 @@ const AddDevice = () => {
             </div>
             <div className="ManageDevice-container-back-div-text">MINERS / SOLAR PANELS</div>
             <div className="AddDevice-div-main-container-button-div">
-              <button className="AddDevice-div-main-container-button" onClick={(e) => {e.preventDefault(); navigate("/enterId");}}>
+              <button className="AddDevice-div-main-container-button" onClick={(e) => {e.preventDefault(); navigate("/enterIdSolar");}}>
                 <div className="AddDevice-div-main-container-button-image-div">
                   <img src={smallAddButton} alt='' className="AddDevice-div-main-container-button-image" />
                 </div>

@@ -153,16 +153,16 @@ const DashboardScreen = () => {
     <p>Data is Loading....</p>
   );
 
-  const notify = () =>
-    toast.success("Logged in Successfully.", {
-      position: toast.POSITION.TOP_CENTER,
-      autoClose: 3000,
-    });
+  // const notify = () =>
+  //   toast.success("Logged in Successfully.", {
+  //     position: toast.POSITION.TOP_CENTER,
+  //     autoClose: 3000,
+  //   });
 
   useEffect(() => {
     getLocation();
     apiData();
-    notify();
+    // notify();
   },[]);
 
 
@@ -214,7 +214,7 @@ const DashboardScreen = () => {
 
   return (
     <div className="main">
-    <ToastContainer />
+    {/* <ToastContainer /> */}
       <div className="menu-div">
         <div className="green-logo-div">
           <img src={greenLogo} alt="home" className="greenLogo" />
@@ -440,7 +440,7 @@ const DashboardScreen = () => {
             </div>
             <div className="daylight-div">
               <div className="daylight-div-title">
-                Total Daylight Hours : {Data && (Data[0].data.currWea.sunset.substring(0, 2) - Data[0].data.currWea.sunrise.substring(0, 2))} Hours
+                Total Daylight Hours : {Data && (parseInt(Data[0].data.currWea.sunset) - parseInt(Data[0].data.currWea.sunrise))} Hours
               </div>
             </div>
             {/* <div className="efficiency-div">

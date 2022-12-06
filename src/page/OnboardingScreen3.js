@@ -12,7 +12,7 @@ const OnboardingScreen3 = () => {
         </div>
         <div className="frame-div7">
           <div className="lorem-ipsum-dolor-sit-amet-co1">
-            <p className="lorem-ipsum-dolor1">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et morbi id tortor sit. Pharetra posuere euismod cras egestas suscipit leo. `}</p>
+            <p className="lorem-ipsum-dolor1">{`We are an energy ecosystem based on Decentralised, Inter Connected, And Green energy powered systems. `}</p>
             <p className="blank-line-p2">&nbsp;</p>
           </div>
           <div className="frame-div99">

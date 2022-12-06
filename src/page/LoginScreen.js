@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import {toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "../style/LoginScreen.css"
-import googleButton from "../assets/GButton.png"
+import googleButton from "../assets/google-logo-4.png"
 import { useNavigate } from "react-router-dom";
 import { UserAuth } from '../context/AuthContext';
 

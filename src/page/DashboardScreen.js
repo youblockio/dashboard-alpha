@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style/DashboardScreen.css";
+import "../style/loader.css";
 import {toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ConnectButton } from "@rainbow-me/rainbowkit";
@@ -49,6 +50,7 @@ const DashboardScreen = () => {
   const [Data, setData] = useState();
   const [currentCity, setCurrentCity] = useState("");
   const [weather, setWeather] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   let nodeId = "0002608353-000001-1c7b3";
 
   const getLocation = () => {
@@ -96,6 +98,7 @@ const DashboardScreen = () => {
       ).then((resp) => resp.json()),
     ]).then((res) => setData((prevState) => (prevState = res)));
     // console.log("print");
+    setIsLoading(false);
   };
 
   console.log(Data);
@@ -209,6 +212,14 @@ const DashboardScreen = () => {
         </div>
       )
     }
+  }
+
+  if(isLoading){
+    return(
+      <div className="loader-body">
+        <span className="loader">Load&nbsp;ng</span>
+      </div>
+    )
   }
 
 

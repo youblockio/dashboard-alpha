@@ -101,7 +101,7 @@
     position: relative;
     background-color: #000;
     width: 100%;
-    height: 745px;
+    height: 100vh;
     overflow: hidden;
     text-align: left;
     font-size: 42px;
@@ -258,8 +258,8 @@
 
   @media screen and (min-width: 1650px){
     .onboarding1-div{
-      height: 1120px;
-      font-size: 28px; 
+      height: 100vh;
+      font-size: 3rem; 
   }
   .frame-div{
     position: relative;

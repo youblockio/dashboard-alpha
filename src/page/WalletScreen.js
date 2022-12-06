@@ -19,6 +19,7 @@ const WalletScreen = () => {
     const [year, setYear] = useState();
     const [totalEarning, setTotalEarning] = useState(true);
     const [text, setText] = useState(" Total");
+    const [isLoading, setIsLoading] = useState(true);
 
 
 
@@ -29,6 +30,7 @@ const WalletScreen = () => {
                 "https://us-central1-dashboard-alpha.cloudfunctions.net/YoublockSolarpannel/station/17246/realtime"
             ).then((resp) => resp.json()),
         ]).then((res) => setData((prevState) => (prevState = res)));
+        setIsLoading(false);
     };
 
     console.log(Data);
@@ -40,6 +42,14 @@ const WalletScreen = () => {
     // const handleClick = (event) => {
     //    console.log(event.target.getAttribute("value"))
     // }
+
+    if(isLoading){
+        return(
+          <div className="loader-body">
+            <span className="loader">Load&nbsp;ng</span>
+          </div>
+        )
+      }
 
     return (
         <div className="wallet-main-div">

@@ -38,7 +38,7 @@ const SetWalletAddressScreen = () => {
                 <img src={largeWalletIcon} alt='walletIcon' className="walletAddress-icon-div-image" />
               </div>
             </div>
-            <div className="walletAddress-container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia bibendum leo amet aliquet ultrices phasellus lacus. Nec lectus nisl, dictum risus ut amet. Diam tristique sed gravida eu, nisi, sagittis, semper mattis. Tellus cras est volutpat cras.</div>
+            {/* <div className="walletAddress-container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia bibendum leo amet aliquet ultrices phasellus lacus. Nec lectus nisl, dictum risus ut amet. Diam tristique sed gravida eu, nisi, sagittis, semper mattis. Tellus cras est volutpat cras.</div> */}
             <div className="walletAddress-container-text-title">Please Click on the Icon to Connect Wallet.</div>
           </div>
         </div>

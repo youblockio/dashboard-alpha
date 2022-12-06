@@ -19,21 +19,21 @@ const OnboardingScreen = () => {
         </div>
         <div className="frame-div2">
           <div className="lorem-ipsum-dolor-sit-amet-co">
-            <p className="lorem-ipsum-dolor">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et morbi id tortor sit. Pharetra posuere euismod cras egestas suscipit leo. `}</p>
+            <p className="lorem-ipsum-dolor">{`Go Green and Mine for Future `}</p>
             <p className="lorem-ipsum-dolor">&nbsp;</p>
             <p className="lorem-ipsum-dolor">
-              Dolor nibh a, congue turpis. Eget congue fusce sagittis tellus.
-              Sit vitae ornare vulputate eu sed diam fermentum felis, tincidunt.
+            We offer a unique hybrid mining solution, allowing users to 
+            generate passive income every month in the simplest possible way.
             </p>
             <p className="lorem-ipsum-dolor">&nbsp;</p>
             <p className="lorem-ipsum-dolor">
-              In enim, massa commodo aliquam aliquet. In ac, nisi eu nulla
-              commodo amet, habitant. Pharetra, sed ut diam fermentum ultricies
-              tempor nec platea vitae.
+            Our plug and mine Hybrid Service provides 
+            you with cryptocurrency rewards—and 
+            is powered by solar energy.
             </p>
           </div>
           <div className="frame-div3">
-            <button className="frame-button" onClick={(e) => {e.preventDefault(); navigate("/onboarding");}} >
+            <button className="frame-button" onClick={(e) => {e.preventDefault(); navigate("/onboarding2");}} >
               <div className="next-div">Next</div>
             </button>
             <div className="frame-div4">

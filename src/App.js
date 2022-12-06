@@ -67,7 +67,7 @@ function App() {
       <RainbowKitProvider chains={chains}>
         <Routes>
           <Route path="/" element={<OnboardingScreen />}></Route>
-          <Route path="/onboarding" element={<OnboardingScreen2 />}></Route>
+          {/* <Route path="/onboarding" element={<OnboardingScreen2 />}></Route> */}
           <Route path="/onboarding2" element={<OnboardingScreen3 />}></Route>
           <Route path="/register" element={<RegisterScreen />}></Route>
           {/* <Route path="/verify" element={<VerifyScreen />}></Route>

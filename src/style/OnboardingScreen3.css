@@ -270,13 +270,13 @@
 
 @media screen and (min-width: 1650px){
   .onboarding3-div {
-    height: 1120px;
+    height: 100vh;
     font-size: 42px;
   }
   .frame-div100 {
     position: absolute;
     top: 260px;
-    left: 650px;
+    left: 37%;
     border-radius: 20px;
     background: radial-gradient(50% 50%at 50% 50%,
         rgba(255, 255, 255, 0.4),

@@ -45,8 +45,8 @@
     height: 1px;
   }
   .image-53-icon {
-    width: 338px;
-    height: 44px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     cursor: pointer;
   }
@@ -224,13 +224,13 @@
 
   @media screen and (min-width: 1650px){
     .login1-div{
-      height: 1120px;
+      height: 100vh;
       font-size: 42px; 
   }
   .frame-div508 {
     position: absolute;
     top: 130px;
-    left: 550px;
+    left: 36%;
     width: 585px;
     border-radius: 20px;
     background: radial-gradient(

@@ -8,7 +8,7 @@
   }
   .masternatureblue-globe-icon {
     position: relative;
-    width: 61.48px;
+    width: 30%;
     height: 51px;
     flex-shrink: 0;
     padding-right: 3vw;
@@ -55,12 +55,7 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .ellipse-icon1 {
-    position: relative;
-    width: 60%;
-    height: 60%;
-    flex-shrink: 0;
-  }
+  
   .frame-div4 {
     flex-direction: row;
     align-items: flex-start;

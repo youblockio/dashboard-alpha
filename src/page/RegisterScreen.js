@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import "../style/RegisterScreen.css"
-import googleButton from "../assets/GButton.png"
+import googleButton from "../assets/google-logo-4.png"
 import { useNavigate } from "react-router-dom";
 import { UserAuth } from '../context/AuthContext';
 
@@ -100,7 +100,7 @@ const RegisterScreen = () => {
             </div>
             <input
               className="frame-input"
-              type="text"
+              type="password"
               placeholder="Enter Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -108,7 +108,7 @@ const RegisterScreen = () => {
             />
             <input
               className="frame-input"
-              type="text"
+              type="password"
               placeholder="Re-Enter Password"
               value={rePassword}
               onChange={(e) => setRePassword(e.target.value)}

@@ -4,23 +4,27 @@
     letter-spacing: 0.3em;
     font-weight: 500;
     display: inline-block;
+    font-size: 2rem;
   }
   .masternatureblue-globe-icon {
     position: relative;
     width: 61.48px;
     height: 51px;
     flex-shrink: 0;
+    padding-right: 3vw;
   }
   .frame-div1 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 70px;
+    gap: 2vw;
   }
   .lorem-ipsum-dolor {
     margin-block-start: 0;
     margin-block-end: 0;
+    font-size: 1rem;
+    padding-right: 3rem;
   }
   .lorem-ipsum-dolor-sit-amet-co,
   .next-div {
@@ -30,10 +34,10 @@
   }
   .lorem-ipsum-dolor-sit-amet-co {
     font-weight: 300;
-    width: 441px;
+    width: 30vw;
   }
   .next-div {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 500;
     font-family: Inter;
     color: #fff;
@@ -42,7 +46,7 @@
   .frame-button {
     cursor: pointer;
     border: 0;
-    padding: 20px 60px;
+    padding: 1rem 2rem;
     background-color: #17a40b;
     border-radius: 20px;
     display: flex;
@@ -53,14 +57,14 @@
   }
   .ellipse-icon1 {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 60%;
+    height: 60%;
     flex-shrink: 0;
   }
   .frame-div4 {
     flex-direction: row;
     align-items: flex-start;
-    gap: 30px;
+    gap: 4rem;
   }
   .frame-div,
   .frame-div2,
@@ -72,7 +76,7 @@
   .frame-div3 {
     flex-direction: row;
     align-items: center;
-    gap: 107px;
+    gap: 6rem;
   }
   .frame-div,
   .frame-div2 {
@@ -80,31 +84,33 @@
     align-items: flex-start;
   }
   .frame-div2 {
-    gap: 40px;
-    font-size: 20px;
+    gap: 3rem;
+    
   }
   .frame-div {
     position: absolute;
-    top: 60px;
-    left: 70px;
+    top: 6rem;
+    left: 4rem;
     border-radius: 17px;
     background: radial-gradient(
       50% 50%at 50% 50%,
       rgba(255, 255, 255, 0.4),
       rgba(165, 165, 165, 0.3)
     );
-    padding: 50px 60px;
+    padding: 4rem 3rem;
     box-sizing: border-box;
-    gap: 32px;
+    gap: 3rem;
+    width: 32vw;
+    height: 70vh;
   }
   .onboarding1-div {
     position: relative;
     background-color: #000;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
     text-align: left;
-    font-size: 42px;
+    
     color: #fff;
     font-family: Inter;
     background-image: url(../assets/Onboarding.png);
@@ -263,12 +269,13 @@
   }
   .frame-div{
     position: relative;
-    top: 175px;
-    left: 100px;
+    top: 6rem;
+    left: 4rem;
     border-radius: 17px;
-    padding: 50px 60px;
-    gap: 32px;
-    width: 560px; 
+    padding: 4rem 3rem;
+    gap: 4rem;
+    width: 32vw;
+    height: 70vh; 
   }
   
   }

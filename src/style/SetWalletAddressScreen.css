@@ -1,29 +1,29 @@
 .SetWalletAddressScreen-div{
-    width: 100%;
+    width: 100vw;
     position: relative;
     background-color: #000;
     display: flex;
-    height: 750px;
+    height: 100vh;
     background-image: url(../assets/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     flex-direction: row;
-    gap: 70px;
+    
     overflow: hidden;
 }
 .walletAddress-text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 200;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 1.5em;
+    
     /* identical to box height */
     letter-spacing: 0.2em;
     color: #FFFFFF;
     position: absolute;
-    left: 190px;
-    top: 30px;
+    left: 12.5vw;
+    top: 3vh;
 }
 .walletAddress-container{
     background: radial-gradient(
@@ -34,26 +34,26 @@
     backdrop-filter: blur(20px);
     border-radius: 20px;
     position: absolute;
-    left: 190px;
-    top: 120px;
-    width: 1100px;
-    height: 500px;
+    left: 12.5vw;
+    top: 16vh;
+    width: 60vw;
+    height: 65vh;
 }
 .walletAddress-container-back-div{
     position: absolute;
-    left: 30px;
-    top: 60px;
+    left: 2vw;
+    top: 8vh;
     cursor: pointer;
 }
 .walletAddress-container-back-div-text{
     position: absolute;
-    left: 80px;
-    top: 60px;
+    left: 5vw;
+    top: 8vh;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 1.5em;
+    
     /* identical to box height */
 
     letter-spacing: 0.2em;
@@ -62,13 +62,13 @@
 }
 .walletAddress-main-icon-div{
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 35%;
+    height: 60%;
     background: linear-gradient(180deg, rgba(0,0,0,0.32), rgba(0,0,0,0.24));
     backdrop-filter: blur(20px);
     border-radius: 20px;
-    top: 130px;
-    left: 80px;
+    top: 16vh;
+    left: 5vw;
 }
 .walletAddress-icon-div{
     position: absolute;
@@ -77,8 +77,8 @@
     cursor: pointer;
 }
 .walletAddress-icon-div-image{
-    width: 200px;
-    height: 200px;
+    width: 160%;
+    height: 160%;
 }
 .walletAddress-container-text{
     width: 500px;
@@ -97,18 +97,19 @@
     color: #FFFFFF;
 }
 .walletAddress-container-text-title{
-    width: 500px;
+    width: 30vw;
     position: absolute;
-    left: 440px;
-    top:130px;
+    left: 25vw;
+    top:17vh;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 1em;
+    
     /* or 222% */
 
     letter-spacing: 0.2em;
+    padding-left: 5vw;
 
     color: #FFFFFF;
     cursor: pointer;
@@ -222,35 +223,3 @@
     }
 }
 
-@media screen and (min-width: 1650px){
-    .SetWalletAddressScreen-div{
-        height: 1120px;
-    }
-    .walletAddress-container{
-        background: radial-gradient(
-          50% 50%at 50% 50%,
-          rgba(255, 255, 255, 0.4),
-          rgba(165, 165, 165, 0.3)
-        );
-        backdrop-filter: blur(20px);
-        border-radius: 20px;
-        position: absolute;
-        left: 230px;
-        top: 230px;
-        width: 1100px;
-        height: 500px;
-    }
-    .walletAddress-text{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 200;
-        font-size: 22px;
-        line-height: 27px;
-        /* identical to box height */
-        letter-spacing: 0.2em;
-        color: #FFFFFF;
-        position: absolute;
-        left: 230px;
-        top: 130px;
-    }
-}

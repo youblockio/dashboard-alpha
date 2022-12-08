@@ -1,29 +1,29 @@
 .setting-div-main{
-    width: 100%;
+    width: 100vw;
     position: relative;
     background-color: #000;
     display: flex;
-    height: 750px;
+    height: 100vh;
     background-image: url(../assets/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     flex-direction: row;
-    gap: 70px;
+    
     overflow: hidden;
 }
 .setting-text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 200;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 1.5em;
+    
     /* identical to box height */
     letter-spacing: 0.2em;
     color: #FFFFFF;
     position: absolute;
-    left: 190px;
-    top: 30px;
+    left: 12.5vw;
+    top: 3vh;
 }
 .setting-div-button-container{
     background: radial-gradient(
@@ -34,15 +34,15 @@
     backdrop-filter: blur(20px);
     border-radius: 20px;
     position: absolute;
-    left: 190px;
-    top: 120px;
-    width: 1100px;
-    height: 500px;
+    left: 12.5vw;
+    top: 16vh;
+    width: 60vw;
+    height: 65vh;
 }
 .setting-div-button{
     position: absolute;
-    left: 80px;
-    top:70px;
+    left: 5vw;
+    top:7vh;
     
 }
 .setting-div-button-text{
@@ -50,35 +50,35 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.5em;
     line-height: 27px;
     /* identical to box height */
 
     letter-spacing: 0.2em;
 
     color: #FFFFFF;
-    padding: 20px;
+    padding: 1em;
 }
 .setting-div-button-divider{
-    width: 500px;
-    height: 0.8px;
+    width: 40vw;
+    height: 0.1vh;
     background:linear-gradient(#AAAAAA 100%, #4C5F66 0%);
     position: absolute;
-    left: 25px;
+    left: 2vw;
 }
 .setting-div-button-text1{
     cursor: pointer;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 1.5em;
+    
     /* identical to box height */
 
     letter-spacing: 0.2em;
 
     color: #FF6B6B;
-    padding: 20px;
+    padding: 1em;
 }
 @media screen and (max-width: 420px){
     .setting-div-main{
@@ -149,35 +149,3 @@
     }
 }
 
-@media screen and (min-width: 1650px){
-    .setting-div-main{
-        height: 1120px;
-    }
-    .setting-text{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 200;
-        font-size: 22px;
-        line-height: 27px;
-        /* identical to box height */
-        letter-spacing: 0.2em;
-        color: #FFFFFF;
-        position: absolute;
-        left: 230px;
-        top: 130px;
-    }
-    .setting-div-button-container{
-        background: radial-gradient(
-          50% 50%at 50% 50%,
-          rgba(255, 255, 255, 0.4),
-          rgba(165, 165, 165, 0.3)
-        );
-        backdrop-filter: blur(20px);
-        border-radius: 20px;
-        position: absolute;
-        left: 240px;
-        top: 230px;
-        width: 1100px;
-        height: 500px;
-    }
-}

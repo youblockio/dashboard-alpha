@@ -1183,7 +1183,7 @@
     }
 
     .main {
-        height: 740px;
+        height: 100vh;
     }
 
     .home-text {
@@ -1264,7 +1264,7 @@
     }
 
     .main {
-        height: 1125px;
+        height: 100vh;
     }
 
     .home-text {

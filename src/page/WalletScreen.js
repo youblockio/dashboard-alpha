@@ -45,8 +45,13 @@ const WalletScreen = () => {
 
     if(isLoading){
         return(
-          <div className="loader-body">
-            <span className="loader">Load&nbsp;ng</span>
+            <div class="bodycontainer">
+            <div class="bodybox">
+              <div class="loader"><span></span></div>
+              <div class="loader"><span></span></div>
+              <div class="loader"><i></i></div>
+              <div class="loader"><i></i></div>
+            </div>
           </div>
         )
       }

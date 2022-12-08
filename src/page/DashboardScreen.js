@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../style/DashboardScreen.css";
 import "../style/loader.css";
-import {toast, ToastContainer} from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import miner from "../assets/Miner.png";
@@ -166,7 +166,7 @@ const DashboardScreen = () => {
     getLocation();
     apiData();
     // notify();
-  },[]);
+  }, []);
 
 
 
@@ -214,10 +214,15 @@ const DashboardScreen = () => {
     }
   }
 
-  if(isLoading){
-    return(
-      <div className="loader-body">
-        <span className="loader">Load&nbsp;ng</span>
+  if (isLoading) {
+    return (
+      <div class="bodycontainer">
+        <div class="bodybox">
+          <div class="loader"><span></span></div>
+          <div class="loader"><span></span></div>
+          <div class="loader"><i></i></div>
+          <div class="loader"><i></i></div>
+        </div>
       </div>
     )
   }
@@ -225,7 +230,7 @@ const DashboardScreen = () => {
 
   return (
     <div className="main">
-    {/* <ToastContainer /> */}
+      {/* <ToastContainer /> */}
       <div className="menu-div">
         <div className="green-logo-div">
           <img src={greenLogo} alt="home" className="greenLogo" />

@@ -50,7 +50,7 @@ const DashboardScreen = () => {
   const [Data, setData] = useState();
   const [currentCity, setCurrentCity] = useState("");
   const [weather, setWeather] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   let nodeId = "0002608353-000001-1c7b3";
 
   const getLocation = () => {
@@ -274,16 +274,16 @@ const DashboardScreen = () => {
           </div>
           <div className="TE-text">Total Earned</div>
           <div className="TE-value-text">
-            $ {Data && Data[1].data.totalIncome}
+          € {Data && Data[1].data.totalIncome}
           </div>
         </div>
         <div className="EE-div">
           <div className="EE-text">Energy Earning</div>
-          <div className="EE-value-text">$ 7.5</div>
+          <div className="EE-value-text">€ 7.5</div>
         </div>
         <div className="ME-div">
           <div className="EE-text">Mining Earning</div>
-          <div className="EE-value-text">$ 39</div>
+          <div className="EE-value-text">€ 39</div>
         </div>
         <div className="solar-cell-div">
           <div className="refresh-div">

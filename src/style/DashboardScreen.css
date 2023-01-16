@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-position: top;
     flex-direction: row;
-    gap: 70px;
+    
     overflow: hidden;
 }
 
@@ -18,31 +18,31 @@
 }
 
 .menu-div {
-    width: 80px;
-    height: 500px;
+    width: 5.5vw;
+    height: 65vh;
     border-radius: 14px;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
-    top: 120px;
+    top: 17.5vh;
     position: absolute;
-    left: 30px;
+    left: 2vw;
     flex-direction: column;
-    gap: 90px;
+    
 }
 
 .home-text {
     position: absolute;
-    left: 190px;
-    top: 20px;
+    left: 10.5vw;
+    top: 2vh;
 }
 
 .TE-div {
     position: absolute;
-    left: 190px;
-    top: 80px;
-    width: 450px;
-    height: 120px;
+    left: 10.5vw;
+    top: 11vh;
+    width: 30vw;
+    height: 16vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
@@ -51,56 +51,57 @@
 
 .refresh-div {
     position: absolute;
-    width: 160px;
-    height: 20px;
+    width: 11vw;
+    height: 2vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
-    top: 8px;
-    left: 280px;
+    top: 1vh;
+    left: 18vw;
     border-radius: 8px;
+
     
     
     /* display: none; */
 }
 .refresh-div-title{
     position: absolute;
-    left: 10px;
-    top: 5px;
-    font-size: 0.5em;
+    left: 0.5vw;
+    top: 0.2vh;
+    font-size: 0.4em;
     color: white;
 }
 .refresh-image-div{
     position: absolute;
-    left: 140px;
+    left: 9.5vw;
     cursor: pointer;
-    top: -2px;
+    top: -0.5vh
 }
 .refresh-image{
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
 }
 
 .EE-div {
     position: absolute;
-    width: 220px;
-    height: 90px;
+    width: 14vw;
+    height: 10vh;
     border-radius: 14px;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
-    left: 190px;
-    top: 210px;
+    left: 10.5vw;
+    top: 29vh;
     color: white;
 }
 
 .ME-div {
     position: absolute;
-    width: 220px;
-    height: 90px;
-    left: 420px;
+    width: 14vw;
+    height: 10vh;
+    left: 26.5vw;
     border-radius: 14px;
-    top: 210px;
+    top: 29vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
@@ -109,46 +110,46 @@
 
 .solar-cell-div {
     position: absolute;
-    left: 190px;
-    width: 450px;
-    height: 160px;
+    left: 10.5vw;
+    width: 30vw;
+    height: 18vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
     border-radius: 14px;
-    top: 310px;
+    top: 41vh;
 }
 
 .weather-div {
     position: absolute;
-    left: 190px;
-    width: 450px;
-    height: 130px;
+    left: 10.5vw;
+    width: 30vw;
+    height: 14vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
     border-radius: 14px;
-    top: 480px;
+    top: 61vh;
 }
 
 .consumption-div {
     position: absolute;
-    left: 190px;
-    width: 450px;
-    height: 100px;
+    left: 10.5vw;
+    width: 30vw;
+    height: 11vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
     border-radius: 14px;
-    top: 620px;
+    top: 77vh;
 }
 
 .graph-div {
     position: absolute;
-    left: 660px;
-    top: 80px;
-    width: 450px;
-    height: 220px;
+    left: 42vw;
+    top: 11vh;
+    width: 31vw;
+    height: 28vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
@@ -157,8 +158,8 @@
 }
 .graph-denotion-div{
     position: absolute;
-    left: 680px;
-    top: 310px;
+    left: 44vw;
+    top: 41vh;
 }
 .graph-denotion-consumption-div{
    position: absolute;
@@ -244,74 +245,74 @@
 
 .geolocation {
     position: absolute;
-    left: 660px;
-    width: 450px;
-    height: 160px;
+    left: 42vw;
+    width: 31vw;
+    height: 18vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
     border-radius: 14px;
-    top: 340px;
+    top: 44vh;
 }
 
 .block {
     position: absolute;
-    left: 660px;
-    width: 450px;
-    height: 200px;
+    left: 42vw;
+    width: 31vw;
+    height: 24vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
     border-radius: 14px;
-    top: 520px;
+    top: 64vh;
 }
 
 .MS-div {
-    top: 80px;
+    top: 11vh;
     position: absolute;
-    width: 350px;
-    height: 80px;
+    width: 25vw;
+    height: 9vh;
     background-color: #03a400;
     border-radius: 14px;
-    left: 1130px;
+    left: 74vw;
     color: white;
 }
 
 .CS-div {
-    top: 170px;
+    top: 22vh;
     position: absolute;
-    width: 350px;
-    height: 80px;
+    width: 25vw;
+    height: 10vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
     border-radius: 14px;
-    left: 1130px;
+    left: 74vw;
     color: white;
 }
 
 .picture-unit-div {
-    top: 260px;
+    top: 34vh;
     position: absolute;
-    width: 350px;
-    height: 280px;
+    width: 25vw;
+    height: 32vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(167, 167, 167, 0.5),
             rgba(83, 83, 83, 0.4));
     border-radius: 14px;
-    left: 1130px
+    left: 74vw
 }
 
 .emission-div {
     position: absolute;
-    width: 350px;
-    height: 170px;
+    width: 25vw;
+    height: 20vh;
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(0, 217, 100, 0.5),
             rgba(0, 255, 117, 0.4));
     border-radius: 14px;
-    left: 1130px;
-    top: 550px;
+    left: 74vw;
+    top: 68vh;
 }
 
 .refresh-div1 {
@@ -333,8 +334,8 @@
     height: 40px;
 
     position: absolute;
-    left: 1150px;
-    top: 10px;
+    left: 80vw;
+    top: 2vh;
     border-radius: 14px;
     flex-direction: column;
     cursor: pointer;
@@ -342,8 +343,8 @@
 
 .MS-div-image {
     position: absolute;
-    left: 250px;
-    top: 9px;
+    left: 17vw;
+    top: 1vh;
 }
 
 .CS-div-image {
@@ -353,10 +354,10 @@
 }
 
 .MS-div-title {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
-    padding-left: 20px;
-    padding-top: 8px;
+    padding-left: 2vw;
+    padding-top: 1vh;
 }
 
 .CS-div-title {
@@ -367,10 +368,10 @@
 }
 
 .MS-div-value {
-    font-size: 26px;
+    font-size: 1.7em;
     font-weight: 500;
-    padding-left: 20px;
-    padding-top: 3px;
+    padding-left: 2vw;
+    padding-top: 0vh;
 }
 
 .CS-div-value {
@@ -381,77 +382,74 @@
 }
 
 .TE-text {
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 300;
-    padding-left: 40px;
-    padding-top: 10px;
+    padding-left: 2vw;
+    padding-top: 1vh;
     color: white;
 }
 
 .TE-value-text {
-    font-size: 66px;
-    padding-top: 4px;
-    padding-left: 40px;
+    font-size: 3em;
+    padding-top: 2vh;
+    padding-left: 4vw;
     color: white;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 60px;
-    line-height: 73px;
+    
 }
 
 .EE-text {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    padding-top: 10px;
-    padding-left: 20px;
+    font-size: 0.7em;
+    
+    padding-top: 1vh;
+    padding-left: 2vw;
 }
 
 .EE-value-text {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 50px;
-    line-height: 61px;
-    padding-left: 20px;
+    font-size: 2em;
+    padding-left: 4vw;
+    padding-top: 1vh;
 }
 
 .solar-cell-image-div {
     position: absolute;
-    left: 30px;
-    top: 50px;
+    left: 2vw;
+    top: 4vh;
 }
 
 .solar-cell-image {
-    width: 200px;
-    height: 70px;
+    width: 12vw;
+    height: 8vh;
 }
 
 .solar-cell-image-div-text {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-
+    font-size: 0.8em;
     color: #FFFFFF;
     position: absolute;
-    left: 50px;
-    top: 130px
+    left: 3vw;
+    top: 13vh
 }
 
 .weather-image-div {
     position: absolute;
-    left: 260px;
-    top: 40px;
+    left: 16vw;
+    top: 4vh;
 }
 
 .weather-image {
-    width: 98px;
-    height: 104px;
+    width: 6.5vw;
+    height: 10vh;
 }
 
 .tempratue-div {
@@ -459,13 +457,10 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 34px;
-    line-height: 48px;
-    left: 350px;
-    top: 45px;
+    font-size: 2em;
+    left: 23vw;
+    top: 5vh;
     /* identical to box height */
-
-
     color: #FFFFFF;
 }
 
@@ -473,38 +468,35 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1em;
     /* identical to box height */
-
-
     color: #FFFFFF;
     position: absolute;
-    left: 365px;
-    top: 110px;
+    left: 23.5vw;
+    top: 11vh
 }
 
 .weather-div-text {
     position: absolute;
-    left: 400px;
-    font-size: 10px;
+    left: 23vw;
+    font-size: 0.8em;
     color: #FFFFFF;
     font-weight: 300;
-    top: 7px;
+    top: 0.5vh
 
 }
 
 .weather-div-mini {
     position: absolute;
-    left: 380px;
-    top: 5px
+    left: 26vw;
+    top: 0.5vh
 }
 
 .weather-div-title {
     position: absolute;
-    left: 30px;
-    font-size: 12px;
-    top: 7px;
+    left: 2vw;
+    font-size: 0.7em;
+    top: 0.5vh;
     color: #FFFFFF;
 }
 
@@ -517,91 +509,89 @@
     /* left: 40px;
     top: 35px; */
     color: white;
-    padding-top: 20px;
+    padding-top: 3vh;
     border-radius: 30px;
     display: flex;
     justify-content: space-evenly;
     width: 80%;
     margin:0px auto;
-    font-size: 12px;
+    font-size: 0.8em;
 }
 
 
 
 .weather-div-array>div>div:nth-child(2){
-    margin-top: -20px;
+    margin-top: -2vh;
+    padding-left: 0.5vw;
 }
 .weather-div-array>div>div:nth-child(3){
-    margin-top: -10px;
+    margin-top: 1vh;
 } 
 .emission-div-title-1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.8em;
     text-align: right;
 
     color: #FFFFFF;
     position: absolute;
-    top: 20px;
-    left: 180px;
+    top: 2vh;
+    left: 11vw;
+    padding-right: 2vw;
 }
 
 .emission-div-title-2 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.8em;
     text-align: right;
 
     color: #FFFFFF;
     position: absolute;
-    left: 180px;
-    top: 85px;
+    left: 11vw;
+    top: 10vh;
+    padding-right: 2vw;
 }
 
 .emission-div-title-3 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.8em;
     text-align: right;
 
     color: #FFFFFF;
     position: absolute;
-    left: 180px;
-    top: 100px;
+    left: 11vw;
+    top: 11.5vh;
 }
 
 .emission-div-title-1-value {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 1.5em;
     text-align: right;
 
     color: #FFFFFF;
     position: absolute;
-    top: 40px;
-    left: 190px;
+    top: 4.5vh;
+    left: 12vw;
 }
 
 .emission-div-title-2-value {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 1.5em;
     text-align: right;
 
     color: #FFFFFF;
     position: absolute;
-    left: 190px;
-    top: 120px;
+    left: 12vw;
+    top: 14vh;
 }
 
 .bulb {
@@ -616,14 +606,14 @@
 
 .emission-div-title-1-image {
     position: absolute;
-    top: 10px;
-    left: 40px;
+    top: 0.5vh;
+    left: 3vw;
 }
 
 .emission-div-title-2-image {
     position: absolute;
-    left: 40px;
-    top: 90px;
+    left: 3vw;
+    top: 10vh;
 }
 
 .picture-unit {
@@ -799,25 +789,21 @@
 
 .self-production-div {
     position: absolute;
-    top: 30px;
-    left: 40px;
+    top: 3.5vh;
+    left: 2vw;
 }
 
 .self-consumption-div {
     position: absolute;
-    top: 30px;
-    left: 240px;
+    top: 3.5vh;
+    left: 15vw;
 }
 
 .self-production-div-title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-
-
+    font-size: 0.8em;
     color: #FFFFFF;
 }
 
@@ -825,35 +811,31 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
-    line-height: 31px;
-
+    font-size: 1.2em;
     color: #FFFFFF;
 }
 
 .self-production-image-div {
     position: absolute;
-    left: 110px;
-    top: 25px;
+    left: 7vw;
+    top: 2.5vh;
 }
 
 .self-production-image-div1 {
     position: absolute;
-    left: 130px;
-    top: 25px;
+    left: 7vw;
+    top: 2.5vh;
 }
 
 .geolocation-title-div {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 6px;
-    line-height: 12px;
-
+    font-size: 0.4em;
     color: #FFFFFF;
     position: absolute;
-    left: 20px;
-    top: 15px;
+    left: 2vw;
+    top: 1.5vh;
 }
 
 .geolocation-center-div {
@@ -861,23 +843,23 @@
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     ;
     border-radius: 20px;
-    width: 360px;
-    height: 90px;
+    width: 26vw;
+    height: 10vh;
     position: absolute;
-    left: 40px;
-    top: 40px;
+    left: 2.5vw;
+    top: 4vh;
 }
 
 .sunrise-div {
     position: absolute;
-    left: 30px;
-    top: 10px;
+    left: 3vw;
+    top: 2vh;
 }
 
 .sunset-div {
     position: absolute;
-    left: 230px;
-    top: 10px;
+    left: 16vw;
+    top: 2vh;
 }
 
 .sunrise {
@@ -889,8 +871,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 0.7em;
 
     color: #FFFFFF;
     position: absolute;
@@ -914,8 +895,8 @@
 
 .daylight-div {
     position: absolute;
-    left: 20px;
-    top: 50px;
+    left: 2.5vw;
+    top: 6vh;
     width: 300px;
     height: 30px;
 }
@@ -930,8 +911,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 22px;
+    font-size: 0.8em;
     color: #FFFFFF;
     text-align: center;
 }
@@ -941,8 +921,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 1em;
     left: 90px;
     top: -3px;
     color: #FFFFFF;
@@ -950,26 +929,24 @@
 
 .current-div {
     position: absolute;
-    left: 40px;
-    top: 135px;
+    left: 3vw;
+    top: 15vh;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 0.8em;
 
     color: #FFFFFF;
 }
 
 .current-div-value {
     position: absolute;
-    left: 350px;
-    top: 135px;
+    left: 24vw;
+    top: 15vh;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 0.9em;
     text-align: right;
 
     color: #FFFFFF;
@@ -987,31 +964,31 @@
 
 .block-energy-div {
     background: radial-gradient(87.65% 87.65% at 18.75% 87.65%, rgba(167, 167, 167, 0.5) 0%, rgba(83, 83, 83, 0.4) 100%);
-    width: 140px;
-    height: 70px;
+    width: 10vw;
+    height: 9vh;
     position: absolute;
-    left: 145px;
-    top: 20px;
+    left: 10.5vw;
+    top: 1vh;
     border-radius: 18px;
 }
 
 .block-grid-div {
     background: radial-gradient(87.65% 87.65% at 18.75% 87.65%, rgba(167, 167, 167, 0.5) 0%, rgba(83, 83, 83, 0.4) 100%);
-    width: 140px;
-    height: 70px;
+    width: 10vw;
+    height: 9vh;
     position: absolute;
-    left: 30px;
-    top: 120px;
+    left: 3vw;
+    top: 12vh;
     border-radius: 18px;
 }
 
 .block-home-div {
     background: radial-gradient(87.65% 87.65% at 18.75% 87.65%, rgba(167, 167, 167, 0.5) 0%, rgba(83, 83, 83, 0.4) 100%);
-    width: 140px;
-    height: 70px;
+    width: 10vw;
+    height: 9vh;
     position: absolute;
-    left: 260px;
-    top: 120px;
+    left: 18vw;
+    top: 12vh;
     border-radius: 18px;
 }
 
@@ -1022,31 +999,29 @@
 
 .block-mining-div-image {
     position: absolute;
-    left: 10px;
-    top: 17px;
+    left: 1vw;
+    top: 2.5vh;
 }
 
 .block-mining-div-title {
-    position: absolute;
-    left: 40px;
-    top: 5px;
+    text-align: center;
+    padding-top: 0.6vh;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 0.6em;
 
     color: #FFFFFF;
 }
 
 .block-mining-div-value {
-    position: absolute;
-    left: 70px;
-    top: 30px;
+    text-align: right;
+    padding-top: 1.5vh;
+    padding-right: 1vw;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 0.8em;
     line-height: 19px;
 
     color: #FFFFFF;
@@ -1160,7 +1135,7 @@
 }
 .picture-unit-main-text{
     font-weight: 900;
-    font-size: 14px;
+    font-size: 0.8em;
     width: 25%;
     text-align: center;
     color: #51EA32 ;
@@ -1170,81 +1145,6 @@
     margin-left: 33%;
 }
 
-@media screen and (max-width: 1440px) {
-    .refresh-div-title{
-        position: absolute;
-        left: 10px;
-        top: 5px;
-        font-size: 0.3em;
-        color: white;
-    }
-    .menu-div {
-        left: 15px;
-    }
-
-    .main {
-        height: 100vh;
-    }
-
-    .home-text {
-        left: 130px;
-    }
-
-    .TE-div {
-        left: 130px;
-    }
-
-    .EE-div {
-        left: 130px;
-    }
-
-    .ME-div {
-        left: 360px
-    }
-
-    .solar-cell-div {
-        left: 130px
-    }
-
-    .weather-div {
-        left: 130px
-    }
-
-    .consumption-div {
-        left: 130px
-    }
-
-    .graph-div {
-        left: 595px
-    }
-    .graph-denotion-div{
-        left: 620px;
-    }
-
-    .geolocation {
-        left: 595px
-    }
-
-    .block {
-        left: 595px
-    }
-
-    .MS-div {
-        left: 1060px;
-    }
-
-    .CS-div {
-        left: 1060px;
-    }
-
-    .picture-unit-div {
-        left: 1060px;
-    }
-
-    .emission-div {
-        left: 1060px;
-    }
-}
 
 @media screen and (max-width: 1040px){
     
